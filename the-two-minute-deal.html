@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./assets/js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Two-Minute Deal — Yunlei Shen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Archivo:wght@400;500;600&amp;family=Caveat:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+::selection { background: #B5382A; color: #F7F2EA; }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
+body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(181, 56, 42)"] { color: #E06A50 !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
+@media (max-width: 900px) {
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; }
+  .hero-fixed { left: 0 !important; }
+  .breakout { width: calc(100vw - 80px) !important; margin-left: calc((100% - (100vw - 80px)) / 2) !important; }
+}
+.breakout { box-sizing: border-box; width: min(1176px, calc(100vw - 304px)); margin-left: calc((100% - min(1176px, calc(100vw - 304px))) / 2); }
+</style>
+</helmet>
+
+<div style="background:#F7F2EA; color:#26221B; font-family:'Archivo',sans-serif; min-height:100vh" data-screen-label="Case Study — The Two-Minute Deal">
+
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+    <div>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#26221B; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; border:1px solid #DFD5C3; padding:8px 16px; border-radius:99px" style-hover="border:1px solid #B5382A; color:#B5382A">← Home</a>
+      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:44px">
+        <p style="margin:0 0 10px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">On this page</p>
+        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Overview</a>
+        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Outcome</a>
+        <a data-toc="final" href="#final" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Highlights</a>
+        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Background</a>
+        <a data-toc="personas" href="#personas" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Personas</a>
+        <a data-toc="research" href="#research" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Research</a>
+        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Solutions</a>
+        <a data-toc="exploration" href="#exploration" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Zero to one</a>
+        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Reflection</a>
+      </div>
+    </div>
+    
+  </aside>
+  <div class="site-main" style="margin-left:224px">
+
+  <section id="preview" style="height:58vh; position:relative" data-screen-label="Final design hero">
+    <div class="hero-fixed" style="position:fixed; top:0; left:224px; right:0; height:58vh; z-index:0; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center">
+      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px">marketplace app — final design hero shot</span>
+    </div>
+  </section>
+
+  <div style="position:relative; z-index:1; background:#F7F2EA">
+  <div style="position:absolute; top:-25px; left:0; right:0; height:26px">
+    <svg viewBox="0 0 1200 26" preserveAspectRatio="none" style="display:block; width:100%; height:26px" aria-hidden="true"><path d="M0,26 L0,13 C150,3 300,21 450,12 C600,4 750,20 900,11 C1050,3 1150,16 1200,10 L1200,26 Z" fill="#F7F2EA"></path></svg>
+  </div>
+
+  <section id="overview" style="max-width:1240px; margin:0 auto; padding:96px 32px 64px" data-screen-label="Hero">
+    <h1 data-reveal="" style="margin:0 0 28px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(46px,7vw,96px); line-height:1.04; letter-spacing:-0.01em; max-width:16ch">The Two-Minute <em>Deal</em></h1>
+    <div style="display:flex; gap:56px; align-items:flex-start; flex-wrap:wrap">
+      <p data-reveal="" style="margin:0; flex:1 1 400px; max-width:640px; font-size:19px; line-height:1.7; color:#3E3930">A nano-influencer sponsorship took up to five weeks of introductions and back-and-forth before any content was made. We built a mobile marketplace that gets a small business and an influencer from first look to signed contract in about two minutes.</p>
+      <aside data-reveal="" style="position:relative; flex:0 1 380px; border:1px solid #26221B; background:#FBF7F0; padding:26px 28px 28px">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding-bottom:16px; border-bottom:1px solid #26221B">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.14em; color:#26221B">CASE FILE · ANONYMOUS AGENT</span>
+          <span style="width:8px; height:8px; border-radius:50%; background:#B5382A; display:inline-block"></span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Product</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Mobile matchmaking app</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Role</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Product Designer</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Timeline</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">2022 — 23 · MVP in 3 mo</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0 0">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Scope</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right; max-width:200px">Research to MVP design, 0→1</span>
+        </div>
+        <span style="position:absolute; top:-14px; right:22px; transform:rotate(6deg); font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.18em; color:#B5382A; border:1.5px solid #B5382A; padding:5px 10px; background:#F7F2EA">SIGNED</span>
+      </aside>
+    </div>
+  </section>
+
+  <section id="impact" style="border-top:1px solid #DFD5C3; border-bottom:1px solid #DFD5C3" data-screen-label="Impact">
+    <div style="max-width:1240px; margin:0 auto; padding:64px 32px">
+      <p data-reveal="" style="margin:0 0 32px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6E675C">Outcome, up front</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%), 1fr)); gap:16px">
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">deal time</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">~2 min</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">average time from opening a business’s Details page to confirming a contract</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">adoption</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">900+</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">influencers and 132+ local businesses onboarded in the first six months</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">growth</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">20–30%</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">daily user growth after launch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="final" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Final design highlights">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">Highlights — the deal in two minutes</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Pick a tier, do the tasks, get paid</h2>
+    <div data-reveal="" class="breakout" style="display:flex; flex-direction:column; gap:16px">
+      <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+        <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Tier contracts — start a deal without a conversation</figcaption>
+        <div style="aspect-ratio:16/9; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px">gif — browsing tiers &amp; starting a contract</span></div>
+      </figure>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(320px,100%), 1fr)); gap:16px">
+        <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+          <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Tasks — close the deal as a checklist</figcaption>
+          <div style="aspect-ratio:1.1/1; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px; text-align:center">gif — completing tasks &amp; uploads</span></div>
+        </figure>
+        <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+          <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Business page — the whole deal in one place</figcaption>
+          <div style="aspect-ratio:1.1/1; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px; text-align:center">gif — details / tiers / tasks tabs</span></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="context" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Context">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">BACKGROUND</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">The marketplace nobody built for the small players</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Influencer marketing platforms serve reputable brands and top-tier creators. Nano-influencers and small local businesses — arguably the best-matched pair, given their shared local focus and tight budgets — were left to find each other through DMs and cold outreach. Our goal: bridge that gap with a B2C mobile app, and ship the MVP in three months.</p>
+    </section>
+
+  <section id="personas" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Personas">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">PERSONAS</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Two sides of the same deal</h2>
+    <div data-reveal="" class="breakout" style="display:grid; grid-template-columns:1fr 1fr; gap:16px">
+      <div style="border:1px solid #DFD5C3; background:#F7F2EA; padding:28px">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maya" style="width:56px; height:56px; border-radius:50%; border:1px solid #DFD5C3; object-fit:cover; flex-shrink:0">
+          <div>
+            <p style="margin:0; font-family:'Instrument Serif',serif; font-size:22px; line-height:1.2">Maya, 26</p>
+            <p style="margin:2px 0 0; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#6E675C">Nano-influencer · 4.8K followers</p>
+          </div>
+        </div>
+        <p style="margin:0 0 16px; font-size:14.5px; line-height:1.7; color:#3E3930; font-style:italic">“I spend more time pitching myself in DMs than actually making content.”</p>
+        <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B5382A">Goals</p>
+        <p style="margin:0 0 14px; font-size:14.5px; line-height:1.7; color:#3E3930">Steady local sponsorships that fit her audience, with clear terms up front.</p>
+        <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B5382A">Frustrations</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.7; color:#3E3930">Weeks of cold outreach and haggling; brands ghost when they hear her follower count.</p>
+      </div>
+      <div style="border:1px solid #DFD5C3; background:#F7F2EA; padding:28px">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Daniel" style="width:56px; height:56px; border-radius:50%; border:1px solid #DFD5C3; object-fit:cover; flex-shrink:0">
+          <div>
+            <p style="margin:0; font-family:'Instrument Serif',serif; font-size:22px; line-height:1.2">Daniel, 41</p>
+            <p style="margin:2px 0 0; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:#6E675C">Café owner · 2 locations</p>
+          </div>
+        </div>
+        <p style="margin:0 0 16px; font-size:14.5px; line-height:1.7; color:#3E3930; font-style:italic">“Agencies quote me thousands. I just want locals to know we exist.”</p>
+        <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B5382A">Goals</p>
+        <p style="margin:0 0 14px; font-size:14.5px; line-height:1.7; color:#3E3930">Affordable creators nearby, and one simple signal that a campaign worked.</p>
+        <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#B5382A">Frustrations</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.7; color:#3E3930">Can’t find cost-effective creators; no time or tools to track results himself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Research">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">RESEARCH</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Six weeks lost to negotiation and reporting</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Interviews, surveys, and competitive analysis sharpened the problem. Over half of nano-influencers hunted for sponsorships through social platforms and direct outreach. Small businesses couldn’t find cost-effective creators. And both sides bled time in the same place: pre-campaign negotiation ran up to five weeks of repeated introductions and haggling, and post-campaign reporting ate another week because nobody could afford professional tracking tools.</p>
+    <p data-reveal="" style="margin:0 0 32px; font-size:16.5px; line-height:1.75; color:#3E3930">A journey map of the influencer’s current experience pointed at three phases worth attacking: negotiation, content creation, and measurement. That became the design brief — <em>streamline the collaboration itself.</em></p>
+    <div data-reveal="" class="breakout" style="background:#F7F2EA; padding:36px 40px">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:24px; flex-wrap:wrap">
+        <p style="margin:0; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#26221B">Influencer journey map — before the app</p>
+        <p style="margin:0; font-size:12px; color:#8A8171">≈ 6 weeks lost per campaign</p>
+      </div>
+      <div style="display:grid; grid-template-columns:88px 1fr 1fr 1fr; gap:1px; background:#DFD5C3; border:1px solid #DFD5C3">
+        <div style="background:#F1EADB; padding:12px 12px"></div>
+        <div style="background:#F1EADB; padding:12px 14px">
+          <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">1 · Negotiation</p>
+          <p style="margin:2px 0 0; font-size:11.5px; color:#B5382A; font-weight:600">up to 5 weeks</p>
+        </div>
+        <div style="background:#F1EADB; padding:12px 14px">
+          <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">2 · Content creation</p>
+          <p style="margin:2px 0 0; font-size:11.5px; color:#8A8171">days</p>
+        </div>
+        <div style="background:#F1EADB; padding:12px 14px">
+          <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">3 · Measurement</p>
+          <p style="margin:2px 0 0; font-size:11.5px; color:#B5382A; font-weight:600">another week</p>
+        </div>
+
+        <div style="background:#FDFBF7; padding:14px 12px"><p style="margin:0; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8171">Doing</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#3E3930">Cold DMs, repeated intros, haggling over price and terms</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#3E3930">Visits the business, creates and posts, reworks through revision rounds</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#3E3930">Assembles engagement numbers into a report by hand</p></div>
+
+        <div style="background:#FDFBF7; padding:14px 12px; display:flex; align-items:center"><p style="margin:0; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8171">Feeling</p></div>
+        <div style="background:#FDFBF7; grid-column:span 3; position:relative; height:110px">
+          <svg viewBox="0 0 600 110" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%">
+            <path d="M 30 78 C 130 92, 160 80, 300 30 C 380 4, 440 40, 570 84" fill="none" stroke="#B5382A" stroke-width="2.5"></path>
+          </svg>
+          <p style="margin:0; position:absolute; left:8%; top:56px; transform:translateX(-50%); font-size:20px">😖</p>
+          <p style="margin:0; position:absolute; left:8%; top:84px; transform:translateX(-50%); font-size:11px; color:#8A8171; white-space:nowrap">worn down before work starts</p>
+          <p style="margin:0; position:absolute; left:50%; top:4px; transform:translateX(-50%); font-size:20px">😊</p>
+          <p style="margin:0; position:absolute; left:50%; top:52px; transform:translateX(-50%); font-size:11px; color:#8A8171; white-space:nowrap">the part they came for</p>
+          <p style="margin:0; position:absolute; left:91%; top:62px; transform:translateX(-50%); font-size:20px">😩</p>
+          <p style="margin:0; position:absolute; left:91%; top:90px; transform:translateX(-50%); font-size:11px; color:#8A8171; white-space:nowrap">unpaid admin at the end</p>
+        </div>
+
+        <div style="background:#FDFBF7; padding:14px 12px"><p style="margin:0; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8171">Pain</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#B5382A">No way to start a deal without weeks of conversation</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#3E3930">Revisions pile up — no shared expectations</p></div>
+        <div style="background:#FDFBF7; padding:14px 14px"><p style="margin:0; font-size:12.5px; line-height:1.55; color:#B5382A">Tracking tools priced for agencies, not individuals</p></div>
+      </div>
+      <p style="margin:20px 0 0; font-size:12.5px; color:#6E675C; text-align:center">The two low points became the design brief: <em style="color:#B5382A">remove negotiation, fold measurement into the deal.</em></p>
+    </div>
+  </section>
+
+  <section id="process" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Process">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">SOLUTIONS</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Remove the negotiation, keep the trust</h2>
+
+    <div data-reveal="" style="background:#F7F2EA; padding:40px 44px 44px; margin-bottom:28px">
+      <div style="display:flex; align-items:baseline; gap:20px; padding-bottom:24px; margin-bottom:32px; border-bottom:1px solid #DFD5C3">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:40px; line-height:1; color:#B5382A">01</p>
+        <h3 style="margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:26px; line-height:1.25">Replace negotiation with multi-tier contracts</h3>
+      </div>
+      <div class="breakout" style="display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap">
+        <div style="display:flex; gap:12px">
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:16px 18px; text-align:center; opacity:0.55">
+            <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">Tier 1</p>
+            <p style="margin:4px 0 0; font-size:12px; color:#6E675C">1–5K followers</p>
+            <p style="margin:8px 0 0; font-size:13px; color:#6E675C">$</p>
+          </div>
+          <div style="border:1.5px solid #B5382A; background:#FDFBF7; padding:16px 18px; text-align:center; position:relative">
+            <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">Tier 2</p>
+            <p style="margin:4px 0 0; font-size:12px; color:#6E675C">5–10K followers</p>
+            <p style="margin:8px 0 0; font-size:13px; color:#B5382A">$$</p>
+            <p style="margin:0; position:absolute; top:-9px; left:50%; transform:translateX(-50%); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; background:#B5382A; color:#F7F2EA; padding:2px 8px; white-space:nowrap">your fit</p>
+          </div>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:16px 18px; text-align:center; opacity:0.55">
+            <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">Tier 3</p>
+            <p style="margin:4px 0 0; font-size:12px; color:#6E675C">10K+ followers</p>
+            <p style="margin:8px 0 0; font-size:13px; color:#6E675C">$$$</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px; flex-wrap:nowrap">
+          <p style="margin:0; font-size:20px; color:#B5382A">→</p>
+          <div style="text-align:center">
+            <p style="margin:0; font-size:14px; font-weight:600; color:#26221B">Deal starts</p>
+            <p style="margin:4px 0 0; font-size:12px; color:#6E675C">no intros, no haggling</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="background:#F7F2EA; padding:40px 44px 44px; margin-bottom:28px">
+      <div style="display:flex; align-items:baseline; gap:20px; padding-bottom:24px; margin-bottom:32px; border-bottom:1px solid #DFD5C3">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:40px; line-height:1; color:#B5382A">02</p>
+        <h3 style="margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:26px; line-height:1.25">Turn the campaign into a simple checklist: visit, post, prove it</h3>
+      </div>
+      <div class="breakout" style="display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap">
+        <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:12px 14px; text-align:center">
+          <p style="margin:0; font-size:12.5px; font-weight:600; color:#26221B; white-space:nowrap">Visit the store</p>
+          <p style="margin:3px 0 0; font-size:11px; color:#6E675C; white-space:nowrap">real experience</p>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:nowrap">
+          <p style="margin:0; font-size:17px; color:#B5382A">→</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:12px 14px; text-align:center">
+            <p style="margin:0; font-size:12.5px; font-weight:600; color:#26221B; white-space:nowrap">Create &amp; post</p>
+            <p style="margin:3px 0 0; font-size:11px; color:#6E675C; white-space:nowrap">shared guidelines</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:nowrap">
+          <p style="margin:0; font-size:17px; color:#B5382A">→</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:12px 14px; text-align:center">
+            <p style="margin:0; font-size:12.5px; font-weight:600; color:#26221B; white-space:nowrap">Screenshot Likes</p>
+            <p style="margin:3px 0 0; font-size:11px; color:#6E675C; white-space:nowrap">one honest signal</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:nowrap">
+          <p style="margin:0; font-size:17px; color:#B5382A">→</p>
+          <div style="border:1.5px solid #B5382A; background:#FDFBF7; padding:12px 14px; text-align:center">
+            <p style="margin:0; font-size:12.5px; font-weight:600; color:#B5382A; white-space:nowrap">Tasks done = deal closed</p>
+            <p style="margin:3px 0 0; font-size:11px; color:#6E675C; white-space:nowrap">no separate report</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="background:#F7F2EA; padding:40px 44px 44px; margin-bottom:72px">
+      <div style="display:flex; align-items:baseline; gap:20px; padding-bottom:24px; margin-bottom:32px; border-bottom:1px solid #DFD5C3">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:40px; line-height:1; color:#B5382A">03</p>
+        <h3 style="margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:26px; line-height:1.25">Consolidate the deal into one tabbed Business page</h3>
+      </div>
+      <div class="breakout" style="display:flex; align-items:center; justify-content:center">
+        <div style="width:280px; border:1px solid #DFD5C3; background:#FDFBF7">
+          <div style="padding:14px 16px 10px; border-bottom:1px solid #EAE2D3">
+            <p style="margin:0; font-size:13px; font-weight:600; color:#26221B">Business page</p>
+            <p style="margin:2px 0 0; font-size:11px; color:#6E675C">the whole deal in one place</p>
+          </div>
+          <div style="display:flex; border-bottom:1px solid #EAE2D3">
+            <p style="margin:0; flex:1; text-align:center; padding:10px 0; font-size:12px; font-weight:600; color:#B5382A; border-bottom:2px solid #B5382A">Details</p>
+            <p style="margin:0; flex:1; text-align:center; padding:10px 0; font-size:12px; color:#6E675C">Tiers</p>
+            <p style="margin:0; flex:1; text-align:center; padding:10px 0; font-size:12px; color:#6E675C">Tasks</p>
+          </div>
+          <div style="padding:14px 16px; display:flex; flex-direction:column; gap:8px">
+            <div style="height:34px; border:1px solid #EAE2D3; background:#F7F2EA; display:flex; align-items:center; padding:0 10px"><p style="margin:0; font-size:11px; color:#6E675C">info + map</p></div>
+            <div style="height:34px; border:1px solid #EAE2D3; background:#F7F2EA; display:flex; align-items:center; padding:0 10px"><p style="margin:0; font-size:11px; color:#6E675C">requirements</p></div>
+            <div style="height:34px; border:1px solid #EAE2D3; background:#F7F2EA; display:flex; align-items:center; padding:0 10px"><p style="margin:0; font-size:11px; color:#6E675C">contract terms</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="exploration" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Design exploration">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">HOW I DESIGNED IT — ZERO TO ONE</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">None of it arrived fully formed</h2>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">PHASE 01 — FRAME</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Frame the problem as design questions</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">I reframed each journey-map pain point as a design question — how might a deal start without a conversation? how might content prove itself without a report? — giving every later concept one brief to answer: <em>streamline the collaboration itself.</em></p>
+      <div class="breakout" style="background:#F7F2EA; padding:36px 40px">
+        <div style="display:grid; grid-template-columns:1fr 24px 1.2fr; gap:12px 16px; align-items:center">
+          <p style="margin:0 0 2px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Pain point</p>
+          <p style="margin:0"></p>
+          <p style="margin:0 0 2px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">How might we…</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#3E3930">Negotiation drags on for up to five weeks</p></div>
+          <p style="margin:0; font-size:17px; color:#B5382A; text-align:center">→</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#26221B; font-weight:600">…start a deal without a conversation?</p></div>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#3E3930">Content revisions pile up without shared expectations</p></div>
+          <p style="margin:0; font-size:17px; color:#B5382A; text-align:center">→</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#26221B; font-weight:600">…make good content the default, not a debate?</p></div>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#3E3930">Reporting eats a week with tools nobody can afford</p></div>
+          <p style="margin:0; font-size:17px; color:#B5382A; text-align:center">→</p>
+          <div style="border:1px solid #DFD5C3; background:#FDFBF7; padding:14px 16px"><p style="margin:0; font-size:13px; line-height:1.5; color:#26221B; font-weight:600">…let content prove itself without a report?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">PHASE 02 — IDEATE</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Sketch the mechanism before the screens</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Brainstorming with the PM, pressure-testing with engineering, and validating with potential users happened on paper first. Rapid sketches explored how a deal could start, run, and close — and converged on the structural moves: tier-based contracts to kill negotiation, and post-campaign Tasks to kill the report. Sketching the mechanism, not the UI, is what let us throw away weak ideas cheaply.</p>
+      <div class="breakout" style="background:#FDFBF7; border:1px solid #EAE2D3; padding:40px 36px; display:flex; align-items:flex-start; justify-content:center; gap:36px; flex-wrap:wrap; background-image:repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(38,34,27,0.05) 31px, rgba(38,34,27,0.05) 32px)">
+        <div style="transform:rotate(-1.5deg)">
+          <p style="margin:0 0 10px; font-family:'Caveat',cursive; font-size:22px; color:#3E3930">pick a tier → deal starts?</p>
+          <div style="display:flex; gap:8px; align-items:flex-end">
+            <div style="width:58px; height:66px; border:2px solid #6E675C; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; display:flex; align-items:center; justify-content:center"><p style="margin:0; font-family:'Caveat',cursive; font-size:18px; color:#6E675C">$</p></div>
+            <div style="width:58px; height:80px; border:2.5px solid #B5382A; border-radius:15px 225px 15px 255px/255px 15px 225px 15px; display:flex; align-items:center; justify-content:center"><p style="margin:0; font-family:'Caveat',cursive; font-size:18px; color:#B5382A">$$ ✓</p></div>
+            <div style="width:58px; height:94px; border:2px solid #6E675C; border-radius:225px 15px 255px 15px/15px 255px 15px 225px; display:flex; align-items:center; justify-content:center"><p style="margin:0; font-family:'Caveat',cursive; font-size:18px; color:#6E675C">$$$</p></div>
+          </div>
+          <p style="margin:10px 0 0; font-family:'Caveat',cursive; font-size:18px; color:#8A8171">no DMs, no haggling!!</p>
+        </div>
+        <div style="transform:rotate(1deg)">
+          <p style="margin:0 0 10px; font-family:'Caveat',cursive; font-size:22px; color:#3E3930">the deal = a checklist</p>
+          <div style="border:2px solid #6E675C; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; padding:14px 18px; display:flex; flex-direction:column; gap:6px">
+            <p style="margin:0; font-family:'Caveat',cursive; font-size:19px; color:#3E3930">☑ visit the store</p>
+            <p style="margin:0; font-family:'Caveat',cursive; font-size:19px; color:#3E3930">☑ post the real thing</p>
+            <p style="margin:0; font-family:'Caveat',cursive; font-size:19px; color:#3E3930">☐ screenshot likes</p>
+          </div>
+          <p style="margin:10px 0 0; font-family:'Caveat',cursive; font-size:18px; color:#B5382A">tasks done → deal closed ✓</p>
+        </div>
+        <div style="transform:rotate(-0.8deg)">
+          <p style="margin:0 0 10px; font-family:'Caveat',cursive; font-size:22px; color:#3E3930">everything on one page?</p>
+          <div style="width:120px; border:2px solid #6E675C; border-radius:15px 255px 15px 225px/225px 15px 255px 15px; padding:10px 12px">
+            <p style="margin:0 0 6px; font-family:'Caveat',cursive; font-size:17px; color:#3E3930; border-bottom:2px solid #B5382A; display:inline-block">details | tiers | tasks</p>
+            <div style="height:10px; border:1.5px solid #A99F8D; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; margin-bottom:5px"></div>
+            <div style="height:10px; border:1.5px solid #A99F8D; border-radius:15px 225px 15px 255px/255px 15px 225px 15px; margin-bottom:5px"></div>
+            <div style="height:10px; border:1.5px solid #A99F8D; border-radius:225px 15px 255px 15px/15px 255px 15px 225px"></div>
+          </div>
+          <p style="margin:10px 0 0; font-family:'Caveat',cursive; font-size:18px; color:#8A8171">tab bar → thumb reach 👍</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">PHASE 03 — STRUCTURE</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Wireframe the architecture and test it</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Low-fidelity wireframes put the concepts in users’ hands: the single Business page, the top tab bar, the Details-then-Tasks sequence. Testing at this fidelity settled the arguments quickly — where tiers should live, when the page should hand over to Tasks — before any pixels were precious.</p>
+      <div class="breakout"><img src="./assets/images/how-do-i-uncover-user-pain-points-mr7hn9tm.png" alt="Lo-fi wireframes — business page, tab bar, task flow" style="display:block; width:100%; height:auto"></div>
+    </div>
+
+    <div data-reveal="">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">PHASE 04 — VISUALIZE</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Make the concept legible at high fidelity</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">High fidelity was where the concepts became self-explanatory: tiers rendered as familiar pricing-style cards so the choice reads at a glance, Tasks as a step-by-step checklist with maps and upload-success states so closing a deal feels like finishing a to-do list. The visual language did the onboarding — no tutorial needed for the MVP.</p>
+      <div class="breakout" style="display:grid; grid-template-columns:1fr; gap:24px">
+        <div><img src="./assets/images/detail-final-mr7hq9h5.png" alt="Hi-fi — details and tier cards" style="display:block; width:100%; height:auto"></div>
+        <div><img src="./assets/images/tasks-final-mr7hr108.png" alt="Hi-fi — tasks and contract status" style="display:block; width:100%; height:auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reflection" style="max-width:820px; margin:0 auto; padding:88px 32px 96px" data-screen-label="Reflection">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">Reflection</p>
+    <p data-reveal="" style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(24px,3vw,32px); line-height:1.45; color:#26221B">Shipping an MVP in three months meant choosing imperfect answers on purpose — and saying so. “Likes” aren’t a real business metric, but a legible, launchable one beat a rigorous one we couldn’t ship. The growth numbers suggest the trade was right.</p>
+  </section>
+
+  <section style="background:#26221B; color:#F7F2EA" data-screen-label="Next project">
+    <div style="max-width:1240px; margin:0 auto; padding:120px 32px 120px">
+      <p style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#A99F8D">Next case study</p>
+      <a href="the-end-of-the-paper-trail.html" style="font-family:'Instrument Serif',serif; font-size:clamp(34px,5vw,60px); color:#F7F2EA; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#E06A50">The End of the Paper Trail →</a>
+      
+    </div>
+  </section>
+
+  </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._initTheme();
+    this._initToc();
+    if ((this.props.motion ?? true) === false) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    this._check = () => {
+      const vh = window.innerHeight;
+      let pending = 0;
+      els.forEach((el) => {
+        if (el.dataset.shown) return;
+        if (el.getBoundingClientRect().top < vh - 40) {
+          el.dataset.shown = '1';
+          try {
+            el.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: 'ease', fill: 'backwards' });
+            setTimeout(() => { if (getComputedStyle(el).opacity !== '1') el.getAnimations().forEach((a) => a.cancel()); }, 900);
+          } catch (err) {}
+        } else { pending++; }
+      });
+      if (pending === 0) this._teardown();
+    };
+    window.addEventListener('scroll', this._check, { passive: true });
+    window.addEventListener('resize', this._check);
+    this._check();
+    requestAnimationFrame(() => this._check && this._check());
+    setTimeout(() => this._check && this._check(), 300);
+  }
+  _teardown() {
+    if (!this._check) return;
+    window.removeEventListener('scroll', this._check);
+    window.removeEventListener('resize', this._check);
+    this._check = null;
+  }
+  _initTheme() {
+    const check = () => {
+      const ctx = document.getElementById('context');
+      if (!ctx) return;
+      const dark = ctx.getBoundingClientRect().top > window.innerHeight * 0.55;
+      if (dark) document.body.setAttribute('data-dark', '1');
+      else document.body.removeAttribute('data-dark');
+    };
+    this._themeCheck = check;
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+  }
+  _initToc() {
+    const ids = ['overview', 'impact', 'final', 'context', 'personas', 'research', 'process', 'exploration', 'reflection'];
+    const links = Array.from(document.querySelectorAll('[data-toc]'));
+    if (!links.length) return;
+    const paint = () => {
+      let current = ids[0];
+      for (const id of ids) {
+        const s = document.getElementById(id);
+        if (s && s.getBoundingClientRect().top <= 140) current = id;
+      }
+      links.forEach((l) => {
+        const active = l.dataset.toc === current;
+        const dot = l.querySelector('[data-toc-dot]');
+        l.style.color = active ? '#B5382A' : (l._hov ? '#26221B' : '#6E675C');
+        if (dot) { dot.style.opacity = active ? '1' : '0'; }
+      });
+    };
+    links.forEach((l) => {
+      l.addEventListener('mouseenter', () => { l._hov = true; paint(); });
+      l.addEventListener('mouseleave', () => { l._hov = false; paint(); });
+    });
+    window.addEventListener('scroll', paint, { passive: true });
+    paint();
+    this._paintToc = paint;
+  }
+  componentWillUnmount() {
+    this._teardown();
+    if (this._paintToc) window.removeEventListener('scroll', this._paintToc);
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
