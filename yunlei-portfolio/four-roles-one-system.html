@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./assets/js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Four Roles, One System — Yunlei Shen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+::selection { background: #B5382A; color: #F7F2EA; }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
+body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(181, 56, 42)"] { color: #E06A50 !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
+@media (max-width: 900px) {
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; }
+  .hero-fixed { left: 0 !important; }
+  .breakout { width: calc(100vw - 80px) !important; margin-left: calc((100% - (100vw - 80px)) / 2) !important; }
+}
+.breakout { box-sizing: border-box; width: min(1176px, calc(100vw - 304px)); margin-left: calc((100% - min(1176px, calc(100vw - 304px))) / 2); }
+</style>
+</helmet>
+
+<div style="background:#F7F2EA; color:#26221B; font-family:'Archivo',sans-serif; min-height:100vh" data-screen-label="Case Study — Four Roles, One System">
+
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+    <div>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#26221B; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; border:1px solid #DFD5C3; padding:8px 16px; border-radius:99px" style-hover="border:1px solid #B5382A; color:#B5382A">← Home</a>
+      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:44px">
+        <p style="margin:0 0 10px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">On this page</p>
+        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Overview</a>
+        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Outcome</a>
+        <a data-toc="final" href="#final" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Highlights</a>
+        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Problem</a>
+        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Fix</a>
+        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#B5382A; opacity:0; transition:opacity .25s"></span>Reflection</a>
+      </div>
+    </div>
+    
+  </aside>
+  <div class="site-main" style="margin-left:224px">
+
+  <section id="preview" style="height:58vh; position:relative" data-screen-label="Final design hero">
+    <div class="hero-fixed" style="position:fixed; top:0; left:224px; right:0; height:58vh; z-index:0; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center">
+      <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px">sugar crm — role workflows hero shot</span>
+    </div>
+  </section>
+
+  <div style="position:relative; z-index:1; background:#F7F2EA">
+  <div style="position:absolute; top:-25px; left:0; right:0; height:26px">
+    <svg viewBox="0 0 1200 26" preserveAspectRatio="none" style="display:block; width:100%; height:26px" aria-hidden="true"><path d="M0,26 L0,13 C150,3 300,21 450,12 C600,4 750,20 900,11 C1050,3 1150,16 1200,10 L1200,26 Z" fill="#F7F2EA"></path></svg>
+  </div>
+
+  <section id="overview" style="max-width:1240px; margin:0 auto; padding:96px 32px 64px" data-screen-label="Hero">
+    
+    <h1 data-reveal="" style="margin:0 0 28px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(46px,7vw,96px); line-height:1.04; letter-spacing:-0.01em; max-width:16ch">Four Roles, <em>One System</em></h1><div style="display:flex; gap:56px; align-items:flex-start; flex-wrap:wrap">
+      <p data-reveal="" style="margin:0; flex:1 1 400px; max-width:640px; font-size:19px; line-height:1.7; color:#3E3930">In Sugar CRM, everyone could edit everything. Work was being silently undone, data conflicted, and nobody owned anything. After rebuilding the architecture, I redesigned how each role moves through a claim — so five teams could finally share one system without colliding.</p>
+      <aside data-reveal="" style="position:relative; flex:0 1 380px; border:1px solid #26221B; background:#FBF7F0; padding:26px 28px 28px">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding-bottom:16px; border-bottom:1px solid #26221B">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.14em; color:#26221B">CASE FILE · VBG–SUGAR CRM</span>
+          <span style="width:8px; height:8px; border-radius:50%; background:#B5382A; display:inline-block"></span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Product</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Internal claims CRM</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Role</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Product Designer</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Timeline</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">2024 — 2025</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0 0">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Scope</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right; max-width:200px">Role-based workflows · <a href="a-crm-worth-navigating.html" style="color:#B5382A">companion&nbsp;project</a></span>
+        </div>
+        <span style="position:absolute; top:-14px; right:22px; transform:rotate(6deg); font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.18em; color:#B5382A; border:1.5px solid #B5382A; padding:5px 10px; background:#F7F2EA">OWNED</span>
+      </aside>
+    </div>
+  </section>
+
+  <section id="impact" style="border-top:1px solid #DFD5C3; border-bottom:1px solid #DFD5C3" data-screen-label="Impact">
+    <div style="max-width:1240px; margin:0 auto; padding:64px 32px">
+      <p data-reveal="" style="margin:0 0 32px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6E675C">Outcome, up front</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%), 1fr)); gap:16px">
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">submissions</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">2×</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">claim submissions within one month of launch</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">data integrity</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">Fewer errors</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">accidental changes by the wrong teams ended once access followed roles</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">accountability</span>
+          <p style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(48px,5vw,68px); line-height:1; color:#B5382A">Clear owners</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">every task and review gained a named, traceable owner — less confusion, less rework</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="final" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Final design highlights">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">Highlights — four views, one system</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Log in, land on your work — and only yours</h2>
+    <div data-reveal="" class="breakout" style="display:flex; flex-direction:column; gap:16px">
+      <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+        <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Role dashboards — each role sees only its tasks</figcaption>
+        <div style="aspect-ratio:16/9; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px">gif — switching between role dashboards</span></div>
+      </figure>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(320px,100%), 1fr)); gap:16px">
+        <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+          <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Role-aware progress bar</figcaption>
+          <div style="aspect-ratio:1.1/1; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px; text-align:center">gif — progress bar per role</span></div>
+        </figure>
+        <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
+          <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Mark as Complete — signed accountability</figcaption>
+          <div style="aspect-ratio:1.1/1; margin:20px; background:#F1EADB; background-image:repeating-linear-gradient(-45deg, rgba(38,34,27,0.045) 0, rgba(38,34,27,0.045) 10px, transparent 10px, transparent 20px); display:flex; align-items:center; justify-content:center"><span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8171; background:#F7F2EA; border:1px solid #DFD5C3; padding:6px 10px; text-align:center">gif — check off &amp; mark complete</span></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="context" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Context">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">PROBLEM</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">No permissions, no ownership, no order</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Reviewing the claim submission process, I found the root problem quickly: every role had access to everything, with no permission controls. Anyone could edit any record. Duplicate entries and conflicting data were routine, employees sifted through information that wasn’t theirs, and — worst of all — people unknowingly undid each other’s work. Claim submissions dropped; revenue followed.</p>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">I interviewed team leaders to map the entire claim workflow: which role does what, with which materials, which steps can run in parallel, and where reviews must happen. Two scoping insights came out of it. The Network Support Coordinator and Mail Clerk work in a third-party platform — their workflows didn’t belong in Sugar at all. The four roles that did were:</p>
+    <div data-reveal="" class="breakout" style="margin-top:32px; display:grid; grid-template-columns:1fr auto 1fr auto 1fr auto 1fr; gap:0; align-items:stretch">
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:26px; color:#B5382A">01</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Builds the packet</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Intake Specialist</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Creates leads, fills initial information, uploads first documents, builds the claim packet, collects signatures</p>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 10px; color:#B5382A; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:26px; color:#B5382A">02</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Runs initial review</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Case Manager</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Sees all veteran information, creates disabilities and diagnoses</p>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 10px; color:#B5382A; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:26px; color:#B5382A">03</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Checks the documents</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Underwriter</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Reviews all uploaded documents for accuracy</p>
+      </div>
+      <div style="display:flex; align-items:center; padding:0 10px; color:#B5382A; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Instrument Serif',serif; font-size:26px; color:#B5382A">04</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Signs off</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Case Review Specialist</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Final verification of documents and completed questionnaires</p>
+      </div>
+    </div>
+    <div data-reveal="" class="breakout" style="margin-top: 40px; aspect-ratio: 3880/3200; background: url(&quot;./assets/images/separate-workflows-mr71hc7r.png&quot;) center / contain no-repeat"></div>
+  </section>
+
+  <section id="process" style="max-width:820px; margin:0 auto; padding:88px 32px 0" data-screen-label="Process">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">FIX</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15">Restrict, sequence, and sign the work</h2>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Fix 01</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Show each role only its own work</h3>
+      <p style="margin:0 0 18px; font-size:16px; line-height:1.75; color:#3E3930">I separated dashboards by role, so logging in lands you on your tasks and nothing else. On Lead and Claim views, the progress bar became role-aware: Intake Specialists get a standalone bar, since their phase runs first and independently; Case Managers, Underwriters, and Case Review Specialists share a bar showing the full process — but can only interact with their assigned steps.</p>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Content follows the same rule: what’s visible depends on role and task stage, and each phase ends with a review checkpoint that prevents duplicate entries and unintended changes from leaking downstream.</p>
+      <div class="breakout" style="aspect-ratio: 3880/2896; background: url(&quot;./assets/images/restricted-progress-bar-mr71ktqf.png&quot;) center / contain no-repeat"></div>
+    </div>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Fix 02</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2"><div>Two kinds of work, two kinds of flow</div></h3>
+      <p style="margin:0 0 18px; font-size:16px; line-height:1.75; color:#3E3930">Intake is inherently sequential, so Intake Specialists got a linear, step-by-step flow: only the current task’s information is visible, tasks are confirmed complete before moving on, and completed steps stay revisitable while future ones stay closed.</p>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Review work is non-linear, so Case Managers, Underwriters, and Case Review Specialists got tab-based navigation instead — tabs ordered by task priority, the system advancing to the next tab on completion, with free movement back for review and updates. Same system, two rhythms.</p>
+      <div class="breakout" style="display:grid; grid-template-columns:1fr; gap:16px">
+        <div style="aspect-ratio: 3880/678; background: url(&quot;./assets/images/intake-specialist-work-flow-mr71pq9d.png&quot;) center / contain no-repeat"></div>
+        <div style="aspect-ratio: 3880/808; background: url(&quot;./assets/images/case-manager-work-flow-mr71q0v5.png&quot;) center / contain no-repeat"></div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="margin-bottom:72px">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Fix 03</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Status defines the action</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Documents and disabilities pass through multiple reviews, so I made the interaction depend on status and role: upload actions in the Intake phase, review actions for everyone downstream. Checkboxes beside each document let reviewers mark progress and resume cleanly after interruptions — a small addition that removed a constant source of lost place.</p>
+      <div class="breakout"><img src="./assets/images/restricted-documents-actions-mr78zojl.png" alt="State-driven document cards with review checkboxes" style="display:block; width:100%; height:auto"></div>
+    </div>
+
+    <div data-reveal="">
+      <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Fix 04</p>
+      <h3 style="margin:0 0 18px; font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; line-height:1.2">Make accountability an interaction, not a policy</h3>
+      <p style="margin:0 0 18px; font-size:16px; line-height:1.75; color:#3E3930">Before submitting, users must actively check off tasks and click “Mark as Complete” — a deliberate confirmation that puts a name on the work and measurably reduced careless errors.</p>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">For reviewed items, a System Information section automatically records who created, accepted, and rejected each one. The record can’t be altered, giving team leads full traceability — who did what, and when — without anyone filing a report.</p>
+      <div class="breakout"><img src="./assets/images/accountability-1-mr79jayf.png" alt="Mark as Complete confirmation" style="display:block; width:100%; height:auto"></div><div class="breakout" style="margin-top:24px"><img src="./assets/images/accountability-2-mr79jpsg.png" alt="System Information audit record" style="display:block; width:100%; height:auto"></div>
+    </div>
+  </section>
+
+  <section id="reflection" style="max-width:820px; margin:0 auto; padding:88px 32px 96px" data-screen-label="Reflection">
+    <p data-reveal="" style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#B5382A">Reflection</p>
+    <p data-reveal="" style="margin:0; font-family:'Instrument Serif',serif; font-size:clamp(24px,3vw,32px); line-height:1.45; color:#26221B">The fixes that mattered most were small: organizing tasks in the order people do them, and asking for one deliberate confirmation. Given another pass, I’d explore automating the handoffs between phases — but turning a messy free-for-all into a smooth, owned process was the win that counted.</p>
+  </section>
+
+  <section style="background:#26221B; color:#F7F2EA" data-screen-label="Next project">
+    <div style="max-width:1240px; margin:0 auto; padding:120px 32px 120px">
+      <p style="margin:0 0 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#A99F8D">Next case study</p>
+      <a href="the-two-minute-deal.html" style="font-family:'Instrument Serif',serif; font-size:clamp(34px,5vw,60px); color:#F7F2EA; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#E06A50">The Two-Minute Deal →</a>
+      
+    </div>
+  </section>
+
+  </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._initTheme();
+    this._initToc();
+    if ((this.props.motion ?? true) === false) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    this._check = () => {
+      const vh = window.innerHeight;
+      let pending = 0;
+      els.forEach((el) => {
+        if (el.dataset.shown) return;
+        if (el.getBoundingClientRect().top < vh - 40) {
+          el.dataset.shown = '1';
+          try {
+            el.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: 'ease', fill: 'backwards' });
+            setTimeout(() => { if (getComputedStyle(el).opacity !== '1') el.getAnimations().forEach((a) => a.cancel()); }, 900);
+          } catch (err) {}
+        } else { pending++; }
+      });
+      if (pending === 0) this._teardown();
+    };
+    window.addEventListener('scroll', this._check, { passive: true });
+    window.addEventListener('resize', this._check);
+    this._check();
+    requestAnimationFrame(() => this._check && this._check());
+    setTimeout(() => this._check && this._check(), 300);
+  }
+  _teardown() {
+    if (!this._check) return;
+    window.removeEventListener('scroll', this._check);
+    window.removeEventListener('resize', this._check);
+    this._check = null;
+  }
+  _initTheme() {
+    const check = () => {
+      const ctx = document.getElementById('context');
+      if (!ctx) return;
+      const dark = ctx.getBoundingClientRect().top > window.innerHeight * 0.55;
+      if (dark) document.body.setAttribute('data-dark', '1');
+      else document.body.removeAttribute('data-dark');
+    };
+    this._themeCheck = check;
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+  }
+  _initToc() {
+    const ids = ['overview', 'impact', 'final', 'context', 'process', 'reflection'];
+    const links = Array.from(document.querySelectorAll('[data-toc]'));
+    if (!links.length) return;
+    const paint = () => {
+      let current = ids[0];
+      for (const id of ids) {
+        const s = document.getElementById(id);
+        if (s && s.getBoundingClientRect().top <= 140) current = id;
+      }
+      links.forEach((l) => {
+        const active = l.dataset.toc === current;
+        const dot = l.querySelector('[data-toc-dot]');
+        l.style.color = active ? '#B5382A' : (l._hov ? '#26221B' : '#6E675C');
+        if (dot) { dot.style.opacity = active ? '1' : '0'; }
+      });
+    };
+    links.forEach((l) => {
+      l.addEventListener('mouseenter', () => { l._hov = true; paint(); });
+      l.addEventListener('mouseleave', () => { l._hov = false; paint(); });
+    });
+    window.addEventListener('scroll', paint, { passive: true });
+    paint();
+    this._paintToc = paint;
+  }
+  componentWillUnmount() {
+    this._teardown();
+    if (this._paintToc) window.removeEventListener('scroll', this._paintToc);
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
