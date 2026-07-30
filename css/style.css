@@ -1,0 +1,4 @@
+/* Base styles shared across all pages. Page-specific styles live inline per page. */
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; }
