@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<meta name="description" content="About Yunlei Shen — Seattle-based product designer who designs in systems, prototypes in code, and lets outcomes carry the load.">
+<script src="js/main.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>About · Yunlei Shen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+.nav-burger { display: none; }
+::selection { background: #8F6B2E; color: #F7F2EA; }
+.rail-links a { position: relative; transition: color .25s ease; }
+.rail-links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: #8F6B2E; transform: scaleX(0); transform-origin: left center; transition: transform .3s cubic-bezier(.22,1,.36,1); }
+.rail-links a:hover { color: #8F6B2E !important; }
+.rail-links a:hover::after { transform: scaleX(1); }
+.rail-links a.active::after { transform: scaleX(1); }
+.skill-chip { transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1) !important; }
+.skill-chip:hover { transform: translateY(-5px) rotate(0deg) !important; }
+.hero-chip { cursor: default; will-change: transform; animation: hero-float 5.2s ease-in-out infinite; }
+.hero-chip:nth-of-type(2n) { animation-duration: 6.4s; animation-delay: -2.1s; animation-name: hero-float-b; }
+.hero-chip:nth-of-type(3n) { animation-duration: 7.1s; animation-delay: -3.6s; }
+.hero-chip:nth-of-type(5n) { animation-duration: 5.8s; animation-delay: -1.2s; animation-name: hero-float-b; }
+@keyframes hero-float { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-9px) rotate(calc(var(--r, 0deg) + 1.6deg)); } }
+@keyframes hero-float-b { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(8px) rotate(calc(var(--r, 0deg) - 1.4deg)); } }
+.hero-blob { animation: blob-drift 14s ease-in-out infinite; will-change: transform; }
+.hero-blob:nth-of-type(2n) { animation-duration: 18s; animation-delay: -6s; animation-direction: reverse; }
+.hero-blob:nth-of-type(3n) { animation-duration: 22s; animation-delay: -11s; }
+@keyframes blob-drift { 0%,100% { translate: 0 0; } 33% { translate: 14px -12px; } 66% { translate: -10px 10px; } }
+@media (prefers-reduced-motion: reduce) { .hero-chip, .hero-blob { animation: none; } }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(239, 231, 214)"], body[data-dark] [style*="background-color: rgb(239, 231, 214)"] { background-color: #2A251E !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(143, 107, 46)"] { color: #C9A96A !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(216, 205, 184)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(201, 191, 169)"] { border-color: #5C5544 !important; }
+body[data-dark] #contact [style*="border: 1.5px solid rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] #contact [style*="border: 3px double rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] #contact [style*="border: 1.5px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] #contact [style*="border: 1.5px dashed rgb(138, 129, 113)"] { border-color: #A99F8D !important; color: #F7F2EA !important; }
+body[data-dark] #contact [style*="border: 1.5px dashed rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] [style*="background: rgb(228, 219, 201)"], body[data-dark] [style*="background-color: rgb(228, 219, 201)"] { background-color: #2E2A22 !important; }
+#contact svg path { transition: fill .6s ease; }
+body[data-dark] #contact svg path { fill: #2E2A22 !important; }
+body[data-dark] #contact [style*="background: rgb(38, 34, 27)"] { background-color: #FBF7F0 !important; color: #26221B !important; }
+body[data-dark] #contact [style*="background: rgb(143, 107, 46)"] { background-color: #C9A96A !important; color: #26221B !important; }
+body[data-dark] #contact button[type="submit"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] .site-rail { border-right-color: #3E3930 !important; }
+.rail-meta a { transition: color .25s ease, border-color .25s ease; }
+.rail-meta a:hover { color: #8F6B2E !important; border-color: #8F6B2E !important; }
+body[data-dark] .rail-meta a { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] .rail-meta a:hover { color: #C9A96A !important; border-color: #C9A96A !important; }
+@media (max-width: 1180px) {
+  .chip-scatter { position: static !important; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; margin-bottom: 56px; pointer-events: auto !important; }
+  .chip-scatter .skill-chip { position: static !important; }
+  .chip-scatter-wrap { padding: 0 !important; }
+}
+@media (max-width: 900px) {
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .site-rail > div:first-child { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+  .site-rail p { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .rail-links { display: none !important; }
+  .site-rail[data-open] .rail-links { display: flex !important; position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #F7F2EA; border-bottom: 1px solid #DFD5C3; flex-direction: column !important; align-items: flex-start !important; gap: 18px !important; margin: 0 !important; padding: 20px 24px; }
+  .site-rail[data-open] .rail-links > span[aria-hidden] { width: 100% !important; align-self: stretch; }
+  body[data-dark] .site-rail[data-open] .rail-links { background: #26221B; border-bottom-color: #3E3930; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; padding-top: 40px; }
+  .hero-stage { width: 840px !important; max-width: 840px !important; }
+  .hero-photo { width: 340px !important; }
+  .photo-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 8px !important; }
+}
+.mobile-intro { display: none; }
+@media (max-width: 900px) {
+  .mobile-intro { display: block !important; }
+}
+@media (max-width: 900px) {
+  [style*="padding: 96px 32px 72px"] { padding: 56px 20px 48px !important; }
+  [style*="padding: 88px 32px 96px"] { padding: 56px 20px 64px !important; }
+}
+</style>
+</helmet>
+
+<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="About">
+
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+    <div>
+      <a href="index.html" title="Yunlei Shen" style="display:inline-block; text-decoration:none; color:#26221B; font-family:'Poppins',sans-serif; font-weight:400; font-size:20px; letter-spacing:0.06em; line-height:1">YUNLEI SHEN</a><button class="nav-burger" aria-label="Menu" style="background:none; border:1px solid #DFD5C3; border-radius:8px; padding:10px 9px; cursor:pointer; flex-direction:column; gap:4px; align-items:center; justify-content:center"><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span></button>
+      <p style="margin:24px 0 0; font-size:13px; line-height:1.65; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
+      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; margin-top:44px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
+        <a href="index.html#work" style="color:#26221B; text-decoration:none; padding-bottom:2px">Work</a>
+        <a href="about.html" class="active" style="color:#8F6B2E; text-decoration:none; padding-bottom:2px">About</a>
+        <span style="align-self:stretch; height:1px; background:#DFD5C3" aria-hidden="true"></span>
+        <a href="mailto:yunlei921128@gmail.com" style="color:#26221B; text-decoration:none; padding-bottom:2px">Email&nbsp;↗</a>
+        <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">LinkedIn&nbsp;↗</a>
+        <a href="images/yunlei-shen-resume-2026.pdf" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">Resume&nbsp;↗</a>
+      </div>
+    </div>
+    <div class="rail-meta" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
+      <div style="font-size:11px; font-weight:400; letter-spacing:0.1em; color:#6E675C; line-height:2"><span style="display:inline-flex; align-items:center; gap:6px"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M6 11 C6 11 10 7.4 10 4.6 A4 4 0 0 0 2 4.6 C2 7.4 6 11 6 11 Z"></path><circle cx="6" cy="4.6" r="1.4"></circle></svg>Seattle, WA</span><br>© 2026 Yunlei Shen<br>Made with Claude</div>
+    </div>
+  </aside>
+
+  <div class="site-main" style="margin-left:224px">
+  <p class="mobile-intro" style="margin:0; padding:0 24px 32px; font-size:14px; line-height:1.7; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
+  <div class="mobile-intro" style="height:1px; background:#DFD5C3; margin:0 24px 8px" aria-hidden="true"></div>
+
+
+  <section style="max-width:1240px; margin:0 auto; padding:96px 32px 72px" data-screen-label="About hero">
+    <div style="text-align:center">
+      
+      
+    </div>
+    <div data-reveal="" class="hero-stage" style="position:relative; max-width:840px; margin:0 auto; padding:48px 0 40px">
+      <span class="hero-blob" style="position:absolute; left:6%; top:2%; width:340px; height:300px; background:#E4DBC9; border-radius:58% 42% 64% 36%/48% 60% 40% 52%; transform:rotate(-8deg)" aria-hidden="true"></span>
+      <span class="hero-blob" style="position:absolute; right:2%; bottom:0%; width:380px; height:320px; background:rgba(143,107,46,0.16); border-radius:38% 62% 46% 54%/62% 38% 60% 40%; transform:rotate(11deg)" aria-hidden="true"></span>
+      <span class="hero-blob" style="position:absolute; right:14%; top:-4%; width:230px; height:210px; border:2px solid #C9BFA9; border-radius:52% 48% 40% 60%/44% 56% 48% 52%; transform:rotate(-15deg)" aria-hidden="true"></span>
+      <span class="hero-blob" style="position:absolute; left:18%; bottom:-3%; width:200px; height:120px; background:#26221B; opacity:0.08; border-radius:64% 36% 56% 44%/40% 62% 38% 58%; transform:rotate(6deg)" aria-hidden="true"></span>
+      <div class="hero-photo" style="position:relative; width:min(340px, 70vw); margin:0 auto; transition:transform .45s cubic-bezier(.22,1,.36,1)">
+        <div style="position:absolute; inset:0; transform:translate(12px,12px); border:1px solid #C9BFA9; pointer-events:none"></div>
+        <img src="images/portrait-hero.jpg" alt="Yunlei in Joshua Tree at golden hour" fetchpriority="high" style="position:relative; display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border:1px solid #DFD5C3">
+        <svg viewBox="0 0 60 24" style="position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:60px; height:24px; color:#8F6B2E" aria-hidden="true"><path d="M2 20 C 14 4, 30 4, 42 12 S 56 18, 58 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+      </div>
+      <span class="hero-chip" style="position:absolute; left:7%; top:6%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; background:#F7F2EA; --r:-5deg; transform:rotate(-5deg)">0 → 1 → scale</span>
+      <span class="hero-chip" style="position:absolute; right:6%; top:5%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:3deg; transform:rotate(3deg)">product strategy</span>
+      <span class="hero-chip" style="position:absolute; left:2%; top:24%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-2deg; transform:rotate(-2deg)">mixed-methods research</span>
+      <span class="hero-chip" style="position:absolute; right:3%; top:23%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:15px 225px 15px 255px/255px 15px 225px 15px; background:#F7F2EA; --r:4deg; transform:rotate(4deg)">AI-assisted prototyping</span>
+      <span class="hero-chip" style="position:absolute; left:3%; top:46%; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#26221B; color:#F7F2EA; --r:2deg; transform:rotate(2deg)">workflow is the product</span>
+      <span class="hero-chip" style="position:absolute; right:2%; top:45%; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#8F6B2E; color:#F7F2EA; --r:-2deg; transform:rotate(-2deg)">vibe coding</span>
+      <span class="hero-chip" style="position:absolute; left:5%; top:66%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:225px 15px 255px 15px/15px 255px 15px 225px; background:#F7F2EA; --r:3deg; transform:rotate(3deg)">design systems</span>
+      <span class="hero-chip" style="position:absolute; right:4%; top:65%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-3deg; transform:rotate(-3deg)">cross-functional leadership</span>
+      <span class="hero-chip" style="position:absolute; left:9%; bottom:6%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-3deg; transform:rotate(-3deg)">metrics that move</span>
+      <span class="hero-chip" style="position:absolute; right:7%; bottom:5%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; background:#F7F2EA; --r:2deg; transform:rotate(2deg)">pitching to stakeholders</span>
+
+    </div>
+    
+  </section>
+
+  <section data-screen-label="Timeline">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 32px 96px">
+      <p data-reveal="" style="margin:0 0 32px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#6E675C">The path so far</p>
+      <div style="max-width:760px; display:flex; flex-direction:column">
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2023 — now</p>
+          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">Product Designer II</strong> · Veteran Benefits Guide, Seattle<br><span style="color:#6E675C">First in-house designer; UX across B2C, internal tools &amp; enterprise</span></p>
+        </div>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2022 — 23</p>
+          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">Product Designer</strong> · Anonymous Agent, Seattle<br><span style="color:#6E675C">Cross-platform nano-influencer marketplace, zero to 900+ users</span></p>
+        </div>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2022</p>
+          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight: 600;">UX Design Intern</strong> · Young &amp; Hungry Creative, San Francisco<br><span style="color: rgb(110, 103, 92);">Nonprofit donation flows, +12.2% donor conversion</span></p>
+        </div>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2021</p>
+          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight: 600;">UX Design Co-op</strong> · General Motors, San Francisco<br><span style="color: rgb(110, 103, 92);">Immersive storytelling for GM’s 2039 vision</span></p>
+        </div>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8; border-bottom:1px solid #D8CDB8">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">Education</p>
+          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">M.A. Interaction &amp; UI/UX Design</strong> · Academy of Art University<br><span style="color:#6E675C">B.F.A. Digital Arts · Zhejiang University of Technology</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="The real me">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 32px 96px">
+      <p data-reveal="" style="margin:0 0 20px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8F6B2E">Me, as myself</p>
+      <h2 data-reveal="" style="margin:0 0 28px; font-family:'Goudy Bookletter 1911', serif; font-weight:400; font-size:clamp(34px,4.5vw,54px); line-height:1.1">The real me lives <em style="color:#8F6B2E">off the clock</em>.</h2>
+      <div data-reveal="" style="margin-bottom:48px">
+        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">On the road</p>
+        <div class="photo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px">
+          <img src="images/photo-22.jpeg" alt="Nā Pali coast from above" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 50%; border:1px solid #DFD5C3">
+          <img src="images/photo-04.jpeg" alt="Sedona cave" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
+          <img src="images/photo-06.jpeg" alt="Winter sunset over boreal hills" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+          <img src="images/photo-33.jpeg" alt="Snowy peak at dusk" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
+          <img src="images/photo-36.jpeg" alt="Beach cove from the bluff" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:25% 50%; border:1px solid #DFD5C3">
+          <img src="images/photo-11.jpeg" alt="Volcano valley under clouds" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
+          <img src="images/photo-26.jpeg" alt="Plaza in Quito" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:70% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-25.jpeg" alt="Basilica towers" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+          <img src="images/photo-40.jpeg" alt="Ridge line and golden meadows" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
+          <img src="images/photo-13.jpeg" alt="Uprooted giant in the rainforest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
+          <img src="images/photo-31.jpeg" alt="Giraffe at sunset" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-08.jpeg" alt="Wildebeest crossing the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
+          <img src="images/photo-14.jpeg" alt="Lion cub in the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-39.jpeg" alt="Leopard in the grass" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:28% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-21.jpeg" alt="Elephants with egrets" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-38.jpeg" alt="Maasai giraffe" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
+          <img src="images/photo-32.jpeg" alt="Frozen river canyon" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+          <img src="images/photo-27.jpeg" alt="Sunset above the clouds on Mauna Kea" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 70%; border:1px solid #DFD5C3">
+          <img src="images/photo-12.jpeg" alt="Badwater Basin reflections" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 65%; border:1px solid #DFD5C3">
+        </div>
+      </div>
+      <div data-reveal="" style="margin-bottom:48px">
+          <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">BAKING</p>
+          <div class="photo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px">
+            <img src="images/photo-35.jpeg" alt="Peach and thyme cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
+            <img src="images/photo-17.jpeg" alt="Garlic rosemary focaccia" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
+            <img src="images/photo-03.jpeg" alt="Sourdough loaf" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+            <img src="images/photo-05.jpeg" alt="Lattice apple pie" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 50%; border:1px solid #DFD5C3">
+            <img src="images/photo-01.jpeg" alt="Flower-pot chocolate dessert" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; border:1px solid #DFD5C3">
+            <img src="images/photo-28.jpeg" alt="Blueberry rosemary cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 50%; border:1px solid #DFD5C3">
+            <img src="images/photo-15.jpeg" alt="Mille-crêpe cake and cold brew" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 60%; border:1px solid #DFD5C3">
+          </div>
+      </div>
+      <div data-reveal="" style="margin-bottom:48px">
+          <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Coffee, always</p>
+          <div class="photo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px">
+            <img src="images/photo-10.jpeg" alt="Espresso in a red cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
+            <img src="images/photo-19.jpeg" alt="Black coffee" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+            <img src="images/photo-23.jpeg" alt="Coffee with biscotti" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+            <img src="images/photo-37.jpeg" alt="Espresso in a Mondrian cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+          </div>
+      </div>
+      <div data-reveal="" style="margin-bottom:48px">
+        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">MY DOG, CHEWIE</p>
+        <div class="photo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px">
+          <img src="images/photo-16.jpeg" alt="Chewie on the beach" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-24.jpeg" alt="Chewie mid-sprint" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
+          <img src="images/photo-29.jpeg" alt="Chewie and the gingerbread man" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 40%; border:1px solid #DFD5C3">
+          <img src="images/photo-07.jpeg" alt="Chewie at Salvation Mountain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
+          <img src="images/photo-09.jpeg" alt="Chewie guarding the apple harvest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 50%; border:1px solid #DFD5C3">
+        </div>
+      </div>
+      <div data-reveal="">
+        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Growing roses, lately</p>
+        <div class="photo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px">
+          <img src="images/photo-18.jpeg" alt="Cream and yellow roses" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 65%; border:1px solid #DFD5C3">
+          <img src="images/photo-02.jpeg" alt="Apricot rose" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-20.jpeg" alt="Pink rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; border:1px solid #DFD5C3">
+          <img src="images/photo-34.jpeg" alt="Yellow rose in the sun" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
+          <img src="images/photo-30.jpeg" alt="Magenta rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:60% 55%; border:1px solid #DFD5C3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const burger = document.querySelector('.nav-burger');
+    if (burger) {
+      const rail = burger.closest('.site-rail');
+      burger.addEventListener('click', function () { rail.hasAttribute('data-open') ? rail.removeAttribute('data-open') : rail.setAttribute('data-open', '1'); });
+      rail.querySelectorAll('.rail-links a').forEach(function (a) { a.addEventListener('click', function () { rail.removeAttribute('data-open'); }); });
+    }
+    this._heroZoom = () => {
+      const st = document.querySelector('.hero-stage');
+      if (!st) return;
+      const vw = window.innerWidth;
+      st.style.zoom = vw <= 900 ? String(Math.max(0.3, (vw - 96) / 840)) : '';
+    };
+    window.addEventListener('resize', this._heroZoom);
+    this._heroZoom();
+    this._theme = () => {
+      const c = document.getElementById('contact');
+      if (!c) return;
+      const dark = c.getBoundingClientRect().top < window.innerHeight * 0.6;
+      if (dark) document.body.setAttribute('data-dark', '1');
+      else document.body.removeAttribute('data-dark');
+    };
+    window.addEventListener('scroll', this._theme, { passive: true });
+    window.addEventListener('resize', this._theme);
+    this._theme();
+    if ((this.props.motion ?? true) === false) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    this._check = () => {
+      const vh = window.innerHeight;
+      let pending = 0;
+      els.forEach((el) => {
+        if (el.dataset.shown) return;
+        if (el.getBoundingClientRect().top < vh - 40) {
+          el.dataset.shown = '1';
+          try {
+            el.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: 'ease', fill: 'backwards' });
+            setTimeout(() => { if (getComputedStyle(el).opacity !== '1') el.getAnimations().forEach((a) => a.cancel()); }, 900);
+          } catch (err) {}
+        } else { pending++; }
+      });
+      if (pending === 0) this._teardown();
+    };
+    window.addEventListener('scroll', this._check, { passive: true });
+    window.addEventListener('resize', this._check);
+    this._check();
+    requestAnimationFrame(() => this._check && this._check());
+    setTimeout(() => this._check && this._check(), 300);
+  }
+  _teardown() {
+    if (!this._check) return;
+    window.removeEventListener('scroll', this._check);
+    window.removeEventListener('resize', this._check);
+    this._check = null;
+  }
+  componentWillUnmount() { this._teardown(); }
+  renderVals() { return {}; }
+}
+</script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#F7F2EA"/><text x="50" y="62" font-family="Georgia,serif" font-size="34" text-anchor="middle" fill="#8F6B2E">Y</text></svg></template>
+</body>
+</html>

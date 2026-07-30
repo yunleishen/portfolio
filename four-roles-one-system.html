@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<meta name="description" content="Case study: Four Roles, One System — role-based workflows in a shared claims system, by Yunlei Shen.">
+<script src="js/main.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Four Roles, One System · Yunlei Shen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+::selection { background: #0B6F65; color: #F7F2EA; }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+body[data-dark] [data-om-badge][style] { color: #26221B !important; }
+body[data-dark] [data-force-light="1"] { background-color: #FBF7F0 !important; color: #26221B !important; }
+
+svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
+body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(11, 111, 101)"] { color: #5FC9B8 !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="border: 1px solid rgb(11, 111, 101)"] { border-color: #5FC9B8 !important; }
+body[data-dark] [style*="background: rgb(11, 111, 101)"] { background-color: #5FC9B8 !important; }
+body[data-dark] [style*="border: 1px solid rgb(47, 95, 138)"] { border-color: #7FAFD8 !important; }
+body[data-dark] [style*="background: rgb(47, 95, 138)"] { background-color: #7FAFD8 !important; }
+body[data-dark] [style*="border: 1px solid rgb(122, 90, 168)"] { border-color: #B69BDD !important; }
+body[data-dark] [style*="background: rgb(122, 90, 168)"] { background-color: #B69BDD !important; }
+body[data-dark] [style*="border: 1px solid rgb(168, 123, 37)"] { border-color: #D9AE5C !important; }
+body[data-dark] [style*="background: rgb(168, 123, 37)"] { background-color: #D9AE5C !important; }
+body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
+@media (max-width: 900px) {
+  body { overflow-x: clip !important; }
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 12px 16px !important; }
+  .site-rail > div:first-child { display: flex; align-items: center; gap: 14px; width: 100%; min-width: 0; }
+  .site-rail > div:first-child > a:first-child { flex-shrink: 0; white-space: nowrap; }
+  .rail-links { flex-direction: row !important; flex-wrap: nowrap !important; gap: 18px !important; margin-top: 0 !important; align-items: center; flex: 1; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .rail-links::-webkit-scrollbar { display: none; }
+  .rail-links a { flex-shrink: 0; white-space: nowrap; }
+  .site-main { padding-top: 32px; }
+  img { max-width: 100% !important; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; }
+  .hero-fixed { left: 0 !important; }
+  .breakout { width: calc(100vw - 80px) !important; margin-left: calc((100% - (100vw - 80px)) / 2) !important; }
+}
+.breakout { box-sizing: border-box; width: 100%; margin-left: 0; }
+@media (max-width: 900px) {
+  .roles-flow { grid-template-columns: 1fr !important; }
+  .roles-arrow { justify-content: center !important; padding: 6px 0 !important; transform: rotate(90deg); }
+  .pipeline-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .pipeline-grid { min-width: 760px; }
+  .acct-fit { width: 68% !important; margin-left: 16% !important; }
+}
+@media (max-width: 900px) {
+  [style*="padding: 96px 32px 64px"] { padding: 64px 20px 48px !important; }
+  [style*="padding: 64px 32px"] { padding: 48px 20px !important; }
+  [style*="padding: 240px 32px"] { padding: 120px 20px 0px !important; }
+  [style*="padding: 240px 32px 120px"] { padding: 120px 20px 96px !important; }
+  [style*="padding: 120px 32px 120px"] { padding: 80px 20px !important; }
+  [style*="margin-bottom: 192px"] { margin-bottom: 96px !important; }
+  [style*="margin-bottom: 120px"] { margin-bottom: 72px !important; }
+  [style*="padding: 48px 40px"] { padding: 28px 14px !important; }
+  [style*="padding: 40px 40px"] { padding: 28px 14px !important; }
+  [style*="padding: 36px 40px"] { padding: 24px 16px !important; }
+}
+</style>
+</helmet>
+
+<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="Case Study — Four Roles, One System">
+
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+    <div>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#26221B; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; border:1px solid #DFD5C3; padding:8px 16px; border-radius:99px" style-hover="border:1px solid #0B6F65; color:#0B6F65">← Home</a>
+      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:44px">
+                <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Overview</a>
+        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Outcome</a>
+        <a data-toc="final" href="#final" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Shipped</a>
+        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Problem</a>
+        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Solution</a>
+        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0B6F65; opacity:0; transition:opacity .25s"></span>Reflection</a>
+      </div>
+    </div>
+    
+  </aside>
+  <div class="site-main" style="margin-left:224px">
+
+  <div style="position:relative; z-index:1; background:#F7F2EA">
+
+  <section id="overview" style="max-width:1240px; margin:0 auto; padding:96px 32px 64px" data-screen-label="Hero">
+    
+    <h1 data-reveal="" style="margin:0 0 28px; font-family:'Goudy Bookletter 1911', serif; font-weight:400; font-size:clamp(46px,7vw,96px); line-height:1.04; letter-spacing:-0.01em; max-width:16ch">Four Roles, <em>One System</em></h1><div style="display:flex; gap:56px; align-items:flex-start; flex-wrap:wrap">
+      <p data-reveal="" style="margin:0; flex:1 1 400px; max-width:640px; font-size:19px; line-height:1.7; color:#3E3930">In Sugar CRM, everyone could edit everything. Work was being silently undone, data conflicted, and nobody owned anything. After rebuilding the architecture, I redesigned how each role moves through a claim, so five teams could finally share one system without colliding.</p>
+      <aside data-reveal="" style="position:relative; flex:0 1 380px; border:1px solid #26221B; background:#FBF7F0; padding:26px 28px 28px">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; padding-bottom:16px; border-bottom:1px solid #26221B">
+          <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.14em; color:#26221B">CASE FILE · VBG–SUGAR CRM</span>
+          <span style="width:8px; height:8px; border-radius:50%; background:#0B6F65; display:inline-block"></span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Product</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Sugar CRM</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Role</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">Product Designer</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0; border-bottom:1px dotted #C9BFA9">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Timeline</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right">2024-2025</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; padding:14px 0 0">
+          <span style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; flex-shrink:0">Scope</span>
+          <span style="flex:1; border-bottom:1px dotted #C9BFA9; transform:translateY(-4px)"></span>
+          <span style="font-size:14px; text-align:right; max-width:200px">Role-based workflows · <a href="a-crm-worth-navigating.html" style="color:#0B6F65">companion&nbsp;project</a></span>
+        </div>
+        <span style="position:absolute; top:-14px; right:22px; transform:rotate(6deg); font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.18em; color:#0B6F65; border:1.5px solid #0B6F65; padding:5px 10px; background:#F7F2EA">OWNED</span>
+      </aside>
+    </div>
+  </section>
+
+  <section id="impact" style="border-top:1px solid #DFD5C3; border-bottom:1px solid #DFD5C3" data-screen-label="Impact">
+    <div style="max-width:1240px; margin:0 auto; padding:64px 32px">
+      <p data-reveal="" style="margin:0 0 32px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#6E675C">Outcome, up front</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px,100%), 1fr)); gap:16px">
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">submissions</span>
+          <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-size:clamp(34px,3.4vw,46px); line-height:1; white-space:nowrap; color:#0B6F65">2×</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">claim submissions within one month of launch</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">data integrity</span>
+          <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-size:clamp(34px,3.4vw,46px); line-height:1; white-space:nowrap; color:#0B6F65">Fewer errors</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">accidental changes by the wrong teams ended once access followed roles</p>
+        </div>
+        <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
+          <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">accountability</span>
+          <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-size:clamp(34px,3.4vw,46px); line-height:1; white-space:nowrap; color:#0B6F65">Clear owners</p>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">every task and review gained a named, traceable owner: less confusion, less rework</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="final" style="max-width:820px; margin:0 auto; padding:240px 32px 0" data-screen-label="Final design highlights">
+    <p data-reveal="" style="margin:0 0 16px"><span data-om-badge="1" style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F7F2EA; background:#0B6F65; padding:4px 10px">Shipped</span></p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Goudy Bookletter 1911', serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.02em">Log in, land on your work, and only yours</h2>
+    <div data-reveal="" class="breakout" style="position:relative; aspect-ratio:1240/4722; overflow:hidden"><iframe data-walkthrough="1" data-scale-to-fit="1240" src="./roles-highlight-walkthrough.html" title="Role dashboards walkthrough" scrolling="no" style="position:absolute; left:0; top:0; width:2616px; height:2487px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+  </section>
+
+  <section id="context" style="max-width:820px; margin:0 auto; padding:240px 32px 0" data-screen-label="Context">
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0B6F65">PROBLEM</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Goudy Bookletter 1911', serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.02em">No permissions, no ownership, no order</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Every role had access to everything, no permission controls, anyone could edit any record. Duplicate entries and conflicting data were routine, and people unknowingly undid each other's work. Claim submissions dropped; revenue followed.</p>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Interviews with team leaders mapped the workflow and scoped it: two roles worked in a third-party platform and didn't belong in Sugar. The four that did:</p>
+    <div data-reveal="" class="breakout roles-flow" style="margin-top:32px; display:grid; grid-template-columns:1fr auto 1fr auto 1fr auto 1fr; gap:0; align-items:stretch">
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-weight:600; letter-spacing:-0.015em; font-size:26px; color:#0B6F65">01</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Brings leads in</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Lead Conversion Specialist</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Creates and nurtures leads, converts them to claims</p>
+      </div>
+      <div class="roles-arrow" style="display:flex; align-items:center; padding:0 10px; color:#0B6F65; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-weight:600; letter-spacing:-0.015em; font-size:26px; color:#0B6F65">02</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Runs initial review</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Case Manager</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Owns veteran info, creates disabilities and diagnoses, sends the claim packet and collects signatures</p>
+      </div>
+      <div class="roles-arrow" style="display:flex; align-items:center; padding:0 10px; color:#0B6F65; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-weight:600; letter-spacing:-0.015em; font-size:26px; color:#0B6F65">03</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Checks the documents</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Underwriter</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Reviews uploaded documents for accuracy</p>
+      </div>
+      <div class="roles-arrow" style="display:flex; align-items:center; padding:0 10px; color:#0B6F65; font-size:18px">→</div>
+      <div style="border:1px solid #C9BFA9; background:#FBF7F0; padding:20px 22px; display:flex; flex-direction:column; gap:10px">
+        <p style="margin:0; font-family:'Goudy Bookletter 1911', serif; font-weight:600; letter-spacing:-0.015em; font-size:26px; color:#0B6F65">04</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Signs off</p>
+        <p style="margin:0; font-size:16px; font-weight:600; color:#26221B">Case Review Specialist</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.6; color:#6E675C">Final verification before submission</p>
+      </div>
+    </div>
+    <div data-reveal="" class="breakout pipeline-wrap" style="margin-top:44px">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:18px">
+        <p style="margin:0; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#6E675C">Claim pipeline · 18 statuses, four owners</p>
+        <p style="margin:0; font-size:11px; letter-spacing:0.02em; color:#6E675C">Dotted = handled outside Sugar</p>
+      </div>
+      <div class="pipeline-grid" style="display:grid; grid-template-columns:126px repeat(4, 1fr); gap:1px; background:#F1EADB; border:1px solid #DFD5C3">
+        <div style="background:#F7F2EA"></div>
+        <div style="background:#FBF7F0; padding:12px 14px"><p style="margin:0 0 3px; font-family:'Goudy Bookletter 1911', serif; font-size:20px; color:#26221B">01</p><p style="margin:0; font-size:11.5px; font-weight:600; letter-spacing:0.04em; color:#26221B">Lead intake</p></div>
+        <div style="background:#FBF7F0; padding:12px 14px"><p style="margin:0 0 3px; font-family:'Goudy Bookletter 1911', serif; font-size:20px; color:#26221B">02</p><p style="margin:0; font-size:11.5px; font-weight:600; letter-spacing:0.04em; color:#26221B">Review</p></div>
+        <div style="background:#FBF7F0; padding:12px 14px"><p style="margin:0 0 3px; font-family:'Goudy Bookletter 1911', serif; font-size:20px; color:#26221B">03</p><p style="margin:0; font-size:11.5px; font-weight:600; letter-spacing:0.04em; color:#26221B">Packet</p></div>
+        <div style="background:#FBF7F0; padding:12px 14px"><p style="margin:0 0 3px; font-family:'Goudy Bookletter 1911', serif; font-size:20px; color:#26221B">04</p><p style="margin:0; font-size:11.5px; font-weight:600; letter-spacing:0.04em; color:#26221B">Submit &amp; close</p></div>
+
+        <div style="background:#F7F2EA; padding:14px; display:flex; flex-direction:column; gap:6px"><span style="width:22px; height:3px; background:#0B6F65"></span><p style="margin:0; font-size:12px; font-weight:600; line-height:1.3; color:#26221B">Lead Conversion Specialist</p></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #0B6F65; padding:6px 8px">New lead</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #0B6F65; padding:6px 8px">Working on lead</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #0B6F65; padding:6px 8px">Nurturing the lead</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #0B6F65; padding:6px 8px">Intake acknowledged</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #0B6F65; padding:6px 8px">Convert lead to claim</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+
+        <div style="background:#F7F2EA; padding:14px; display:flex; flex-direction:column; gap:6px"><span style="width:22px; height:3px; background:#2F5F8A"></span><p style="margin:0; font-size:12px; font-weight:600; line-height:1.3; color:#26221B">Case Manager</p></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #2F5F8A; padding:6px 8px">Initial review</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #2F5F8A; padding:6px 8px">Claim review call</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #2F5F8A; padding:6px 8px">Claim packet ready for review</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #2F5F8A; padding:6px 8px">Claim packet pending signature</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+
+        <div style="background:#F7F2EA; padding:14px; display:flex; flex-direction:column; gap:6px"><span style="width:22px; height:3px; background:#7A5AA8"></span><p style="margin:0; font-size:12px; font-weight:600; line-height:1.3; color:#26221B">Underwriter</p></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #7A5AA8; padding:6px 8px">Underwriter review</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+
+        <div style="background:#F7F2EA; padding:14px; display:flex; flex-direction:column; gap:6px"><span style="width:22px; height:3px; background:#A87B25"></span><p style="margin:0; font-size:12px; font-weight:600; line-height:1.3; color:#26221B">Case Review Specialist</p></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #A87B25; padding:6px 8px">Pre-examiner QC</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#26221B; border:1px solid #A87B25; padding:6px 8px">Ready for CRS</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+
+        <div style="background:#F7F2EA; padding:14px; display:flex; flex-direction:column; gap:6px"><span style="width:22px; height:3px; background:#6E675C"></span><p style="margin:0; font-size:12px; font-weight:600; line-height:1.3; color:#6E675C">Outside Sugar</p><p style="margin:0; font-size:10.5px; line-height:1.35; color:#6E675C">Network Support · Mail Clerk</p></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; align-items:center; justify-content:center"><span style="font-size:11px; color:#6E675C">·</span></div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#6E675C; border:1px dotted #DFD5C3; padding:6px 8px">Ready for examiner evaluation</span>
+        </div>
+        <div style="background:#F7F2EA; padding:12px; display:flex; flex-direction:column; gap:6px">
+          <span style="font-size:11.5px; line-height:1.35; color:#6E675C; border:1px dotted #DFD5C3; padding:6px 8px">Mail claim to VA</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#6E675C; border:1px dotted #DFD5C3; padding:6px 8px">File sent to VA</span>
+          <span style="font-size:11.5px; line-height:1.35; color:#6E675C; border:1px dotted #DFD5C3; padding:6px 8px">Ready for invoice</span>
+        </div>
+      </div>
+      <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center">
+        <p style="margin:0 6px 0 0; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C">Closing states</p>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Closed paid in full</span>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Charge off</span>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Close account settled</span>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Send to collections</span>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Marked as RECON</span>
+        <span style="font-size:11px; color:#6E675C; border:1px dotted #DFD5C3; padding:5px 8px">Closed</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" style="max-width:820px; margin:0 auto; padding:240px 32px 0" data-screen-label="Process">
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0B6F65">Solution</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Goudy Bookletter 1911', serif; font-weight:400; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.02em">Restrict, sequence, and sign the work</h2>
+
+    <div data-reveal="" style="margin-bottom:120px">
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Solution 01</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Goudy Bookletter 1911', serif; letter-spacing:-0.015em; font-weight: 600; font-size:28px; line-height:1.2">Show each role only its own work</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Dashboards are separated by role, logging in lands you on your tasks and nothing else. Visibility and the progress bar follow role and task stage, and each phase ends with a review checkpoint that stops duplicates and unintended changes from leaking downstream.</p>
+      <div class="breakout" style="position:relative; aspect-ratio:1240/1600; overflow:hidden"><iframe data-walkthrough="2" data-hide-avatars="1" data-no-shadow="1" data-scale-to-fit="1240" src="./roles-lofi-wireframes.html" title="Role-aware progress bar wireframes" scrolling="no" style="position:absolute; left:0; top:0; width:1240px; height:1600px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+
+    </div>
+
+    <div data-reveal="" style="margin-bottom:120px">
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Solution 02</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Goudy Bookletter 1911', serif; letter-spacing:-0.015em; font-weight: 600; font-size:28px; line-height:1.2"><div>Two kinds of work, two kinds of flow</div></h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Intake is sequential, so it got a linear step by step flow; review work is non-linear, so reviewers got priority-ordered tabs with free movement back. Same system, two rhythms.</p>
+      <div class="breakout" style="display:grid; grid-template-columns:1fr; gap:16px">
+        <div style="position:relative; aspect-ratio:16/9; overflow:hidden"><iframe data-walkthrough="3" data-stage="1920,1080" data-scale-to-fit="1920" src="./lcs-walkthrough.html" title="Lead Conversion Specialist step flow" scrolling="no" style="position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+        <div style="position:relative; aspect-ratio:16/9; overflow:hidden"><iframe data-walkthrough="4" data-stage="1920,1080" data-scale-to-fit="1920" src="./claim-lifecycle-walkthrough.html" title="Case Manager claim lifecycle" scrolling="no" style="position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+      </div>
+    </div>
+
+    <div data-reveal="" style="margin-bottom:120px">
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Solution 03</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Goudy Bookletter 1911', serif; letter-spacing:-0.015em; font-weight: 600; font-size:28px; line-height:1.2">Status defines the action</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Every status maps to one tone and one action: six tones tell you at a glance whether something is yours, waiting, or urgent, and what to do next. Checkboxes beside each document let reviewers mark progress and resume cleanly after interruptions.</p>
+      <div class="breakout" style="position:relative; aspect-ratio:16/9; overflow:hidden"><iframe data-walkthrough="5" data-font-bump="5" data-grid-split="3" data-stage="1584,400" data-scale-to-fit="1180" src="./status-system.html" title="Status-driven document actions" scrolling="no" style="position:absolute; left:0; top:0; width:1180px; height:760px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+    </div>
+
+    <div data-reveal="">
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Solution 04</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Goudy Bookletter 1911', serif; letter-spacing:-0.015em; font-weight: 600; font-size:28px; line-height:1.2">Make accountability an interaction, not a policy</h3>
+      <p style="margin:0 0 24px; font-size:16px; line-height:1.75; color:#3E3930">Submitting takes a deliberate “Mark as Complete”,&nbsp; a confirmation that puts a name on the work, and an immutable System Information record traces who created, accepted, and rejected each item. Careless errors dropped measurably.</p>
+      <div class="breakout acct-fit" style="position:relative; aspect-ratio:1240/760; overflow:visible"><iframe data-walkthrough="6" data-strip-gray="1" data-fix-ring="1" data-fit-inner="1240" data-auto-height="1" data-stage="1880,760" data-scale-to-fit="1880" src="./accountability-features.html" title="Accountability features" scrolling="no" style="position:absolute; left:0; top:0; width:1880px; height:760px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+    </div>
+  </section>
+
+  <section id="reflection" style="max-width:820px; margin:0 auto; padding:240px 32px 120px" data-screen-label="Reflection">
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0B6F65">Reflection</p>
+    <p data-reveal="" style="margin:0; font-family:'Poppins', sans-serif; font-weight:300; font-size:16px; line-height:1.75; color:#26221B">The fixes that mattered most were small: organizing tasks in the order people do them, and asking for one deliberate confirmation. Turning a messy free-for-all into a smooth, owned process was the win that counted.</p>
+  </section>
+
+  <section style="background:#FBF7F0; color:#26221B; border-top:1px solid #DFD5C3" data-screen-label="Next project" data-force-light="1">
+    <div style="max-width:1240px; margin:0 auto; padding:120px 32px 120px">
+      <p style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8A8171" data-force-light="1">Next case study</p>
+      <a href="the-two-minute-deal.html" style="font-family:'Goudy Bookletter 1911', serif; font-size:clamp(34px,5vw,60px); color:#26221B; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#0B6F65" data-force-light="1">The Two-Minute Deal →</a>
+      
+    </div>
+  </section>
+
+  </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._initTheme();
+    this._initToc();
+    this._initWalkthrough();
+    this._initLofiFrame();
+    this._initRename();
+    if ((this.props.motion ?? true) === false) return;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    this._check = () => {
+      const vh = window.innerHeight;
+      let pending = 0;
+      els.forEach((el) => {
+        if (el.dataset.shown) return;
+        if (el.getBoundingClientRect().top < vh - 40) {
+          el.dataset.shown = '1';
+          try {
+            el.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: 'ease', fill: 'backwards' });
+            setTimeout(() => { if (getComputedStyle(el).opacity !== '1') el.getAnimations().forEach((a) => a.cancel()); }, 900);
+          } catch (err) {}
+        } else { pending++; }
+      });
+      if (pending === 0) this._teardown();
+    };
+    window.addEventListener('scroll', this._check, { passive: true });
+    window.addEventListener('resize', this._check);
+    this._check();
+    requestAnimationFrame(() => this._check && this._check());
+    setTimeout(() => this._check && this._check(), 300);
+  }
+  _teardown() {
+    if (!this._check) return;
+    window.removeEventListener('scroll', this._check);
+    window.removeEventListener('resize', this._check);
+    this._check = null;
+  }
+  _initLofiFrame() {
+    document.querySelectorAll('iframe[data-walkthrough]:not([data-walkthrough="1"])').forEach((el) => this._tuneFrame(el));
+  }
+
+  _tuneFrame(f) {
+    if (!f) return;
+    const pageBg = () => '#F7F2EA';
+    const tune = () => {
+      try {
+        const d = f.contentDocument;
+        if (!d || !d.body) return;
+        let s = d.getElementById('om-lofi-strip');
+        if (!s) {
+          s = d.createElement('style');
+          s.id = 'om-lofi-strip';
+        }
+        if (s.parentNode !== d.body || d.body.lastElementChild !== s) d.body.appendChild(s);
+        const css = '[data-omelette-chrome]{display:none!important}'
+          + '#__bundler_thumbnail,#__bundler_loading{display:none!important}'
+          + '*{scrollbar-width:none!important}*::-webkit-scrollbar{width:0!important;height:0!important;display:none!important}'
+          + '#dc-root,#dc-root>.sc-host,#dc-root>.sc-host>div{background:transparent!important}'
+          + (f.dataset.noShadow === '1' ? '#dc-root *{box-shadow:none!important}' : '');
+        if (f.dataset.hideAvatars === '1') {
+          d.querySelectorAll('#dc-root [style*="border-radius: 50%"]').forEach((el) => {
+            const m = (d.defaultView.getComputedStyle(el).backgroundColor || '').match(/\d+(\.\d+)?/g);
+            if (!m || m[3] === '0') return;
+            if (+m[1] > +m[0] + 40 && +m[1] > +m[2]) el.style.setProperty('display', 'none', 'important');
+          });
+        }
+        if (s.textContent !== css) s.textContent = css;
+        const bg = pageBg();
+        d.documentElement.style.setProperty('background', bg, 'important');
+        d.body.style.setProperty('background', bg, 'important');
+        const stage = (f.dataset.stage || '').split(',').map(Number);
+        const root = d.querySelector('#dc-root > .sc-host > div');
+        if (stage.length === 2 && stage[0]) {
+          if (root) {
+            root.style.padding = '0px';
+            root.style.height = stage[1] + 'px';
+            root.style.width = stage[0] + 'px';
+          }
+          d.querySelectorAll('[data-om-starter] svg[width]').forEach((sv) => {
+            sv.style.transform = 'none';
+            sv.style.boxShadow = 'none';
+          });
+          d.querySelectorAll('[data-om-starter]').forEach((el) => { el.style.padding = '0px'; });
+          let sh = stage[1];
+          if (f.dataset.stackGrid === '1' && root) {
+            root.style.width = stage[0] + 'px';
+            root.querySelectorAll('[style*="grid-template-columns"]').forEach((g) => {
+              if (/\d{3,4}px/.test(g.getAttribute('style') || '')) {
+                g.style.gridTemplateColumns = '1fr';
+                g.style.width = '100%';
+              }
+            });
+            root.querySelectorAll('[style*="width: 1240px"]').forEach((el) => {
+              el.style.width = '100%';
+            });
+            root.style.boxSizing = 'border-box';
+            root.querySelectorAll('*').forEach((el) => {
+              const r = el.getBoundingClientRect();
+              if (r.width > stage[0]) {
+                el.style.boxSizing = 'border-box';
+                el.style.maxWidth = stage[0] + 'px';
+                el.style.width = '100%';
+              }
+            });
+          }
+          if (f.dataset.fontBump && root) {
+            const add = parseFloat(f.dataset.fontBump);
+            const list = [];
+            root.querySelectorAll('*').forEach((el) => {
+              if (el.dataset.omFb) return;
+              const hasText = Array.from(el.childNodes).some((n) => n.nodeType === 3 && n.textContent.trim());
+              if (!hasText) return;
+              const fs = parseFloat(d.defaultView.getComputedStyle(el).fontSize);
+              if (fs) list.push([el, fs]);
+            });
+            list.forEach(([el, fs]) => {
+              el.dataset.omFb = '1';
+              el.style.setProperty('font-size', (fs + add) + 'px', 'important');
+            });
+          }
+          if (f.dataset.fixRing && root) {
+            root.querySelectorAll('[style*="left: 98px"][style*="top: 834px"]').forEach((el) => {
+              el.style.left = '23px'; el.style.top = '829px';
+              el.style.width = '595px'; el.style.height = '124px';
+            });
+          }
+          if (f.dataset.stripGray && root) {
+            root.querySelectorAll('[style*="position: absolute"][style*="width: 280px"], [style*="position: absolute"][style*="width: 240px"]').forEach((a) => {
+              a.querySelectorAll('*').forEach((el) => {
+                if (!(el.textContent || '').trim()) return;
+                if (d.defaultView.getComputedStyle(el).color === 'rgb(138, 143, 163)') el.style.setProperty('display', 'none', 'important');
+              });
+            });
+          }
+          if (f.dataset.autoHeight === '1' && root) {
+            root.style.height = 'auto';
+            sh = Math.max(1, Math.ceil(root.scrollHeight));
+          }
+          if (f.dataset.gridSplit && root) {
+            root.querySelectorAll('[style*="repeat(6, 1fr)"]').forEach((g) => { g.dataset.omSplit = '1'; });
+            const cols = window.innerWidth < 768 ? f.dataset.gridSplit : '6';
+            root.querySelectorAll('[data-om-split]').forEach((g) => {
+              g.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
+            });
+            root.style.height = 'auto';
+            sh = Math.max(stage[1], Math.ceil(root.scrollHeight));
+          }
+          if (f.dataset.fitInner && root) {
+            const inner = parseFloat(f.dataset.fitInner);
+            const row = Array.from(root.children).find((r) => r.children && r.children.length > 1);
+            const target = row ? Array.from(row.children).find((k) => Math.round(k.getBoundingClientRect().width) === inner) : null;
+            const off = target ? target.offsetLeft : 0;
+            Array.from(root.children).forEach((r) => Array.from(r.children || []).forEach((k) => {
+              if (Math.round(k.getBoundingClientRect().width) === inner) {
+                k.style.borderRadius = '12px';
+                k.style.overflow = 'hidden';
+              }
+            }));
+            f.style.width = stage[0] + 'px';
+            f.style.height = sh + 'px';
+            f.parentElement.style.aspectRatio = inner + ' / ' + sh;
+            const pwi = f.parentElement.clientWidth;
+            if (pwi) f.style.transform = 'scale(' + (pwi / inner) + ') translateX(' + (-off) + 'px)';
+            return;
+          }
+          f.style.width = stage[0] + 'px';
+          f.style.height = sh + 'px';
+          f.dataset.scaleToFit = stage[0];
+          f.parentElement.style.aspectRatio = stage[0] + ' / ' + sh;
+          const pw0 = f.parentElement.clientWidth;
+          if (pw0) f.style.transform = 'scale(' + (pw0 / stage[0]) + ')';
+          return;
+        }
+        if (root) {
+          root.style.boxSizing = 'border-box';
+          root.style.paddingLeft = '0px';
+          root.style.paddingRight = '0px';
+          root.style.width = '1240px';
+          root.style.gridTemplateColumns = '1fr';
+          const w = Math.ceil(Math.max(root.scrollWidth, 600));
+          const h = Math.ceil(root.scrollHeight);
+          if (h) {
+            f.style.width = w + 'px';
+            f.style.height = h + 'px';
+            f.dataset.scaleToFit = w;
+            f.parentElement.style.aspectRatio = w + ' / ' + h;
+          }
+        }
+        const base = parseFloat(f.dataset.scaleToFit);
+        const pw = f.parentElement.clientWidth;
+        if (base && pw) f.style.transform = 'scale(' + (pw / base) + ')';
+      } catch (err) {}
+    };
+    f.addEventListener('load', tune);
+    tune();
+    let ln = 0;
+    const lt = setInterval(() => { tune(); if (++ln > 16) clearInterval(lt); }, 250);
+    const syncBg = () => {
+      try {
+        const d = f.contentDocument;
+        if (!d || !d.body) return;
+        const bg = pageBg();
+        d.documentElement.style.setProperty('background', bg, 'important');
+        d.body.style.setProperty('background', bg, 'important');
+      } catch (err) {}
+    };
+    this._lofiSync = () => {
+      const end = performance.now() + 900;
+      const step = () => {
+        syncBg();
+        if (performance.now() < end) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    if (window.ResizeObserver) new ResizeObserver(tune).observe(f.parentElement);
+  }
+
+  _initRename() {
+    const swap = () => {
+      document.querySelectorAll('iframe').forEach((f) => {
+        try {
+          const d = f.contentDocument;
+          if (!d || !d.body) return;
+          const walker = d.createTreeWalker(d.body, NodeFilter.SHOW_TEXT);
+          let n;
+          while ((n = walker.nextNode())) {
+            if (n.nodeValue && n.nodeValue.indexOf('Intake Specialist') !== -1) {
+              n.nodeValue = n.nodeValue.split('Intake Specialist').join('Lead Conversion Specialist');
+            }
+          }
+        } catch (err) {}
+      });
+    };
+    let n = 0;
+    const t = setInterval(() => { swap(); if (++n > 24) clearInterval(t); }, 500);
+    swap();
+  }
+
+  _initWalkthrough() {
+    const f = document.querySelector('iframe[data-walkthrough="1"]');
+    if (!f) return;
+    const pageBg = () => {
+      try { return getComputedStyle(document.body).backgroundColor || '#F7F2EA'; }
+      catch (e) { return '#F7F2EA'; }
+    };
+    const isDark = () => {
+      const m = (pageBg().match(/\d+/g) || []).map(Number);
+      if (m.length < 3) return false;
+      return (0.299 * m[0] + 0.587 * m[1] + 0.114 * m[2]) < 128;
+    };
+    const recolor = () => {
+      try {
+        const d = f.contentDocument;
+        const root = d && d.querySelector('#dc-root > .sc-host > div');
+        if (!root) return;
+        root.style.background = 'transparent';
+        const dark = isDark();
+        if (!root.dataset.omTealed) {
+          root.querySelectorAll('*').forEach((el) => {
+            if (el.children.length) return;
+            const cs = d.defaultView.getComputedStyle(el);
+            if (cs.color === 'rgb(242, 243, 248)' && parseInt(cs.fontWeight, 10) >= 600) el.dataset.omTeal = '1';
+          });
+          root.dataset.omTealed = '1';
+        }
+        root.querySelectorAll('[data-om-teal]').forEach((el) => {
+          el.dataset.omLit = '1';
+          el.style.setProperty('color', dark ? '#57C7B8' : '#0B6F65', 'important');
+        });
+        const strong = dark ? '#F2EDE4' : '#1A1B25';
+        const muted = dark ? 'rgba(242,237,228,0.78)' : 'rgb(138,143,163)';
+        const faint = dark ? 'rgba(242,237,228,0.66)' : 'rgb(196,199,212)';
+        const lum = (m) => (0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2]) / 255;
+        const sat = (m) => Math.max(m[0], m[1], m[2]) - Math.min(m[0], m[1], m[2]);
+        const parse = (c) => {
+          const m = (c || '').match(/\d+(\.\d+)?/g);
+          return m && m.length >= 3 ? m.map(Number) : null;
+        };
+        Array.from(root.children).forEach((card) => {
+          const hdr = card.children && card.children[0];
+          if (!hdr) return;
+          const nodes = [hdr].concat(Array.from(hdr.querySelectorAll('*')));
+          nodes.forEach((el) => {
+            if (!dark) { el.style.removeProperty('color'); return; }
+            if (!(el.textContent || '').trim()) return;
+            const c = d.defaultView.getComputedStyle(el).color;
+            const m = (c.match(/\d+(\.\d+)?/g) || []).map(Number);
+            if (m.length < 3) return;
+            if (el.dataset.omLit === '1') return;
+            const l = lum(m);
+            if (l > 0.55) return;
+            const next = l < 0.2 ? strong : (l < 0.42 ? muted : faint);
+            el.style.setProperty('color', next, 'important');
+          });
+        });
+      } catch (err) {}
+    };
+    const buildCss = () => '[data-omelette-chrome]{display:none!important}'
+      + '#__bundler_thumbnail,#__bundler_loading{display:none!important}'
+      + '#dc-root,.sc-host,body>div{background:transparent!important}'
+      + '*{scrollbar-width:none!important;-ms-overflow-style:none!important}'
+      + '*::-webkit-scrollbar{width:0!important;height:0!important;display:none!important}'
+      + 'html,body{background:' + pageBg() + '!important}'
+      + '#dc-root,#dc-root>.sc-host,#dc-root>.sc-host>div{background:transparent!important}'
+      + '[data-om-teal]{color:' + (isDark() ? '#57C7B8' : '#0B6F65') + '!important;transition:none!important}'
+      ;
+    const apply = () => {
+      try {
+        const d = f.contentDocument;
+        if (!d || !d.head) return;
+        let s = d.getElementById('om-walk-strip');
+        if (!s) {
+          s = d.createElement('style');
+          s.id = 'om-walk-strip';
+        }
+        const host = d.body || d.head;
+        if (s.parentNode !== host || host.lastElementChild !== s) host.appendChild(s);
+        const css = buildCss();
+        if (s.textContent !== css) s.textContent = css;
+        const bg = pageBg();
+        d.documentElement.style.setProperty('background', bg, 'important');
+        d.body.style.setProperty('background', bg, 'important');
+        if (!this._walkObs) {
+          this._walkObs = new MutationObserver(() => { if (this._walkRun) this._walkRun(); });
+          this._walkObs.observe(d.body, { childList: true });
+        }
+      } catch (err) {}
+    };
+    const COL = 1240;
+    const reflow = () => {
+      try {
+        const d = f.contentDocument;
+        const root = d && d.querySelector('#dc-root > .sc-host > div');
+        if (!root) return;
+        root.style.boxSizing = 'border-box';
+        root.style.paddingLeft = '0px';
+        root.style.paddingRight = '0px';
+        root.style.width = COL + 'px';
+        root.style.gridTemplateColumns = '1fr';
+        const w = Math.ceil(Math.max(root.scrollWidth, COL));
+        const h = Math.ceil(root.scrollHeight);
+        if (!h) return;
+        f.style.width = w + 'px';
+        f.style.height = h + 'px';
+        f.dataset.scaleToFit = w;
+        f.parentElement.style.aspectRatio = w + ' / ' + h;
+      } catch (err) {}
+    };
+    const fit = () => {
+      const base = parseFloat(f.dataset.scaleToFit);
+      if (!base) return;
+      const w = f.parentElement.clientWidth;
+      if (w) f.style.transform = 'scale(' + (w / base) + ')';
+    };
+    const run = () => { apply(); reflow(); recolor(); fit(); };
+    this._walkRun = run;
+    const syncBg = () => {
+      try {
+        const d = f.contentDocument;
+        if (!d || !d.body) return;
+        const bg = pageBg();
+        d.documentElement.style.setProperty('background', bg, 'important');
+        d.body.style.setProperty('background', bg, 'important');
+      } catch (err) {}
+    };
+    this._walkSync = () => {
+      const end = performance.now() + 900;
+      const step = () => {
+        syncBg();
+        if (performance.now() < end) requestAnimationFrame(step);
+        else recolor();
+      };
+      requestAnimationFrame(step);
+    };
+    window.addEventListener('scroll', syncBg, { passive: true });
+    f.addEventListener('load', run);
+    window.addEventListener('resize', fit);
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(f.parentElement);
+    run();
+    let n = 0;
+    const t = setInterval(() => { run(); if (++n > 16) clearInterval(t); }, 250);
+    this._walkTimer = t;
+  }
+
+  _initTheme() {
+    const check = () => {
+      const ctx = document.getElementById('context');
+      if (!ctx) return;
+      const dark = ctx.getBoundingClientRect().top > window.innerHeight * 0.55;
+      const was = document.body.hasAttribute('data-dark');
+      if (dark) document.body.setAttribute('data-dark', '1');
+      else document.body.removeAttribute('data-dark');
+      if (was !== dark) {
+        if (this._walkSync) this._walkSync();
+        if (this._lofiSync) this._lofiSync();
+      }
+    };
+    this._themeCheck = check;
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+  }
+  _initToc() {
+    const ids = ['overview', 'impact', 'final', 'context', 'process', 'reflection'];
+    const links = Array.from(document.querySelectorAll('[data-toc]'));
+    if (!links.length) return;
+    const paint = () => {
+      let current = ids[0];
+      for (const id of ids) {
+        const s = document.getElementById(id);
+        if (s && s.getBoundingClientRect().top <= 140) current = id;
+      }
+      if (window.innerHeight + window.scrollY >= (document.documentElement.scrollHeight - 4)) current = ids[ids.length - 1];
+      links.forEach((l) => {
+        const active = l.dataset.toc === current;
+        const dot = l.querySelector('[data-toc-dot]');
+        l.style.color = active ? '#0B6F65' : (l._hov ? '#26221B' : '#6E675C');
+        if (dot) { dot.style.opacity = active ? '1' : '0'; }
+      });
+    };
+    links.forEach((l) => {
+      l.addEventListener('mouseenter', () => { l._hov = true; paint(); });
+      l.addEventListener('mouseleave', () => { l._hov = false; paint(); });
+    });
+    window.addEventListener('scroll', paint, { passive: true });
+    paint();
+    this._paintToc = paint;
+  }
+  componentWillUnmount() {
+    this._teardown();
+    if (this._paintToc) window.removeEventListener('scroll', this._paintToc);
+  }
+  renderVals() { return {}; }
+}
+</script>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#F7F2EA"/><text x="50" y="62" font-family="Georgia,serif" font-size="34" text-anchor="middle" fill="#8F6B2E">Y</text></svg></template>
+</body>
+</html>

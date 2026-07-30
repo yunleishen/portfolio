@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>html,body{margin:0;height:100%;overflow:hidden}
+.stage{position:relative;height:100%;background:transparent}
+svg.net{position:absolute;inset:0;width:100%;height:100%}
+.lbl{position:absolute;font-family:'Caveat',cursive;color:#4A4336}
+@keyframes dash{to{stroke-dashoffset:-30px}}
+.draw{animation:dash 3s linear infinite}
+</style></head><body><div class="stage">
+<svg class="net" viewBox="0 0 900 560" fill="none" preserveAspectRatio="xMidYMid slice">
+  <!-- accent blobs (ref: rough color shapes behind line art) -->
+  <path d="M150 355 q 60 -18 96 8 q 10 48 -14 92 q -66 14 -96 -10 q -10 -52 14 -90 z" fill="#4B3FAF" opacity="0.16"/>
+  <path d="M672 128 q 78 -16 122 10 q 14 44 -8 86 q -84 16 -122 -8 q -12 -48 8 -88 z" fill="#E8B44B" opacity="0.28"/>
+  <!-- pencil connection: two overlapping wobbly strokes -->
+  <path class="draw" d="M245 392 c 70 -22 110 -44 168 -70 c 50 -22 96 -40 150 -66 c 40 -19 68 -32 92 -44" stroke="#4B3FAF" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 7 22 6" opacity="0.85"/>
+  <path d="M247 396 c 72 -26 114 -46 170 -72 c 48 -22 94 -40 148 -66 c 38 -18 64 -30 88 -42" stroke="#4B3FAF" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="9 11 16 8" opacity="0.35"/>
+  <!-- small arrow at the storefront end -->
+  <path d="M655 212 l 14 -8 m -14 8 l 4 -15" stroke="#4B3FAF" stroke-width="2" stroke-linecap="round"/>
+  <!-- creator figure: loose single-line ink style -->
+  <g stroke="#26221B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M197 306 c 10 -3 17 5 16 14 c -1 9 -8 15 -16 14 c -8 -1 -13 -8 -12 -15 c 1 -7 6 -12 12 -13 z"/>
+    <path d="M204 312 c 6 -2 10 1 11 5"/>
+    <path d="M199 336 c -9 2 -15 10 -16 21 c -1 12 -1 22 1 32"/>
+    <path d="M205 335 c 9 1 14 9 15 19 c 1 11 0 22 -2 33"/>
+    <path d="M186 389 c 11 4 24 4 33 -1"/>
+    <path d="M190 390 c -1 14 -2 26 -4 38 m 18 -37 c 2 13 3 25 3 37"/>
+    <path d="M183 411 c -3 1 -6 1 -8 3 m 40 -4 c 3 1 6 2 8 4"/>
+    <path d="M197 344 c -8 3 -16 9 -22 17 m 32 -18 c 10 2 18 7 24 5 c 5 -2 8 -6 9 -11"/>
+  </g>
+  <path d="M238 326 l 9 3 c 2 1 2 3 1 5 l -5 11 c -1 2 -3 2 -5 1 l -8 -4 z" fill="none" stroke="#4B3FAF" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- storefront: wobbly sketch -->
+  <g stroke="#26221B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M700 162 c 40 -3 80 -3 118 1 l -2 62 c -38 3 -76 3 -114 -1 z"/>
+    <path d="M694 161 c 3 -9 7 -17 12 -23 c 36 -4 72 -4 106 0 c 5 7 9 15 11 23 c -43 4 -86 4 -129 0 z"/>
+    <path d="M712 140 l -3 20 m 20 -21 l -2 21 m 21 -22 l 0 22 m 20 -22 l 1 22 m 19 -22 l 3 21"/>
+    <path d="M712 176 c 8 -2 16 -2 23 0 l 1 46 c -8 1 -17 1 -25 0 z"/>
+    <path d="M748 175 c 17 -2 34 -2 50 0 l -1 26 c -16 2 -32 2 -48 0 z"/>
+  </g>
+  <path d="M700 141 c 36 -4 72 -4 106 0 l 6 9 c -40 4 -80 4 -118 0 z" fill="#E8B44B" opacity="0.8"/>
+  <text x="752" y="220" font-family="Caveat, cursive" font-size="20" fill="#26221B">café</text>
+</svg>
+<span class="lbl" style="left:13%;bottom:16%;font-size:20px;transform:rotate(-3deg)">Mia — creator, 12k local reach</span>
+<span class="lbl" style="right:6%;top:46%;font-size:20px;transform:rotate(2deg)">Fern &amp; Co. — local business</span>
+<span class="lbl" style="left:42%;top:42%;font-size:22px;color:#4B3FAF;transform:rotate(-4deg)">matched · deal in 2 min ✓</span>
+<span class="lbl" style="left:46%;top:66%;font-size:19px;color:#6E675C;transform:rotate(-3deg)">no DMs, no haggling —</span>
+</div></body></html>
