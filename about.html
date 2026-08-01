@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="About Yunlei Shen — Seattle-based product designer who designs in systems, prototypes in code, and lets outcomes carry the load.">
+<script src="js/support.js"></script>
+<meta name="description" content="About Yunlei Shen — product designer working across research, systems thinking, and interface craft.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <x-dc>
@@ -15,8 +16,97 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/about.css">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+::selection { background: #8F6B2E; color: #F7F2EA; }
+.rail-links a { position: relative; transition: color .25s ease; }
+.rail-links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: #8F6B2E; transform: scaleX(0); transform-origin: left center; transition: transform .3s cubic-bezier(.22,1,.36,1); }
+.rail-links a:hover { color: #8F6B2E !important; }
+.rail-links a:hover::after { transform: scaleX(1); }
+.rail-links a.active::after { transform: scaleX(1); }
+.skill-chip { transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1) !important; }
+.skill-chip:hover { transform: translateY(-5px) rotate(0deg) !important; }
+.hero-chip { cursor: default; will-change: transform; animation: hero-float 5.2s ease-in-out infinite; }
+.hero-chip:nth-of-type(2n) { animation-duration: 6.4s; animation-delay: -2.1s; animation-name: hero-float-b; }
+.hero-chip:nth-of-type(3n) { animation-duration: 7.1s; animation-delay: -3.6s; }
+.hero-chip:nth-of-type(5n) { animation-duration: 5.8s; animation-delay: -1.2s; animation-name: hero-float-b; }
+@keyframes hero-float { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-9px) rotate(calc(var(--r, 0deg) + 1.6deg)); } }
+@keyframes hero-float-b { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(8px) rotate(calc(var(--r, 0deg) - 1.4deg)); } }
+.hero-blob { animation: blob-drift 14s ease-in-out infinite; will-change: transform; }
+.hero-blob:nth-of-type(2n) { animation-duration: 18s; animation-delay: -6s; animation-direction: reverse; }
+.hero-blob:nth-of-type(3n) { animation-duration: 22s; animation-delay: -11s; }
+@keyframes blob-drift { 0%,100% { translate: 0 0; } 33% { translate: 14px -12px; } 66% { translate: -10px 10px; } }
+@media (prefers-reduced-motion: reduce) { .hero-chip, .hero-blob { animation: none; } }
+@media (max-width: 1024px) { .hero-blob { display: none; } }
+@media (max-width: 1024px) { .hero-chip { position: static !important; transform: none !important; display: inline-block; margin: 6px 4px; } .hero-stage { display: flex; flex-direction: column; align-items: center; text-align: center; } .hero-stage > span[aria-hidden] { display: none; } }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(239, 231, 214)"], body[data-dark] [style*="background-color: rgb(239, 231, 214)"] { background-color: #2A251E !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(143, 107, 46)"] { color: #C9A96A !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(216, 205, 184)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="rgb(201, 191, 169)"] { border-color: #5C5544 !important; }
+body[data-dark] #contact [style*="border: 1.5px solid rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] #contact [style*="border: 3px double rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] #contact [style*="border: 1.5px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] #contact [style*="border: 1.5px dashed rgb(138, 129, 113)"] { border-color: #A99F8D !important; color: #F7F2EA !important; }
+body[data-dark] #contact [style*="border: 1.5px dashed rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] [style*="background: rgb(228, 219, 201)"], body[data-dark] [style*="background-color: rgb(228, 219, 201)"] { background-color: #2E2A22 !important; }
+#contact svg path { transition: fill .6s ease; }
+body[data-dark] #contact svg path { fill: #2E2A22 !important; }
+body[data-dark] #contact [style*="background: rgb(38, 34, 27)"] { background-color: #FBF7F0 !important; color: #26221B !important; }
+body[data-dark] #contact [style*="background: rgb(143, 107, 46)"] { background-color: #C9A96A !important; color: #26221B !important; }
+body[data-dark] #contact button[type="submit"] { border-color: #C9A96A !important; color: #C9A96A !important; }
+body[data-dark] .site-rail { border-right-color: #3E3930 !important; }
+.rail-meta a { transition: color .25s ease, border-color .25s ease; }
+.rail-meta a:hover { color: #8F6B2E !important; border-color: #8F6B2E !important; }
+body[data-dark] .rail-meta a { border-color: #F7F2EA !important; color: #F7F2EA !important; }
+body[data-dark] .rail-meta a:hover { color: #C9A96A !important; border-color: #C9A96A !important; }
+@media (max-width: 1180px) {
+  .chip-scatter { position: static !important; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; margin-bottom: 56px; pointer-events: auto !important; }
+  .chip-scatter .skill-chip { position: static !important; }
+  .chip-scatter-wrap { padding: 0 !important; }
+}
+@media (max-width: 1024px) {
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .rail-divider { align-self: center !important; width: 28px !important; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; }
+}
+
+.nav-burger { display: none; }
+.mobile-intro { display: none; }
+@media (max-width: 1024px) {
+  html, body { overflow-x: clip; }
+  img { max-width: 100% !important; }
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .site-rail > div:first-child { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+  .site-rail p { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .rail-links { display: none !important; }
+  .site-rail[data-open] .rail-links { display: flex !important; position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #F7F2EA; border-bottom: 1px solid #DFD5C3; flex-direction: column !important; align-items: flex-start !important; gap: 18px !important; margin: 0 !important; padding: 20px 24px; }
+  .site-rail[data-open] .rail-links > span[aria-hidden] { width: 100% !important; align-self: stretch; }
+  body[data-dark] .site-rail[data-open] .rail-links { background: #26221B; border-bottom-color: #3E3930; }
+  .rail-meta { display: none !important; }
+  .mobile-intro { display: block !important; }
+  .site-main { padding-top: 28px; }
+  [style*="repeat(4, minmax(0,1fr))"] { gap: 6px !important; }
+  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
+  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
+}
+.photo-grid { grid-template-columns: repeat(8, minmax(0,1fr)); }
+@media (max-width: 1024px) { .photo-grid { grid-template-columns: repeat(6, minmax(0,1fr)); gap: 10px; } }
+@media (max-width: 640px) { .photo-grid { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; } }
+</style>
 </helmet>
 
 <div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="About">
@@ -31,7 +121,7 @@
         <span class="rail-divider" style="align-self:stretch; height:1px; background:#DFD5C3" aria-hidden="true"></span>
         <a href="mailto:yunlei921128@gmail.com" style="color:#26221B; text-decoration:none; padding-bottom:2px">Email&nbsp;↗</a>
         <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">LinkedIn&nbsp;↗</a>
-        <a href="files/resume.pdf" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">Resume&nbsp;↗</a>
+        <a href="images/yunlei-shen-resume-2026.pdf" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">Resume&nbsp;↗</a>
       </div>
     </div>
     <div class="rail-meta" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
@@ -55,7 +145,7 @@
       <span class="hero-blob" style="position:absolute; left:18%; bottom:-3%; width:200px; height:120px; background:#26221B; opacity:0.08; border-radius:64% 36% 56% 44%/40% 62% 38% 58%; transform:rotate(6deg)" aria-hidden="true"></span>
       <div class="hero-photo" style="position:relative; width:min(340px, 70vw); margin:0 auto; transition:transform .45s cubic-bezier(.22,1,.36,1)">
         <div style="position:absolute; inset:0; transform:translate(12px,12px); border:1px solid #C9BFA9; pointer-events:none"></div>
-        <img src="images/portrait-hero.jpg" alt="Yunlei in Joshua Tree at golden hour" fetchpriority="high" style="position:relative; display:block; width:100%; aspect-ratio:4/5; object-fit:cover; border:1px solid #DFD5C3">
+        <img src="images/portrait-hero.jpg" alt="Yunlei in Joshua Tree at golden hour" fetchpriority="high" style="position:relative; display:block; width:100%; aspect-ratio:4/5; object-fit:cover">
         <svg viewBox="0 0 60 24" style="position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:60px; height:24px; color:#8F6B2E" aria-hidden="true"><path d="M2 20 C 14 4, 30 4, 42 12 S 56 18, 58 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
       </div>
       <span class="hero-chip" style="position:absolute; left:7%; top:6%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; background:#F7F2EA; --r:-5deg; transform:rotate(-5deg)">0 → 1 → scale</span>
@@ -104,70 +194,70 @@
   <section data-screen-label="The real me">
     <div style="max-width:1240px; margin:0 auto; padding:88px 32px 96px">
       <p data-reveal="" style="margin:0 0 20px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8F6B2E">Me, as myself</p>
-      <h2 data-reveal="" style="margin:0 0 28px; font-family:'Poppins', sans-serif; font-weight:400; font-size:clamp(34px,4.5vw,54px); line-height:1.1">The real me lives <em style="color:#8F6B2E">off the clock</em>.</h2>
+      <h2 id="rmt" data-reveal="" style="margin:0 0 28px; font-family:'Poppins', sans-serif; font-weight:400; font-size:clamp(30px,4.5vw,48px); line-height:1.1"><span id="rmt-in" style="display:inline-block">The real me lives <em style="color:#8F6B2E">off the clock</em>.</span></h2>
       <div data-reveal="" style="margin-bottom:48px">
         <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">On the road</p>
-        <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px">
-          <img src="images/photo-01.jpeg" alt="Nā Pali coast from above" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 50%; border:1px solid #DFD5C3">
-          <img src="images/photo-02.jpeg" alt="Sedona cave" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
-          <img src="images/photo-03.jpeg" alt="Winter sunset over boreal hills" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-          <img src="images/photo-04.jpeg" alt="Snowy peak at dusk" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
-          <img src="images/photo-05.jpeg" alt="Beach cove from the bluff" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:25% 50%; border:1px solid #DFD5C3">
-          <img src="images/photo-06.jpeg" alt="Volcano valley under clouds" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
-          <img src="images/photo-07.jpeg" alt="Plaza in Quito" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:70% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-08.jpeg" alt="Basilica towers" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-          <img src="images/photo-09.jpeg" alt="Ridge line and golden meadows" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
-          <img src="images/photo-10.jpeg" alt="Uprooted giant in the rainforest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
-          <img src="images/photo-11.jpeg" alt="Giraffe at sunset" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-12.jpeg" alt="Wildebeest crossing the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
-          <img src="images/photo-13.jpeg" alt="Lion cub in the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-14.jpeg" alt="Leopard in the grass" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:28% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-15.jpeg" alt="Elephants with egrets" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-16.jpeg" alt="Maasai giraffe" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
-          <img src="images/photo-17.jpeg" alt="Frozen river canyon" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-          <img src="images/photo-18.jpeg" alt="Sunset above the clouds on Mauna Kea" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 70%; border:1px solid #DFD5C3">
-          <img src="images/photo-19.jpeg" alt="Badwater Basin reflections" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 65%; border:1px solid #DFD5C3">
+        <div class="photo-grid" style="display:grid; gap:12px">
+          <img src="images/photo-22.jpg" alt="Nā Pali coast from above" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 50%">
+          <img src="images/photo-04.jpg" alt="Sedona cave" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
+          <img src="images/photo-06.jpg" alt="Winter sunset over boreal hills" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+          <img src="images/photo-33.jpg" alt="Snowy peak at dusk" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
+          <img src="images/photo-36.jpg" alt="Beach cove from the bluff" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:25% 50%">
+          <img src="images/photo-11.jpg" alt="Volcano valley under clouds" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
+          <img src="images/photo-26.jpg" alt="Plaza in Quito" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:70% 45%">
+          <img src="images/photo-25.jpg" alt="Basilica towers" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+          <img src="images/photo-40.jpg" alt="Ridge line and golden meadows" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
+          <img src="images/photo-13.jpg" alt="Uprooted giant in the rainforest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
+          <img src="images/photo-31.jpg" alt="Giraffe at sunset" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 45%">
+          <img src="images/photo-08.jpg" alt="Wildebeest crossing the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
+          <img src="images/photo-14.jpg" alt="Lion cub in the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 45%">
+          <img src="images/photo-39.jpg" alt="Leopard in the grass" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:28% 45%">
+          <img src="images/photo-21.jpg" alt="Elephants with egrets" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 45%">
+          <img src="images/photo-38.jpg" alt="Maasai giraffe" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
+          <img src="images/photo-32.jpg" alt="Frozen river canyon" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+          <img src="images/photo-27.jpg" alt="Sunset above the clouds on Mauna Kea" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 70%">
+          <img src="images/photo-12.jpg" alt="Badwater Basin reflections" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 65%">
         </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
           <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">BAKING</p>
-          <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px">
-            <img src="images/photo-20.jpeg" alt="Peach and thyme cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
-            <img src="images/photo-21.jpeg" alt="Garlic rosemary focaccia" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; border:1px solid #DFD5C3">
-            <img src="images/photo-22.jpeg" alt="Sourdough loaf" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-            <img src="images/photo-23.jpeg" alt="Lattice apple pie" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 50%; border:1px solid #DFD5C3">
-            <img src="images/photo-24.jpeg" alt="Flower-pot chocolate dessert" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; border:1px solid #DFD5C3">
-            <img src="images/photo-25.jpeg" alt="Blueberry rosemary cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 50%; border:1px solid #DFD5C3">
-            <img src="images/photo-26.jpeg" alt="Mille-crêpe cake and cold brew" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 60%; border:1px solid #DFD5C3">
+          <div class="photo-grid" style="display:grid; gap:12px">
+            <img src="images/photo-35.jpg" alt="Peach and thyme cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
+            <img src="images/photo-17.jpg" alt="Garlic rosemary focaccia" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
+            <img src="images/photo-03.jpg" alt="Sourdough loaf" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+            <img src="images/photo-05.jpg" alt="Lattice apple pie" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 50%">
+            <img src="images/photo-01.jpg" alt="Flower-pot chocolate dessert" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%">
+            <img src="images/photo-28.jpg" alt="Blueberry rosemary cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 50%">
+            <img src="images/photo-15.jpg" alt="Mille-crêpe cake and cold brew" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 60%">
           </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
           <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Coffee, always</p>
-          <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px">
-            <img src="images/photo-27.jpeg" alt="Espresso in a red cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
-            <img src="images/photo-28.jpeg" alt="Black coffee" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-            <img src="images/photo-29.jpeg" alt="Coffee with biscotti" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
-            <img src="images/photo-30.jpeg" alt="Espresso in a Mondrian cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; border:1px solid #DFD5C3">
+          <div class="photo-grid" style="display:grid; gap:12px">
+            <img src="images/photo-10.jpg" alt="Espresso in a red cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
+            <img src="images/photo-19.jpg" alt="Black coffee" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+            <img src="images/photo-23.jpg" alt="Coffee with biscotti" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+            <img src="images/photo-37.jpg" alt="Espresso in a Mondrian cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
           </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
         <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">MY DOG, CHEWIE</p>
-        <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px">
-          <img src="images/photo-31.jpeg" alt="Chewie on the beach" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-32.jpeg" alt="Chewie mid-sprint" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
-          <img src="images/photo-33.jpeg" alt="Chewie and the gingerbread man" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 40%; border:1px solid #DFD5C3">
-          <img src="images/photo-34.jpeg" alt="Chewie at Salvation Mountain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; border:1px solid #DFD5C3">
-          <img src="images/photo-35.jpeg" alt="Chewie guarding the apple harvest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 50%; border:1px solid #DFD5C3">
+        <div class="photo-grid" style="display:grid; gap:12px">
+          <img src="images/photo-16.jpg" alt="Chewie on the beach" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 45%">
+          <img src="images/photo-24.jpg" alt="Chewie mid-sprint" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
+          <img src="images/photo-29.jpg" alt="Chewie and the gingerbread man" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 40%">
+          <img src="images/photo-07.jpg" alt="Chewie at Salvation Mountain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
+          <img src="images/photo-09.jpg" alt="Chewie guarding the apple harvest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 50%">
         </div>
       </div>
       <div data-reveal="">
         <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Growing roses, lately</p>
-        <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px">
-          <img src="images/photo-36.jpeg" alt="Cream and yellow roses" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 65%; border:1px solid #DFD5C3">
-          <img src="images/photo-37.jpeg" alt="Apricot rose" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-38.jpeg" alt="Pink rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; border:1px solid #DFD5C3">
-          <img src="images/photo-39.jpeg" alt="Yellow rose in the sun" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; border:1px solid #DFD5C3">
-          <img src="images/photo-40.jpeg" alt="Magenta rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:60% 55%; border:1px solid #DFD5C3">
+        <div class="photo-grid" style="display:grid; gap:12px">
+          <img src="images/photo-18.jpg" alt="Cream and yellow roses" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 65%">
+          <img src="images/photo-02.jpg" alt="Apricot rose" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 45%">
+          <img src="images/photo-20.jpg" alt="Pink rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%">
+          <img src="images/photo-34.jpg" alt="Yellow rose in the sun" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
+          <img src="images/photo-30.jpg" alt="Magenta rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:60% 55%">
         </div>
       </div>
     </div>
@@ -232,5 +322,10 @@ class Component extends DCLogic {
   renderVals() { return {}; }
 }
 </script>
+<script>
+(function(){function fit(){var h2=document.getElementById('rmt'),inner=document.getElementById('rmt-in');if(!h2||!inner)return;var p=h2.parentElement,cs=getComputedStyle(p);var box=p.getBoundingClientRect().width-parseFloat(cs.paddingLeft||0)-parseFloat(cs.paddingRight||0);if(window.innerWidth<1024){h2.style.fontSize='clamp(30px,4.5vw,48px)';inner.style.whiteSpace='normal';return;}inner.style.whiteSpace='nowrap';h2.style.fontSize='100px';var w=inner.getBoundingClientRect().width;if(!w)return;h2.style.fontSize=Math.max(28,Math.min(96,100*(box*0.8)/w))+'px';}
+window.addEventListener('resize',fit);requestAnimationFrame(fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);})();
+</script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,33 @@
-/* Yunlei Shen — portfolio · shared base */
-html { scroll-behavior: smooth; }
-body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-body { transition: background-color .6s ease; }
-[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
-body[data-dark] { background: #26221B; }
+/* Yunlei Shen — portfolio: responsive safety net.
+   Page-level styling is authored inline per page; this file holds the
+   cross-page fluid/mobile rules. Mobile-first: base rules apply everywhere,
+   media queries add refinements for wider screens. */
+
+html { -webkit-text-size-adjust: 100%; }
+html, body { overflow-x: clip; max-width: 100%; }
+
+img, video, svg { max-width: 100%; }
+img, video { height: auto; }
+
+a { color: inherit; }
+a:hover { color: #8F6B2E; }
+
+/* Touch targets: every nav/menu control is at least 44px tall on touch sizes. */
+@media (max-width: 1023px) {
+  .rail-links a,
+  .nav-burger,
+  a[href$=".pdf"] {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Wide screens: let long-form measures breathe with fluid type. */
+@media (min-width: 1024px) {
+  .site-main p { text-wrap: pretty; }
+}
+
+@media print {
+  .site-rail, .nav-burger { display: none !important; }
+}

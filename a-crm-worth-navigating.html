@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Case study: A CRM Worth Navigating — rebuilding a CRM information architecture, by Yunlei Shen.">
+<script src="js/support.js"></script>
+<meta name="description" content="Case study: restructuring the information architecture of a multi-role CRM.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <x-dc>
@@ -15,8 +16,84 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/a-crm-worth-navigating.css">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
+::selection { background: #0F7A78; color: #F7F2EA; }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
+body[data-dark] [data-force-light="1"][style] { background-color: #FBF7F0 !important; color: #26221B !important; }
+
+svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
+body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
+body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
+body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
+body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
+body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
+body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
+body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
+body[data-dark] [style*="color: rgb(15, 122, 120)"] { color: #4FC5C1 !important; }
+body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
+body[data-dark] [data-force-light="1"][style] { background-color: #FBF7F0 !important; border-color: #DFD5C3 !important; }
+body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
+body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
+@media (max-width: 1024px) {
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .rail-meta { display: none !important; }
+  .site-main { margin-left: 0 !important; }
+  .hero-fixed { left: 0 !important; }
+  .breakout { width: calc(100vw - 80px) !important; margin-left: calc((100% - (100vw - 80px)) / 2) !important; }
+}
+.hero-fixed image-slot { display: block; width: 100%; height: 100%; }
+.breakout { box-sizing: border-box; width: min(1176px, calc(100vw - 304px)); margin-left: calc((100% - min(1176px, calc(100vw - 304px))) / 2); }
+
+.lbl-row { display: grid; grid-template-columns: 132px minmax(0,1fr); gap: 28px; }
+.opt-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.next-link { font-size: clamp(24px, 3vw, 38px) !important; letter-spacing: -0.03em; }
+@media (max-width: 1024px) {
+  .lbl-row { grid-template-columns: 1fr; gap: 10px; }
+  .opt-grid { grid-template-columns: 1fr; }
+  .site-main section[id] { padding-top: 96px !important; }
+  .site-main section#overview { padding-top: 80px !important; padding-bottom: 0 !important; }
+  .site-main section#context { padding-top: 80px !important; }
+  .site-main section#impact { padding-top: 96px !important; margin-top: 0 !important; }
+  .site-main section#reflection { padding-bottom: 96px !important; }
+}
+@media (max-width: 1024px) {
+  html, body { overflow-x: clip; }
+  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
+}
+  #overview .hero-row { display:flex; align-items:baseline; justify-content:space-between; gap:24px; }
+  @media (max-width: 1024px) { .meta-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
+  @media (max-width: 1024px) {
+    #overview .hero-row { flex-direction: column-reverse; align-items: flex-start !important; gap: 16px !important; }
+    #overview .hero-row h1 { white-space: normal !important; font-size: clamp(28px, 8.4vw, 44px) !important; }
+  }
+
+@media (max-width: 1024px) {
+  html, body { overflow-x: clip; }
+  img { max-width: 100% !important; }
+  .site-rail > div:first-child { display: flex !important; align-items: center; gap: 14px; width: 100%; min-width: 0; max-width: 100%; }
+  .site-rail > div:first-child > a:first-child { flex-shrink: 0; white-space: nowrap; }
+  .rail-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; max-width: 100%; }
+  .rail-links::-webkit-scrollbar { display: none; }
+  .rail-links a { flex-shrink: 0; white-space: nowrap; }
+  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
+  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
+}
+
+@media (max-width: 1024px) {
+  .site-main img[style*="position: absolute"] { max-width: none !important; }
+  .row-4 { grid-template-columns: 1fr !important; }
+  .site-main [style*="grid-template-columns: repeat(4"], .site-main [style*="grid-template-columns:repeat(4"] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .site-main [style*="grid-template-columns: repeat(3"], .site-main [style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
+  .site-main [style*="grid-template-columns: 1fr 1fr"], .site-main [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  .site-main [style*="1fr auto 1fr auto 1fr"] { grid-template-columns: 1fr !important; }
+}
+</style>
 </helmet>
 
 <div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="Case Study — A CRM Worth Navigating">
@@ -48,7 +125,7 @@
     </div>
 
     <div data-reveal="" style="margin-top:56px; border-radius:20px; overflow:hidden; background:#EFE8DB; box-shadow:0 18px 44px rgba(38,34,27,0.10), 0 3px 10px rgba(38,34,27,0.05)">
-      <div style="position:relative; width:100%; aspect-ratio:1637/840; overflow:hidden"><iframe data-walkthrough="1" src="embeds/crm-highlight-walkthrough.html" title="Key screens walkthrough" scrolling="no" style="position:absolute; left:0; top:-4%; width:100%; height:108%; border:0; background:transparent"></iframe></div>
+      <div style="position:relative; width:100%; aspect-ratio:1637/840; overflow:hidden"><iframe data-walkthrough="1" src="./crm-highlight-walkthrough.html" title="Key screens walkthrough" scrolling="no" style="position:absolute; left:0; top:-4%; width:100%; height:108%; border:0; background:transparent"></iframe></div>
     </div>
 
     <p data-reveal="" style="margin:56px 0 0; max-width:70ch; font-size:18px; line-height:1.7; color:#3E3930; text-wrap:pretty">Sugar CRM is where every VBG employee spends the working day. Years of growth without a designer had buried the work four to six clicks deep, and claim submissions had quietly fallen by half. I rebuilt the information architecture — and let five teams decide what it should be.</p>
@@ -374,7 +451,7 @@
       <h3 style="margin:0 0 18px; font-family:'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size:28px; line-height:1.2">Match the layout to the data, not the template</h3>
       <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">One rule settled every page debate: pages people act on get cards with key info on the face; pages people scan keep tables, plus the identity columns every sort demanded. Deciding the rule first meant no layout ever got relitigated.</p>
       <div style="display:grid; grid-template-columns:1fr; gap:16px">
-        <div style="position:relative; aspect-ratio:1240/900; overflow:visible"><iframe data-mock-frame="1" data-fit-inner="1240" src="embeds/crm-key-screens-mocks.html" title="Key screen mockups" scrolling="no" style="position:absolute; left:0; top:0; width:1240px; height:900px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
+        <div style="position:relative; aspect-ratio:1240/900; overflow:visible"><iframe data-mock-frame="1" data-fit-inner="1240" src="./crm-key-screens-mocks.html" title="Key screen mockups" scrolling="no" style="position:absolute; left:0; top:0; width:1240px; height:900px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
       </div>
     </div>
   </section>
@@ -568,11 +645,24 @@ class Component extends DCLogic {
               off = k.offsetLeft;
             }
           }));
-          f.style.width = w + 'px';
+          const rr = root.getBoundingClientRect();
+          let maxR = w, minL = 0;
+          root.querySelectorAll('*').forEach((n) => {
+            const r = n.getBoundingClientRect();
+            if (!r.width || !r.height) return;
+            if (r.right - rr.left > maxR) maxR = r.right - rr.left;
+            if (r.left - rr.left < minL) minL = r.left - rr.left;
+          });
+          const cw = Math.ceil(maxR - minL);
+          f.style.width = cw + 'px';
           f.style.height = h + 'px';
-          f.parentElement.style.aspectRatio = inner + ' / ' + h;
           const pw = f.parentElement.clientWidth;
-          if (pw) f.style.transform = 'scale(' + (pw / inner) + ') translateX(' + (-off) + 'px)';
+          if (!pw) return;
+          const vw = document.documentElement.clientWidth;
+          const sc = Math.min(pw / inner, Math.max(0, vw - 32) / cw);
+          f.parentElement.style.aspectRatio = 'auto';
+          f.parentElement.style.height = Math.ceil(h * sc) + 'px';
+          f.style.transform = 'translateX(' + ((pw - cw * sc) / 2) + 'px) scale(' + sc + ') translateX(' + (-minL) + 'px)';
         } catch (err) {}
       };
       f.addEventListener('load', tune);
@@ -730,5 +820,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>

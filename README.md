@@ -1,32 +1,40 @@
 # Yunlei Shen — Portfolio
 
-Personal portfolio site for Yunlei Shen, product designer (Seattle, WA). Home, About, and four in-depth case studies: The End of the Paper Trail, Four Roles One System, A CRM Worth Navigating, The Two-Minute Deal.
+Personal portfolio site for Yunlei Shen, product designer: a home page with four
+case studies (VBG Portal, Sugar CRM information architecture, Sugar CRM role
+workflows, Anonymous Agent) plus an about page.
 
 ## Tech stack
 
-Pure static HTML, CSS and vanilla JavaScript — no build step, no npm dependencies, no server-side code. Interactive figures (product walkthroughs, before/after sliders, covers) are self-contained HTML documents in `embeds/`, loaded in iframes.
+- Static HTML, CSS and vanilla JavaScript — no build step, no dependencies
+- Google Fonts (Poppins, Special Elite, Shadows Into Light) loaded over HTTPS
+- Interactive case-study visuals are self-contained HTML documents embedded as iframes
 
 ## Responsive
 
-One codebase, mobile-first. Fluid grid/flex layouts and media queries adapt the site from 320px phones through tablets to large desktops: the sidebar becomes a top bar with a hamburger menu on small screens, multi-column diagrams stack vertically, images scale proportionally (`max-width: 100%`), and no view scrolls horizontally at any width.
+The site is fully responsive from 320px upward. It uses a mobile-first stylesheet
+with media queries at 768px and 1024px, fluid flexbox/grid layouts, `clamp()`
+typography, images capped at `max-width: 100%`, a collapsible menu on small
+screens, and 44px minimum touch targets. There is no horizontal scrolling at any
+width and no separate mobile codebase.
 
 ## Structure
 
 ```
-index.html                  home
-about.html                  about
-<case-study>.html           four case studies
-css/style.css               shared base styles
-css/<page>.css              per-page styles
-js/main.js                  page runtime
-js/image-slot.js            image helper
-images/                     photos, screenshots, favicon
-embeds/                     interactive figures loaded in iframes
-files/resume.pdf            resume
+index.html            Home
+about.html            About
+*.html                Case studies and the embedded visuals they load
+css/style.css         Shared responsive stylesheet
+js/main.js            Shared page script
+js/support.js         Rendering runtime used by the pages
+images/               Photography, screenshots, favicon, resume PDF
 ```
 
-All paths are relative, so the site works from a repository sub-path (e.g. `https://<username>.github.io/portfolio/`).
+All paths are relative, so the site works from a repository sub-path such as
+`https://<username>.github.io/portfolio/`.
 
 ## Deploy to GitHub Pages
 
-Push these files to the `main` branch, then in the repository: Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/ (root)`.
+Push these files to the `main` branch, then in the repository go to
+**Settings → Pages → Build and deployment → Deploy from a branch**, select
+**main** and the **/ (root)** folder, and save.
