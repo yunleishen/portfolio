@@ -1,4 +1,6 @@
-/* Base styles shared across all pages. Page-specific styles live inline per page. */
+/* Yunlei Shen — portfolio · shared base */
 html { scroll-behavior: smooth; }
 body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-img { max-width: 100%; }
+body { transition: background-color .6s ease; }
+[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
+body[data-dark] { background: #26221B; }
