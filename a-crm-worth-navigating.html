@@ -645,24 +645,18 @@ class Component extends DCLogic {
               off = k.offsetLeft;
             }
           }));
-          const rr = root.getBoundingClientRect();
-          let maxR = w, minL = 0;
-          root.querySelectorAll('*').forEach((n) => {
-            const r = n.getBoundingClientRect();
-            if (!r.width || !r.height) return;
-            if (r.right - rr.left > maxR) maxR = r.right - rr.left;
-            if (r.left - rr.left < minL) minL = r.left - rr.left;
-          });
-          const cw = Math.ceil(maxR - minL);
+          const cw = w, minL = 0;
           f.style.width = cw + 'px';
           f.style.height = h + 'px';
           const pw = f.parentElement.clientWidth;
           if (!pw) return;
           const vw = document.documentElement.clientWidth;
-          const sc = Math.min(pw / inner, Math.max(0, vw - 32) / cw);
-          f.parentElement.style.aspectRatio = 'auto';
-          f.parentElement.style.height = Math.ceil(h * sc) + 'px';
-          f.style.transform = 'translateX(' + ((pw - cw * sc) / 2) + 'px) scale(' + sc + ') translateX(' + (-minL) + 'px)';
+          const sc = Math.min(pw, Math.max(0, vw - 32)) / cw;
+          const nh = Math.ceil(h * sc) + 'px';
+          const ntr = 'translateX(' + ((pw - cw * sc) / 2) + 'px) scale(' + sc + ') translateX(' + (-minL) + 'px)';
+          if (f.parentElement.style.aspectRatio !== 'auto') f.parentElement.style.aspectRatio = 'auto';
+          if (f.parentElement.style.height !== nh) f.parentElement.style.height = nh;
+          if (f.style.transform !== ntr) f.style.transform = ntr;
         } catch (err) {}
       };
       f.addEventListener('load', tune);
