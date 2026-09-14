@@ -1,54 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/support.js"></script>
-<meta name="description" content="Case study: replacing a paper-based VA disability claim process with a guided digital portal.">
-<title>The End of the Paper Trail · Yunlei Shen</title>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.yunleidesign.com/the-end-of-the-paper-trail.html">
-<meta property="og:url" content="https://www.yunleidesign.com/the-end-of-the-paper-trail.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="The End of the Paper Trail · Yunlei Shen">
-<meta property="og:description" content="Case study: replacing a paper-based VA disability claim process with a guided digital portal.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
 <title>The End of the Paper Trail · Yunlei Shen</title>
-<script src="js/image-slot.js"></script>
+<script src="./image-slot.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-::selection { background: #026C96; color: #F7F2EA; }
-body { transition: background-color .6s ease; }
-[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
-body[data-dark] { background: #26221B; }
-body[data-dark] [data-force-light="1"] { background-color: #FBF7F0 !important; color: #26221B !important; }
+body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
+::selection { background: #141414; color: #FAF7F2; }
+a { color: #141414; }
+a:hover { color: #1E3A5F; }
 
-svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
-body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
-body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
-body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
-body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
-body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
-body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
-body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
-body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
-body[data-dark] [style*="color: rgb(2, 108, 150)"] { color: #4FB4DC !important; }
-body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
-body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
-body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
 @media (max-width: 1024px) {
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #E3DED6 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: nowrap !important; align-items: center; flex: 1 1 auto; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 2px; }
+  .rail-links::-webkit-scrollbar { display: none; }
+  .rail-links > a { flex: none !important; white-space: nowrap !important; }
+  .site-rail > div:first-child { min-width: 0 !important; max-width: 100% !important; flex: 1 1 auto !important; }
   .rail-meta { display: none !important; }
   .site-main { margin-left: 0 !important; }
   .hero-fixed { left: 0 !important; }
@@ -64,7 +41,7 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 
 .lbl-row { display: grid; grid-template-columns: 132px minmax(0,1fr); gap: 28px; }
 .opt-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
-.next-link { font-size: clamp(24px, 3vw, 38px) !important; letter-spacing: -0.03em; }
+.next-link { font-size: clamp(24px, 3vw, 38px) !important; letter-spacing: -0.01em; }
 @media (max-width: 1024px) {
   .lbl-row { grid-template-columns: 1fr; gap: 10px; }
   .opt-grid { grid-template-columns: 1fr; }
@@ -78,26 +55,14 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   html, body { overflow-x: clip; }
   .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
 }
-  #overview .hero-row { display:flex; align-items:baseline; justify-content:space-between; gap:24px; }
+  #overview .hero-row { display:flex; flex-direction:column; align-items:flex-start; gap:24px; }
   @media (max-width: 1024px) { .meta-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
   @media (max-width: 1024px) { .row-4 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
   @media (max-width: 560px) { .row-4 { grid-template-columns: 1fr !important; } }
   @media (max-width: 1024px) {
-    #overview .hero-row { flex-direction: column-reverse; align-items: flex-start !important; gap: 16px !important; }
-    #overview .hero-row h1 { white-space: normal !important; font-size: clamp(28px, 8.4vw, 44px) !important; }
+    #overview .hero-row { align-items: flex-start !important; gap: 16px !important; }
+    #overview .hero-row h1 { font-size: clamp(36px, 10vw, 56px) !important; }
   }
-
-@media (max-width: 1024px) {
-  html, body { overflow-x: clip; }
-  img { max-width: 100% !important; }
-  .site-rail > div:first-child { display: flex !important; align-items: center; gap: 14px; width: 100%; min-width: 0; max-width: 100%; }
-  .site-rail > div:first-child > a:first-child { flex-shrink: 0; white-space: nowrap; }
-  .rail-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; max-width: 100%; }
-  .rail-links::-webkit-scrollbar { display: none; }
-  .rail-links a { flex-shrink: 0; white-space: nowrap; }
-  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
-  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
-}
 
 @media (max-width: 1024px) {
   .site-main img[style*="position: absolute"] { max-width: none !important; }
@@ -115,49 +80,50 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 </style>
 </helmet>
 
-<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="Case Study — The End of the Paper Trail">
+<div style="background:#FAF7F2; color:#141414; font-family:'Geist', sans-serif; min-height:100vh" data-screen-label="Case Study — The End of the Paper Trail">
 
-  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#FAF7F2; border-right:1px solid #E3DED6; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
     <div>
       
-      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#26221B; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; border:1px solid #DFD5C3; padding:8px 16px; border-radius:99px" style-hover="border:1px solid #026C96; color:#026C96">← Home</a>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#141414; text-decoration:none; font-size:13px; font-weight:400" style-hover="color:#1E3A5F; text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1.5px">← (Home)</a>
       <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:44px">
-        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Overview</a>
-        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Context</a>
-        <a data-toc="problem" href="#problem" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Problem</a>
-        <a data-toc="strategy" href="#strategy" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Strategy</a>
-        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Process</a>
-        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Impact</a>
-        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#026C96; opacity:0; transition:opacity .25s"></span>Reflection</a>
+        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽¹⁾</span>Overview</a>
+        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽²⁾</span>Context</a>
+        <a data-toc="problem" href="#problem" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽³⁾</span>Problem</a>
+        <a data-toc="strategy" href="#strategy" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁴⁾</span>Strategy</a>
+        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁵⁾</span>Process</a>
+        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁶⁾</span>Impact</a>
+        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁷⁾</span>Reflection</a>
       </div>
     </div>
     
   </aside>
   <div class="site-main" style="margin-left:224px">
 
-  <div style="position:relative; z-index:1; background:#F7F2EA">
+  <div style="position:relative; z-index:1; background:#FAF7F2">
 
   <section id="overview" style="max-width:820px; margin:0 auto; padding:160px 32px 0; container-type:inline-size" data-screen-label="Hero">
 
     <div class="hero-row">
-      <h1 data-reveal="" style="margin:0; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px, calc((100cqw - 230px) / 11.86), 72px); line-height:1.06; letter-spacing:-0.032em; color:#26221B; white-space:nowrap">The End of the Paper Trail</h1>
-      <span style="flex:0 0 auto; display:inline-flex; align-items:center; gap:14px"><span data-reveal="" style="font-size:12px; color:#8A8171">9 min read</span><span data-reveal="" style="display:inline-flex; align-items:center; gap:8px; border:1px solid #DFD5C3; border-radius:99px; padding:7px 14px; font-size:12px; font-weight:500; color:#3E3930"><span style="width:7px; height:7px; border-radius:50%; background:#026C96"></span>Shipped</span></span>
+      <p data-reveal="" style="margin:0; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">01 &mdash; VBG Portal &middot; 2025&ndash;26</p>
+      <h1 data-reveal="" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(44px, 12.6cqw, 104px); line-height:0.95; letter-spacing:-0.01em; color:#141414">The End of the Paper Trail</h1>
+      <p data-reveal="" style="margin:0; font-size:13px; font-weight:300; color:#6B6560">(9 min read) &middot; <span style="color:#1E3A5F">(Shipped)</span></p>
     </div>
 
-    <div data-reveal="" style="margin-top:56px; border-radius:20px; overflow:hidden; background:#EFE8DB">
+    <div data-reveal="" style="margin-top:56px; overflow:hidden; background:#F2EEE7">
       <div style="position:relative; width:100%; aspect-ratio:16/9; overflow:hidden">
       <iframe data-video-frame="1" src="./vbg-key-features-video.html" title="Key features walkthrough" scrolling="no" style="position:absolute; left:0; top:0; width:100%; height:100%; border:0; background:transparent"></iframe>
       </div>
     </div>
 
-    <p data-reveal="" style="margin:56px 0 0; max-width:70ch; font-size:18px; line-height:1.7; color:#3E3930; text-wrap:pretty">Veteran Benefits Guide runs disability claims for veterans, and ran them entirely on paper. Every claim moved at the speed of a staff member carrying it. I led the design of the platform that took the whole thing online, and cut processing time nearly in half.</p>
+    <p data-reveal="" style="margin:56px 0 0; max-width:34em; font-family:'STIX Two Text', serif; font-size:clamp(21px,2vw,26px); line-height:1.55; color:#141414; text-wrap:pretty">Veteran Benefits Guide runs disability claims for veterans, and ran them entirely on paper. Every claim moved at the speed of a staff member carrying it. I led the design of the platform that took the whole thing online, and cut processing time nearly in half.</p>
 
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:56px 0 32px"></div>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:56px 0 32px"></div>
     <div class="meta-grid" style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:32px 40px">
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Product</p><p style="margin:0; font-size:16px; color:#26221B">VBG Portal</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">My role</p><p style="margin:0; font-size:16px; color:#26221B">Product Designer</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Timeline</p><p style="margin:0; font-size:16px; color:#26221B">2025 – 2026</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Scope</p><p style="margin:0; font-size:16px; color:#26221B">End-to-end claim filing, 0→1</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Product)</p><p style="margin:0; font-size:16px; color:#141414">VBG Portal</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(My role)</p><p style="margin:0; font-size:16px; color:#141414">Product Designer</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Timeline)</p><p style="margin:0; font-size:16px; color:#141414">2025 – 2026</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Scope)</p><p style="margin:0; font-size:16px; color:#141414">End-to-end claim filing, 0→1</p></div>
     </div>
   </section>
 
@@ -166,84 +132,84 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   
 
   <section id="context" style="max-width:820px; margin:0 auto; padding:160px 32px 0" data-screen-label="Context">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">CONTEXT</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em"><div>One designer, a paper business, fourteen months</div></h2>
-    <div data-reveal="" style="margin: 0; font-size: 16.5px; line-height: 1.75; color: #3E3930"><div>VBG had been operating for years with over two hundred employees when the paper process stopped being a quirk and became the ceiling: every claim needed a staff member at every step, so serving more veterans meant hiring more people. Going digital was a company-level initiative, and our product team owned it.</div><div><br></div><div>I joined that team as the company's first in-house product designer, which meant no design research to inherit, no process to point at, and a fourteen-month runway to build both the product and the case for how it should be built.</div></div>
-    <div data-reveal="" style="margin-top:44px; border-top:2px solid #26221B">
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Context)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em"><div>One designer, a paper business, fourteen months</div></h2>
+    <div data-reveal="" style="margin: 0; font-size: 16.5px; line-height: 1.75; color: #141414"><div>VBG had been operating for years with over two hundred employees when the paper process stopped being a quirk and became the ceiling: every claim needed a staff member at every step, so serving more veterans meant hiring more people. Going digital was a company-level initiative, and our product team owned it.</div><div><br></div><div>I joined that team as the company's first in-house product designer, which meant no design research to inherit, no process to point at, and a fourteen-month runway to build both the product and the case for how it should be built.</div></div>
+    <div data-reveal="" style="margin-top:44px; border-top:1px solid #141414">
       
-      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #DFD5C3">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Owned</p>
-        <div style="display:flex; flex-wrap:wrap; gap:8px"><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #026C96; padding:6px 11px">Research</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #026C96; padding:6px 11px">IA &amp; flows</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #026C96; padding:6px 11px">UI design</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #026C96; padding:6px 11px">QA through launch</span></div>
+      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #E3DED6">
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Owned)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#141414">Research &middot; IA &amp; flows &middot; UI design &middot; QA through launch</p>
       </div>
-      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #DFD5C3">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Partnered on</p>
-        <div style="display:flex; flex-wrap:wrap; gap:8px"><span style="font-size:12.5px; line-height:1.4; color:#6E675C; border:1px dashed #C9BFA9; padding:6px 11px">PM &amp; engineering</span><span style="font-size:12.5px; line-height:1.4; color:#6E675C; border:1px dashed #C9BFA9; padding:6px 11px">Ops lead</span><span style="font-size:12.5px; line-height:1.4; color:#6E675C; border:1px dashed #C9BFA9; padding:6px 11px">Medical consultant</span></div>
+      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #E3DED6">
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Partnered on)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6B6560">PM &amp; engineering &middot; Ops lead &middot; Medical consultant</p>
       </div>
       <div class="lbl-row" style="padding:18px 0 0">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Constraint</p>
-        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6E675C">Not mine: the backend claim engine, and the VA requirements I designed within.</p>
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Constraint)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6B6560">Not mine: the backend claim engine, and the VA requirements I designed within.</p>
       </div>
     </div>
   </section><section id="problem" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Problem">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96"><span style="letter-spacing: 2.4px;">Problem · Discovery</span></p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Four frictions that kept veterans dependent on staff</h2>
-    <p data-reveal="" style="margin: 0; font-size: 16.5px; line-height: 1.75; color: #3E3930">There was no research to inherit. The first month was fieldwork: I sat with every role that touches a claim and shadowed live veteran calls. Four frictions shaped everything that followed:</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Problem · Discovery)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Four frictions that kept veterans dependent on staff</h2>
+    <p data-reveal="" style="margin: 0; font-size: 16.5px; line-height: 1.75; color: #141414">There was no research to inherit. The first month was fieldwork: I sat with every role that touches a claim and shadowed live veteran calls. Four frictions shaped everything that followed:</p>
     <div data-reveal="" style="margin-top:40px; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px,100%), 1fr)); gap:16px">
-      <div style="border:1px solid #DFD5C3; background:#FBF7F0; padding:28px; display:flex; flex-direction:column; gap:14px">
-        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#026C96">01</span><span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px">documents</span></div>
-        <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Days lost to paperwork</p>
-        <p style="margin:0; font-size:14px; line-height:1.6; color:#6E675C">Requests for more documents after submission restarted the wait.</p>
+      <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:28px; display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#1E3A5F">01</span><span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#6B6560; border:1px solid #E3DED6; padding:4px 8px">documents</span></div>
+        <p style="margin:0; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Days lost to paperwork</p>
+        <p style="margin:0; font-size:14px; line-height:1.6; color:#6B6560">Requests for more documents after submission restarted the wait.</p>
       </div>
-      <div style="border:1px solid #DFD5C3; background:#FBF7F0; padding:28px; display:flex; flex-direction:column; gap:14px">
-        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#026C96">02</span><span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px">forms</span></div>
-        <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Disability Benefits Questionnaires too confusing to finish alone</p>
-        <p style="margin:0; font-size:14px; line-height:1.6; color:#6E675C">Veterans leaned on case managers and revised them repeatedly.</p>
+      <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:28px; display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#1E3A5F">02</span><span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#6B6560; border:1px solid #E3DED6; padding:4px 8px">forms</span></div>
+        <p style="margin:0; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Disability Benefits Questionnaires too confusing to finish alone</p>
+        <p style="margin:0; font-size:14px; line-height:1.6; color:#6B6560">Veterans leaned on case managers and revised them repeatedly.</p>
       </div>
-      <div style="border:1px solid #DFD5C3; background:#FBF7F0; padding:28px; display:flex; flex-direction:column; gap:14px">
-        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#026C96">03</span><span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px">scheduling</span></div>
-        <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">No control over evaluations</p>
-        <p style="margin:0; font-size:14px; line-height:1.6; color:#6E675C">Every scheduling change routed through a coordination team.</p>
+      <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:28px; display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#1E3A5F">03</span><span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#6B6560; border:1px solid #E3DED6; padding:4px 8px">scheduling</span></div>
+        <p style="margin:0; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">No control over evaluations</p>
+        <p style="margin:0; font-size:14px; line-height:1.6; color:#6B6560">Every scheduling change routed through a coordination team.</p>
       </div>
-      <div style="border:1px solid #DFD5C3; background:#FBF7F0; padding:28px; display:flex; flex-direction:column; gap:14px">
-        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#026C96">04</span><span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px">status</span></div>
-        <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Zero visibility into claim status</p>
-        <p style="margin:0; font-size:14px; line-height:1.6; color:#6E675C">The only option was calling customer service.</p>
+      <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:28px; display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px"><span style="font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:26px; color:#1E3A5F">04</span><span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#6B6560; border:1px solid #E3DED6; padding:4px 8px">status</span></div>
+        <p style="margin:0; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:22px; line-height:1.25">Zero visibility into claim status</p>
+        <p style="margin:0; font-size:14px; line-height:1.6; color:#6B6560">The only option was calling customer service.</p>
       </div>
     </div>
   </section><section id="strategy" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Strategy">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Strategy</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Three ways off paper, and why we took the slowest one</h2>
-    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">“Go digital” is not one decision; it is a fork. We weighed three paths:</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Strategy)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Three ways off paper, and why we took the slowest one</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#141414">“Go digital” is not one decision; it is a fork. We weighed three paths:</p>
     <div data-reveal="" class="opt-grid" style="margin:36px 0 0">
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #DFD5C3; background:transparent">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #E3DED6; background:transparent">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C4BAA6">A</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#8A8171; border:1px solid #DFD5C3">Ruled out</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C9C4BC">A</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#6B6560">(Ruled out)</span>
         </div>
         <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#5A544A">Digitize the forms</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">E-forms and e-signatures bolted onto the existing process. Cheapest, live in weeks — but staff still carry every step.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#8A8171">Removes the paper, not the ceiling.</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">E-forms and e-signatures bolted onto the existing process. Cheapest, live in weeks — but staff still carry every step.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#6B6560">Removes the paper, not the ceiling.</p>
       </article>
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #DFD5C3; background:transparent">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #E3DED6; background:transparent">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C4BAA6">B</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#8A8171; border:1px solid #DFD5C3">Ruled out</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C9C4BC">B</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#6B6560">(Ruled out)</span>
         </div>
         <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#5A544A">Configure an off-the-shelf case portal</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">Faster than building, but nothing on the market modeled VA claim logic or could turn a DBQ into a guided flow.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#8A8171">Bends the business around the tool — again.</p>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">Faster than building, but nothing on the market modeled VA claim logic or could turn a DBQ into a guided flow.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#6B6560">Bends the business around the tool — again.</p>
       </article>
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #026C96; background:#FFFDF9">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #1E3A5F; background:#FAF7F2">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#026C96">C</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#F7F2EA; background:#026C96; border:1px solid #026C96">Chosen</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#1E3A5F">C</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#1E3A5F">(Chosen)</span>
         </div>
-        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#26221B">Build a portal designed around self-service</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">Slowest of the three, and the only one that attacks the actual constraint: veterans depending on staff for every move.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#026C96">Fourteen months, and the ceiling comes down.</p>
+        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#141414">Build a portal designed around self-service</h3>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">Slowest of the three, and the only one that attacks the actual constraint: veterans depending on staff for every move.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#1E3A5F">Fourteen months, and the ceiling comes down.</p>
       </article>
     </div>
     
@@ -251,82 +217,82 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   </section>
 
   <section id="process" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process — Straighten the path">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Process 01: Straighten the path</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Compress the journey to seven legible steps</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Process 01 · Straighten the path)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Compress the journey to seven legible steps</h2>
     <div data-reveal="">
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">The map made the diagnosis obvious: most of the eighteen touchpoints existed to move paper between desks, not to serve the veteran. That became the cut rule: a step survives only if the veteran needs it, not if the paper does.</p>
-      <figure class="breakout" style="margin-top:0; margin-bottom:0; margin-right:0; border:1px solid #DFD5C3; background:#FBF7F0; padding:32px">
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">The map made the diagnosis obvious: most of the eighteen touchpoints existed to move paper between desks, not to serve the veteran. That became the cut rule: a step survives only if the veteran needs it, not if the paper does.</p>
+      <figure class="breakout" style="margin-top:0; margin-bottom:0; margin-right:0; border:1px solid #E3DED6; background:#FAF7F2; padding:32px">
         <div class="ba-grid">
         <div>
         <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:18px">
-          <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Before: manual process, 18 touchpoints</p>
-          <div style="display:flex; gap:18px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#8A8171">
-            <span style="display:inline-flex; align-items:center; gap:6px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; display:inline-block"></span>veteran pain point</span>
+          <p style="margin:0; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">Before: manual process, 18 touchpoints</p>
+          <div style="display:flex; gap:18px; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#6B6560">
+            <span style="display:inline-flex; align-items:center; gap:6px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; display:inline-block"></span>veteran pain point</span>
             <span style="text-decoration:line-through">eliminated</span>
           </div>
         </div>
         <div style="display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start">
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Veteran walk in / call in</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Meet with intake specialist</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>Provide personal info</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>Provide military info</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>Provide disability info</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>Provide initial documents</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">Case manager initial review</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>Complete mini Disability Benefits Questionnaires</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">Underwriter review</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">Case review specialist review</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">Claim final review call</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#026C96; flex-shrink:0"></span>VBG schedules evaluation</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Complete evaluation</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">CRS review completed</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Sign additional documents</span>
-          <span style="border:1px dashed #DFD5C3; background:transparent; padding:7px 12px; font-size:12.5px; color:#A99F8D; text-decoration:line-through">File sent to VA</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Receive decision letter</span>
-          <span style="border:1px solid #DFD5C3; background:#F7F2EA; padding:7px 12px; font-size:12.5px; color:#3E3930">Pay invoice</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Veteran walk in / call in</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Meet with intake specialist</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>Provide personal info</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>Provide military info</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>Provide disability info</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>Provide initial documents</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">Case manager initial review</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>Complete mini Disability Benefits Questionnaires</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">Underwriter review</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">Case review specialist review</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">Claim final review call</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414; display:inline-flex; align-items:center; gap:7px"><span style="width:7px; height:7px; border-radius:50%; background:#1E3A5F; flex-shrink:0"></span>VBG schedules evaluation</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Complete evaluation</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">CRS review completed</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Sign additional documents</span>
+          <span style="border:1px dashed #E3DED6; background:transparent; padding:7px 12px; font-size:12.5px; color:#9A948B; text-decoration:line-through">File sent to VA</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Receive decision letter</span>
+          <span style="border:1px solid #E3DED6; background:#FAF7F2; padding:7px 12px; font-size:12.5px; color:#141414">Pay invoice</span>
         </div>
         </div>
         <div class="ba-divider" style="display:flex; align-items:center; gap:14px">
-          <span style="flex:1; height:1px; background:#DFD5C3"></span>
-          <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:11px; letter-spacing:0.08em; color:#026C96">consolidated ↓</span>
-          <span style="flex:1; height:1px; background:#DFD5C3"></span>
+          <span style="flex:1; height:1px; background:#E3DED6"></span>
+          <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size:11px; letter-spacing:0.08em; color:#1E3A5F">consolidated ↓</span>
+          <span style="flex:1; height:1px; background:#E3DED6"></span>
         </div>
         <div>
-        <p style="margin:0 0 18px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">After: VBG Portal, 7 digital steps</p>
+        <p style="margin:0 0 18px; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">After: VBG Portal, 7 digital steps</p>
         <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:8px">
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">1</p><p style="margin:0; font-size:13px; line-height:1.4">Sign up</p><p style="margin:6px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#026C96">merges 2 steps</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">2</p><p style="margin:0; font-size:13px; line-height:1.4">Guided questionnaires</p><p style="margin:6px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#026C96">no more phone calls</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">3</p><p style="margin:0; font-size:13px; line-height:1.4">Documents checklist</p><p style="margin:6px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#026C96">self-correcting</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">4</p><p style="margin:0; font-size:13px; line-height:1.4">Schedule evaluation</p><p style="margin:6px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#026C96">self-serve</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">5</p><p style="margin:0; font-size:13px; line-height:1.4">Complete evaluation</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">6</p><p style="margin:0; font-size:13px; line-height:1.4">Sign additional documents</p></div>
-          <div style="border:1px solid #C9BFA9; background:#F7F2EA; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#026C96">7</p><p style="margin:0; font-size:13px; line-height:1.4">Receive decision letter &amp; pay invoice</p><p style="margin:6px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; color:#026C96">merges 2 steps</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">1</p><p style="margin:0; font-size:13px; line-height:1.4">Sign up</p><p style="margin:6px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#1E3A5F">merges 2 steps</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">2</p><p style="margin:0; font-size:13px; line-height:1.4">Guided questionnaires</p><p style="margin:6px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#1E3A5F">no more phone calls</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">3</p><p style="margin:0; font-size:13px; line-height:1.4">Documents checklist</p><p style="margin:6px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#1E3A5F">self-correcting</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">4</p><p style="margin:0; font-size:13px; line-height:1.4">Schedule evaluation</p><p style="margin:6px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#1E3A5F">self-serve</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">5</p><p style="margin:0; font-size:13px; line-height:1.4">Complete evaluation</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">6</p><p style="margin:0; font-size:13px; line-height:1.4">Sign additional documents</p></div>
+          <div style="border:1px solid #E3DED6; background:#FAF7F2; padding:12px 14px"><p style="margin:0 0 4px; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:17px; color:#1E3A5F">7</p><p style="margin:0; font-size:13px; line-height:1.4">Receive decision letter &amp; pay invoice</p><p style="margin:6px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size:10px; color:#1E3A5F">merges 2 steps</p></div>
         </div>
         </div>
         </div>
-        <figcaption style="margin:24px 0 0; font-size:12.5px; color:#8A8171">Each eliminated step was a negotiation with ops about which reviews protected veterans and which protected habits.<br>Six staff-only review steps eliminated; every remaining step became self-serve.</figcaption>
+        <figcaption style="margin:24px 0 0; font-size:12.5px; color:#6B6560">Fig. 01 &mdash; Each eliminated step was a negotiation with ops about which reviews protected veterans and which protected habits.<br>Six staff-only review steps eliminated; every remaining step became self-serve.</figcaption>
       </figure>
     </div>
 
     </section>
 
   <section id="dashboard" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process — Build the spine">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Process 02: Build the spine</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">A dashboard framework that scales with the process</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Process 02 · Build the spine)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">A dashboard framework that scales with the process</h2>
     <div data-reveal="">
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">Seven steps needed a predictable structure. I tested two opposite frameworks, total transparency versus total focus, and shipped the combination.</p>
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">Seven steps needed a predictable structure. I tested two opposite frameworks, total transparency versus total focus, and shipped the combination.</p>
       
 <!-- ============ EXPLORATION I ============ -->
     <div style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Explored · set aside</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">The all-tasks checklist</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B6560">(Explored · set aside)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">The all-tasks checklist</h4>
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">Veterans called it informative and overwhelming in the same breath — that contradiction was the finding: transparency is not showing everything, it is showing where you are.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">Veterans called it informative and overwhelming in the same breath — that contradiction was the finding: transparency is not showing everything, it is showing where you are.</p>
 
-      <img class="breakout" src="images/wireframes-exploration-1-navy.png" alt="Wireframes — exploration 1" draggable="false" style="display: block; height: auto; aspect-ratio: 2352/1168; background: #FBF7F0; pointer-events: none; user-select: none">
+      <img class="breakout" src="./wireframes-exploration-1-navy.png" alt="Wireframes — exploration 1" draggable="false" style="display: block; height: auto; aspect-ratio: 2352/1168; background: #FAF7F2; pointer-events: none; user-select: none">
 
       
     </div>
@@ -334,24 +300,24 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ EXPLORATION II ============ -->
     <div>
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F2EA; background: #026C96; padding: 4px 10px">Final design · shipped</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">One step at a time</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Final design · shipped)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">One step at a time</h4>
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">The stepper won because it answers the only question a veteran reliably has: where am I, and what is my next move.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">The stepper won because it answers the only question a veteran reliably has: where am I, and what is my next move.</p>
 
-      <div id="stepper-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #DFD5C3; background: #FBF7F0">
-        <img src="images/wireframes-exploration-2-navy.png" alt="Wireframes — exploration 2" draggable="false" style="display: block; width: 100%; height: auto; aspect-ratio: 2352/1144; pointer-events: none; user-select: none">
-        <div id="stepper-final-layer" style="position: absolute; inset: 0; background: #FBF7F0; clip-path: inset(0 0 0 86%)">
+      <div id="stepper-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #E3DED6; background: #FAF7F2">
+        <img src="./wireframes-exploration-2-navy.png" alt="Wireframes — exploration 2" draggable="false" style="display: block; width: 100%; height: auto; aspect-ratio: 2352/1144; pointer-events: none; user-select: none">
+        <div id="stepper-final-layer" style="position: absolute; inset: 0; background: #FAF7F2; clip-path: inset(0 0 0 86%)">
           <div style="position: absolute; inset: 0; padding: 10.02% 3.8% 10.99%; box-sizing: border-box; display: flex; align-items: stretch; justify-content: center; gap: 4%">
-            <img src="images/stepper-final-home.png" alt="Final dashboard — gather information" style="display: block; height: 100%; width: auto; max-width: 46%; object-fit: contain; border: 0.5px solid #D6CDBB; box-shadow: 0 12px 32px rgba(38,34,27,0.12); box-sizing: border-box">
-            <img src="images/stepper-final-completed.png" alt="Final dashboard — step completed" style="display: block; height: 100%; width: auto; max-width: 46%; object-fit: contain; border: 0.5px solid #D6CDBB; box-shadow: 0 12px 32px rgba(38,34,27,0.12); box-sizing: border-box">
+            <img src="./stepper-final-home.png" alt="Final dashboard — gather information" style="display: block; height: 100%; width: auto; max-width: 46%; object-fit: contain; border: 0.5px solid #E3DED6; box-sizing: border-box">
+            <img src="./stepper-final-completed.png" alt="Final dashboard — step completed" style="display: block; height: 100%; width: auto; max-width: 46%; object-fit: contain; border: 0.5px solid #E3DED6; box-sizing: border-box">
           </div>
         </div>
-        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #8A8171; border: 1px solid #DFD5C3; background: #F7F2EA; padding: 3px 10px">WIREFRAME</span>
-        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #F7F2EA; background: #026C96; padding: 3px 10px">FINAL</span>
+        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #6B6560; border: 1px solid #E3DED6; background: #FAF7F2; padding: 3px 10px">(Wireframe)</span>
+        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #FAF7F2; background: #1E3A5F; padding: 3px 10px">(Final)</span>
         <div id="stepper-compare-handle" style="position: absolute; top: 0; bottom: 0; left: 86%; width: 0; cursor: ew-resize; touch-action: none; z-index: 3">
-          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #026C96"></div>
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; background: #026C96; color: #F7F2EA; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 4px 12px rgba(38,34,27,0.25)">⇄</div>
+          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #1E3A5F"></div>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: #1E3A5F; color: #FAF7F2; display: flex; align-items: center; justify-content: center; font-size: 14px">⇄</div>
         </div>
       </div>
 
@@ -362,57 +328,57 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     </section>
 
   <section id="questionnaire" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process — Retire the form">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Process 03: Retire the form</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Turn the questionnaire into a conversation</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Process 03 · Retire the form)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Turn the questionnaire into a conversation</h2>
     <div data-reveal="">
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">The fight of the project: our medical consultant’s red line was legal defensibility — the output had to file as a real DBQ; mine was that a veteran with no medical vocabulary could finish alone. The card system below is how both red lines held.</p>
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">The fight of the project: our medical consultant’s red line was legal defensibility — the output had to file as a real DBQ; mine was that a veteran with no medical vocabulary could finish alone. The card system below is how both red lines held.</p>
       
       <!-- ============ STAGE I: PAPER BASELINE ============ -->
     <div style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">The starting point</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Fourteen pages of paper</h4>
+        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(The starting point)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Fourteen pages of paper</h4>
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">The audit came first: clinical terminology, no guidance anywhere, and one misread field meant weeks of delay.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">The audit came first: clinical terminology, no guidance anywhere, and one misread field meant weeks of delay.</p>
 
       <div class="breakout dbq-paper-row" style="display: flex; gap: 24px; justify-content: center">
-        <img src="images/dbq-paper-page1.png" alt="Real VA ankle DBQ, page 1: identification and evidence review" style="display: block; flex: 1 1 0; min-width: 0; width: 50%; height: auto; align-self: flex-start; border: 1px solid #C9BFA9; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
-        <img src="images/dbq-paper-rom.png" alt="Real VA ankle DBQ, page 5: range of motion degree fields" style="display: block; flex: 1 1 0; min-width: 0; width: 50%; height: auto; align-self: flex-start; border: 1px solid #C9BFA9; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
+        <img src="./dbq-paper-page1.png" alt="Real VA ankle DBQ, page 1: identification and evidence review" style="display: block; flex: 1 1 0; min-width: 0; width: 50%; height: auto; align-self: flex-start; border: 1px solid #E3DED6">
+        <img src="./dbq-paper-rom.png" alt="Real VA ankle DBQ, page 5: range of motion degree fields" style="display: block; flex: 1 1 0; min-width: 0; width: 50%; height: auto; align-self: flex-start; border: 1px solid #E3DED6">
       </div>
     </div>
 
     <!-- ============ STAGE II: DECONSTRUCT ============ -->
     <div style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Deconstruct</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Map every field, translate every question</h4>
+        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(Deconstruct)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Map every field, translate every question</h4>
       </div>
-      <div style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty"><div>You cannot simplify a question until you know what the VA needs from the answer — so I mapped every field to its intent first, and only then rewrote the words.</div></div>
+      <div style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty"><div>You cannot simplify a question until you know what the VA needs from the answer — so I mapped every field to its intent first, and only then rewrote the words.</div></div>
 
-      <div class="breakout dbq-map-row" style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08); padding: 36px 40px; display: flex; gap: 36px; align-items: stretch">
+      <div class="breakout dbq-map-row" style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 36px 40px; display: flex; gap: 36px; align-items: stretch">
           <div style="flex: 1.1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">PAPER FIELD</span>
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">PAPER FIELD</span>
             <div style="border: 1px solid #E7E3DB; padding: 8px 10px; font-size: 10.5px; color: #6B6558; font-style: italic">"Flexion endpoint (degrees), active ROM"</div>
             <div style="border: 1px solid #E7E3DB; padding: 8px 10px; font-size: 10.5px; color: #6B6558; font-style: italic">"Etiology of the claimed condition"</div>
             <div style="border: 1px solid #E7E3DB; padding: 8px 10px; font-size: 10.5px; color: #6B6558; font-style: italic">"Ankylosis present? Specify severity"</div>
             <div style="border: 1px solid #E7E3DB; padding: 8px 10px; font-size: 10.5px; color: #6B6558; font-style: italic">"Functional loss and contributing factors"</div>
           </div>
           <div style="display: flex; flex-direction: column; justify-content: space-around; gap: 8px; padding-top: 24px">
-            <span style="color: #026C96; font-size: 14px">→</span>
-            <span style="color: #026C96; font-size: 14px">→</span>
-            <span style="color: #026C96; font-size: 14px">→</span>
-            <span style="color: #026C96; font-size: 14px">→</span>
+            <span style="color: #1E3A5F; font-size: 14px">→</span>
+            <span style="color: #1E3A5F; font-size: 14px">→</span>
+            <span style="color: #1E3A5F; font-size: 14px">→</span>
+            <span style="color: #1E3A5F; font-size: 14px">→</span>
           </div>
           <div style="flex: 1.3 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">PLAIN LANGUAGE QUESTION</span>
-            <div style="border: 1px solid #C9BFA9; background: #FBF7F0; padding: 8px 10px; font-size: 10.5px; color: #26221B">How far can you bend your ankle before it hurts?</div>
-            <div style="border: 1px solid #C9BFA9; background: #FBF7F0; padding: 8px 10px; font-size: 10.5px; color: #26221B">Tell us how this condition started.</div>
-            <div style="border: 1px solid #C9BFA9; background: #FBF7F0; padding: 8px 10px; font-size: 10.5px; color: #26221B">Does the joint lock or freeze in place?</div>
-            <div style="border: 1px solid #C9BFA9; background: #FBF7F0; padding: 8px 10px; font-size: 10.5px; color: #26221B">What daily activities does this make harder?</div>
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">PLAIN LANGUAGE QUESTION</span>
+            <div style="border: 1px solid #E3DED6; background: #FAF7F2; padding: 8px 10px; font-size: 10.5px; color: #141414">How far can you bend your ankle before it hurts?</div>
+            <div style="border: 1px solid #E3DED6; background: #FAF7F2; padding: 8px 10px; font-size: 10.5px; color: #141414">Tell us how this condition started.</div>
+            <div style="border: 1px solid #E3DED6; background: #FAF7F2; padding: 8px 10px; font-size: 10.5px; color: #141414">Does the joint lock or freeze in place?</div>
+            <div style="border: 1px solid #E3DED6; background: #FAF7F2; padding: 8px 10px; font-size: 10.5px; color: #141414">What daily activities does this make harder?</div>
           </div>
           <div style="flex: 0.9 1 0; min-width: 0; border-left: 1px solid #E7E3DB; padding-left: 24px; display: flex; flex-direction: column; gap: 6px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">REGROUPED INTO 9 SECTIONS</span>
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.12em; color: #8C8577">REGROUPED INTO 9 SECTIONS</span>
             <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10px; color: #4A4438">
               <span>01 Condition history</span>
               <span>02 Symptoms &amp; range of motion</span>
@@ -433,17 +399,17 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ STAGE III: QUESTION SYSTEM ============ -->
     <div style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Systematize</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">A question card for every kind of answer</h4>
+        <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(Systematize)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">A question card for every kind of answer</h4>
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">I shaped the cards around how a veteran answers, not how the VA asks, and hid every follow-up until an answer earns it, because each visible-but-irrelevant question is one more reason to call for help.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">I shaped the cards around how a veteran answers, not how the VA asks, and hid every follow-up until an answer earns it, because each visible-but-irrelevant question is one more reason to call for help.</p>
 
       <div class="breakout dbq-cards-row" style="display: flex; gap: 24px; justify-content: center">
 
         <!-- Card type 1: short answer -->
         <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08); padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 1 OF 6</span>
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 1 OF 6</span>
             <span style="font-size: 11.5px; font-weight: 700; color: #3A3529; line-height: 1.4">Tell us how this condition started.</span>
             <div style="height: 4px; width: 70%; background: #EDEAE3"></div>
             <div style="border: 1.5px solid #6B6558; border-radius: 4px; height: 64px; padding: 8px"><div style="height: 4px; width: 85%; background: #E7E3DB"></div><div style="height: 4px; width: 62%; background: #E7E3DB; margin-top: 5px"></div></div>
@@ -456,14 +422,14 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 
         <!-- Card type 2: yes/no gated -->
         <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08); padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 3 OF 6</span>
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 3 OF 6</span>
             <span style="font-size: 11.5px; font-weight: 700; color: #3A3529; line-height: 1.4">Have you been treated for shin splints?</span>
             <div style="display: flex; gap: 8px">
               <span style="flex: 1; border: 1.5px solid #3A3529; background: #F1EEE8; border-radius: 4px; padding: 6px 0; font-size: 9.5px; font-weight: 700; color: #3A3529; text-align: center">Yes</span>
               <span style="flex: 1; border: 1px solid #C9C3B7; border-radius: 4px; padding: 6px 0; font-size: 9.5px; color: #8C8577; text-align: center">No</span>
             </div>
-            <div style="border-left: 2px solid #C9BFA9; padding-left: 10px; display: flex; flex-direction: column; gap: 6px">
+            <div style="border-left: 2px solid #E3DED6; padding-left: 10px; display: flex; flex-direction: column; gap: 6px">
               <span style="font-size: 9px; color: #6B6558">Which treatments have you tried?</span>
               <div style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; background: #0C213D; border-radius: 2px; color: #FFFFFF; font-size: 6px; line-height: 8px; text-align: center">✓</span><span style="font-size: 9px; color: #4A4438">Shoe orthotics</span></div>
               <div style="display: flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border: 1.2px solid #B9B4AA; border-radius: 2px"></span><span style="font-size: 9px; color: #8C8577">Physical therapy</span></div>
@@ -477,8 +443,8 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 
         <!-- Card type 3: ROM slider -->
         <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08); padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
-            <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 5 OF 6</span>
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 16px 18px; display: flex; flex-direction: column; gap: 9px">
+            <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 5 OF 6</span>
             <span style="font-size: 11.5px; font-weight: 700; color: #3A3529; line-height: 1.4">How far can you bend your ankle upward?</span>
             <div style="display: flex; align-items: center; justify-content: center; padding: 6px 0">
               <div style="position: relative; width: 74px; height: 40px">
@@ -486,7 +452,7 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
                 <div style="position: absolute; left: 8px; bottom: 4px; width: 50px; height: 3px; background: #0C213D; border-radius: 2px; transform: rotate(-24deg); transform-origin: left bottom"></div>
                 <div style="position: absolute; left: 4px; bottom: 0; width: 10px; height: 10px; border-radius: 50%; background: #3A3529"></div>
               </div>
-              <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 12px; color: #3A3529; margin-left: 10px">17°</span>
+              <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 12px; color: #3A3529; margin-left: 10px">17°</span>
             </div>
             <div style="position: relative; height: 12px">
               <div style="position: absolute; left: 0; right: 0; top: 5px; height: 3px; background: #E7E3DB; border-radius: 2px"></div>
@@ -506,23 +472,23 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ STAGE IV: SHIPPED ============ -->
     <div>
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F2EA; background: #026C96; padding: 4px 10px">Final design · shipped</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">The self-service questionnaire</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Final design · shipped)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">The self-service questionnaire</h4>
       </div>
       
 
-      <div id="dbq-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #DFD5C3; background: #FBF7F0; padding: 40px 40px; display: flex; gap: 48px; flex-wrap: wrap; justify-content: center">
+      <div id="dbq-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #E3DED6; background: #FAF7F2; padding: 40px 40px; display: flex; gap: 48px; flex-wrap: wrap; justify-content: center">
 
         <!-- Frame F1: questionnaire screen -->
         <div style="flex: 0 1 520px; min-width: 440px; display: flex; flex-direction: column">
-          <div id="dbq-wire-box" style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
+          <div id="dbq-wire-box" style="border: 1px solid #E3DED6; background: #FFFFFF">
             <div style="height: 26px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: #0C213D">
-              <span style="width: 34px; height: 7px; background: #FBF7F0; border-radius: 3px"></span>
+              <span style="width: 34px; height: 7px; background: #FAF7F2; border-radius: 3px"></span>
               <span style="margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
               <span style="width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
             </div>
             <div style="display: flex; min-height: 300px">
-              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 12px; height: 12px; border-radius: 3px; background: #FBF7F0"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
+              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 12px; height: 12px; border-radius: 3px; background: #FAF7F2"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
               <div style="flex: 1; padding: 14px 18px; box-sizing: border-box">
                 <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 14px">
                   <span style="width: 10px; height: 10px; border-radius: 50%; background: #0C213D; color: #FFFFFF; font-size: 7px; line-height: 10px; text-align: center">✓</span>
@@ -538,12 +504,12 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
                 </div>
                 <div style="max-width: 340px; margin: 0 auto; display: flex; flex-direction: column; gap: 7px">
                   <div style="border: 1px solid #E8E4DC; border-radius: 4px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px">
-                    <div style="display: flex; align-items: center"><span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 1 OF 6</span><span style="margin-left: auto; width: 9px; height: 9px; border-radius: 50%; background: #0C213D; color: #FFFFFF; font-size: 6px; line-height: 9px; text-align: center">✓</span></div>
+                    <div style="display: flex; align-items: center"><span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 1 OF 6</span><span style="margin-left: auto; width: 9px; height: 9px; border-radius: 50%; background: #0C213D; color: #FFFFFF; font-size: 6px; line-height: 9px; text-align: center">✓</span></div>
                     <span style="font-size: 10.5px; font-weight: 700; color: #3A3529; line-height: 1.4">Tell us how this condition started.</span>
                     <div style="border: 1px solid #E8E4DC; border-radius: 4px; padding: 6px 8px"><div style="height: 3.5px; width: 88%; background: #D9D4CA"></div><div style="height: 3.5px; width: 64%; background: #D9D4CA; margin-top: 4px"></div></div>
                   </div>
                   <div style="border: 1.5px solid #0C213D; border-radius: 4px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; background: #FFFFFF">
-                    <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 2 OF 6</span>
+                    <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 2 OF 6</span>
                     <span style="font-size: 10.5px; font-weight: 700; color: #3A3529; line-height: 1.4">How far can you bend your ankle upward?</span>
                     <div style="position: relative; height: 12px; margin-top: 2px">
                       <div style="position: absolute; left: 0; right: 0; top: 5px; height: 3px; background: #E7E3DB; border-radius: 2px"></div>
@@ -556,7 +522,7 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
                     </div>
                   </div>
                   <div style="border: 1px solid #E8E4DC; border-radius: 4px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; opacity: 0.5">
-                    <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 3 OF 6</span>
+                    <span style="font-family: 'Geist', sans-serif; font-weight: 500; font-size: 8px; letter-spacing: 0.1em; color: #B9B4AA">QUESTION 3 OF 6</span>
                     <span style="font-size: 10.5px; font-weight: 700; color: #3A3529; line-height: 1.4">Have you been treated for shin splints?</span>
                     <div style="display: flex; gap: 8px"><span style="flex: 1; border: 1px solid #C9C3B7; border-radius: 4px; padding: 5px 0; font-size: 9px; color: #8C8577; text-align: center">Yes</span><span style="flex: 1; border: 1px solid #C9C3B7; border-radius: 4px; padding: 5px 0; font-size: 9px; color: #8C8577; text-align: center">No</span></div>
                   </div>
@@ -568,14 +534,14 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 
         
       
-        <div id="dbq-final-layer" style="position: absolute; inset: 0; background: #FBF7F0; clip-path: inset(0 0 0 86%)">
-          <img id="dbq-final-img" src="images/dbq-final.png?v=2" alt="Final high-fidelity questionnaire screen" style="position: absolute; display: block;  border: 0.5px solid #D6CDBB; box-shadow: 0 12px 32px rgba(38,34,27,0.08); box-sizing: border-box">
+        <div id="dbq-final-layer" style="position: absolute; inset: 0; background: #FAF7F2; clip-path: inset(0 0 0 86%)">
+          <img id="dbq-final-img" src="./dbq-final.png?v=2" alt="Final high-fidelity questionnaire screen" style="position: absolute; display: block;  border: 0.5px solid #E3DED6; box-sizing: border-box">
         </div>
-        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #8A8171; border: 1px solid #DFD5C3; background: #F7F2EA; padding: 3px 10px">WIREFRAME</span>
-        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #F7F2EA; background: #026C96; padding: 3px 10px">FINAL</span>
+        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #6B6560; border: 1px solid #E3DED6; background: #FAF7F2; padding: 3px 10px">(Wireframe)</span>
+        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #FAF7F2; background: #1E3A5F; padding: 3px 10px">(Final)</span>
         <div id="dbq-compare-handle" style="position: absolute; top: 0; bottom: 0; left: 86%; width: 0; cursor: ew-resize; touch-action: none; z-index: 3">
-          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #026C96"></div>
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; background: #026C96; color: #F7F2EA; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 4px 12px rgba(38,34,27,0.25)">⇄</div>
+          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #1E3A5F"></div>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: #1E3A5F; color: #FAF7F2; display: flex; align-items: center; justify-content: center; font-size: 14px">⇄</div>
         </div>
       </div>
 
@@ -586,33 +552,33 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     </section>
 
   <section id="documents" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process — Close the loops">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Process 04: Close the loops</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">A document center that runs on status</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Process 04 · Close the loops)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">A document center that runs on status</h2>
     <div data-reveal="">
       
       <div style="margin-bottom:40px">
-<div style="margin: 0 0 40px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty"><div>The first Document Center treated documents as files in a drawer; the shipped one treats them as states: every document says where it stands and what to do next.</div></div>
+<div style="margin: 0 0 40px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty"><div>The first Document Center treated documents as files in a drawer; the shipped one treats them as states: every document says where it stands and what to do next.</div></div>
 
     <!-- ============ I: FLAT FILE DRAWER ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Explored · set aside</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Starting point: a flat file drawer</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B6560">(Explored · set aside)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Starting point: a flat file drawer</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">The obvious first draft: a table of uploads. But a rejected buddy statement looks identical to an accepted X-ray, and nothing says <em>what needs the veteran's attention</em>.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">The obvious first draft: a table of uploads. But a rejected buddy statement looks identical to an accepted X-ray, and nothing says <em>what needs the veteran's attention</em>.</p>
 
-      <div class="breakout" style="border: 1px solid #DFD5C3; background: #FBF7F0; padding: 48px 40px; display: flex; gap: 48px; flex-wrap: wrap; justify-content: center">
+      <div class="breakout" style="border: 1px solid #E3DED6; background: #FAF7F2; padding: 48px 40px; display: flex; gap: 48px; flex-wrap: wrap; justify-content: center">
         <div style="flex: 0 1 560px; min-width: 460px; display: flex; flex-direction: column">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF">
             <div style="height: 26px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: #0C213D">
-              <span style="width: 34px; height: 7px; background: #FBF7F0; border-radius: 3px"></span>
+              <span style="width: 34px; height: 7px; background: #FAF7F2; border-radius: 3px"></span>
               <span style="margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
               <span style="width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
             </div>
             <div style="display: flex; min-height: 300px">
-              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 12px; height: 12px; border-radius: 3px; background: #FBF7F0"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
+              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 12px; height: 12px; border-radius: 3px; background: #FAF7F2"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
               <div style="flex: 1; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px">
                 <div style="display: flex; align-items: center"><span style="font-size: 12px; font-weight: 700; color: #3A3529">My Documents</span></div>
                 <div style="display: grid; grid-template-columns: 2.2fr 1fr 1fr 0.5fr; gap: 8px; padding: 5px 8px; border-bottom: 1px solid #E8E4DC">
@@ -635,15 +601,15 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ IV: SURFACING WHAT NEEDS ATTENTION ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Chosen direction</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Making the urgent impossible to miss</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Chosen direction)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Making the urgent impossible to miss</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">Once documents had a vocabulary, sorting, filtering, and badging stopped being separate decisions; they are the same five words repeated. That is why I designed the words before the screens.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">Once documents had a vocabulary, sorting, filtering, and badging stopped being separate decisions; they are the same five words repeated. That is why I designed the words before the screens.</p>
 
       <div class="breakout row-4" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">PRIORITY SORT</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">PRIORITY SORT</p>
           <div style="display: flex; flex-direction: column; gap: 5px">
             <div style="display: flex; align-items: center; gap: 7px; border-left: 3px solid #C13B67; background: #FBF9F5; padding: 6px 8px"><span style="font-size: 8.5px; font-weight: 700; color: #3A3529">Rejected first</span></div>
             <div style="display: flex; align-items: center; gap: 7px; border-left: 3px solid #D9A93E; background: #FBF9F5; padding: 6px 8px"><span style="font-size: 8.5px; font-weight: 700; color: #3A3529">Then awaiting upload</span></div>
@@ -651,8 +617,8 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           </div>
           
         </div>
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">STATUS FILTER TABS</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">STATUS FILTER TABS</p>
           <div style="display: flex; flex-wrap: wrap; gap: 5px">
             <span style="border-radius: 999px; padding: 4px 10px; font-size: 8px; font-weight: 700; background: #0C213D; color: #FFFFFF">All Documents</span>
             <span style="border-radius: 999px; padding: 4px 10px; font-size: 8px; border: 1px solid #D9D4CA; color: #6B6558">Uploaded</span>
@@ -661,18 +627,18 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           </div>
           
         </div>
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">NAV ATTENTION BADGE</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">NAV ATTENTION BADGE</p>
           <div style="background: #0C213D; padding: 10px 12px; display: flex; flex-direction: column; gap: 7px; border-radius: 3px">
             <span style="font-size: 8.5px; color: #A39C8E">Home</span>
             <span style="font-size: 8.5px; color: #A39C8E">My Claims</span>
-            <span style="display: flex; align-items: center; font-size: 8.5px; font-weight: 700; color: #FBF7F0">Document Center<span style="margin-left: auto; background: #C13B67; color: #FFFFFF; border-radius: 999px; padding: 1px 6px; font-size: 7.5px; font-weight: 700">2</span></span>
+            <span style="display: flex; align-items: center; font-size: 8.5px; font-weight: 700; color: #FAF7F2">Document Center<span style="margin-left: auto; background: #C13B67; color: #FFFFFF; border-radius: 999px; padding: 1px 6px; font-size: 7.5px; font-weight: 700">2</span></span>
             <span style="font-size: 8.5px; color: #A39C8E">Support Center</span>
           </div>
           
         </div>
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">TYPED UPLOAD MODAL</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">TYPED UPLOAD MODAL</p>
           <div style="border: 1px solid #E8E4DC; border-radius: 4px; overflow: hidden">
             <div style="background: #0C213D; color: #FFFFFF; font-size: 8.5px; font-weight: 700; padding: 6px 9px">Upload document</div>
             <div style="padding: 9px; display: flex; flex-direction: column; gap: 6px">
@@ -690,40 +656,40 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ II: STATUS LANGUAGE ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Chosen direction</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">A five-state status language</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Chosen direction)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">A five-state status language</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">The redesign started with vocabulary, not screens: five states, split by one question — is the veteran needed, or are we? Everything visual just repeats that answer.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">The redesign started with vocabulary, not screens: five states, split by one question — is the veteran needed, or are we? Everything visual just repeats that answer.</p>
 
       <div class="breakout" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 18px">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); border-left: 4px solid #D9A93E; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; border-left: 4px solid #D9A93E; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 5px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #F5EDDA; color: #7A5E1A">○ Awaiting upload</span>
-            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Missing: the row describes what it is and where to find it.</p>
+            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #141414">Missing: the row describes what it is and where to find it.</p>
             
           </div>
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); border-left: 4px solid #7A5CB8; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; border-left: 4px solid #7A5CB8; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 5px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #EEE8F7; color: #5A3F96">↑ Uploaded</span>
-            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Received and queued for review.</p>
-            <span style="margin-top: auto; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #8A8171">TEAM ACTS</span>
+            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #141414">Received and queued for review.</p>
+            <span style="margin-top: auto; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #6B6560">TEAM ACTS</span>
           </div>
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); border-left: 4px solid #4A8FB5; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; border-left: 4px solid #4A8FB5; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 5px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #E3EEF4; color: #2E6484">◔ In review</span>
-            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">A case manager is verifying it meets VA requirements.</p>
-            <span style="margin-top: auto; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #8A8171">TEAM ACTS</span>
+            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #141414">A case manager is verifying it meets VA requirements.</p>
+            <span style="margin-top: auto; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #6B6560">TEAM ACTS</span>
           </div>
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); border-left: 4px solid #4A6B4F; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; border-left: 4px solid #4A6B4F; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 5px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #E7EFE8; color: #33503A">✓ Accepted</span>
-            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Cleared for the claim file. No action needed again.</p>
-            <span style="margin-top: auto; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #8A8171">DONE</span>
+            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #141414">Cleared for the claim file. No action needed again.</p>
+            <span style="margin-top: auto; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #6B6560">DONE</span>
           </div>
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); border-left: 4px solid #C13B67; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; border-left: 4px solid #C13B67; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px">
             <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 5px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #F8E4EA; color: #96274C">✕ Rejected</span>
-            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Didn't meet requirements: the reason appears inline with Replace.</p>
+            <p style="margin: 0; font-size: 12.5px; line-height: 1.6; color: #141414">Didn't meet requirements: the reason appears inline with Replace.</p>
             
           </div>
         </div>
-      <p style="margin: 20px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.1em; line-height: 1.8; color: #026C96">Fixed color per state, everywhere it appears: row stripe, badge, filter tab, dashboard count</p>
+      <p style="margin: 20px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.1em; line-height: 1.8; color: #1E3A5F">Fixed color per state, everywhere it appears: row stripe, badge, filter tab, dashboard count</p>
 
       
     </section>
@@ -731,22 +697,22 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ III: ACTIONS FOLLOW STATUS ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F2EA; background: #026C96; padding: 4px 10px">Final design · shipped</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Actions follow status</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Final design · shipped)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Actions follow status</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">Each row offers only the actions its state allows: Awaiting gets one Upload button, Rejected gets the reason inline plus Replace. The row itself is the instruction.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">Each row offers only the actions its state allows: Awaiting gets one Upload button, Rejected gets the reason inline plus Replace. The row itself is the instruction.</p>
 
-      <div id="doc-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #DFD5C3; background: #FBF7F0; padding: 48px 40px; display: flex; justify-content: center">
+      <div id="doc-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #E3DED6; background: #FAF7F2; padding: 48px 40px; display: flex; justify-content: center">
         <div style="flex: 0 1 640px; min-width: 460px; display: flex; flex-direction: column">
-          <div id="doc-wire-box" style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
+          <div id="doc-wire-box" style="border: 1px solid #E3DED6; background: #FFFFFF">
             <div style="height: 26px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: #0C213D">
-              <span style="width: 34px; height: 7px; background: #FBF7F0; border-radius: 3px"></span>
+              <span style="width: 34px; height: 7px; background: #FAF7F2; border-radius: 3px"></span>
               <span style="margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
               <span style="width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
             </div>
             <div style="display: flex; min-height: 320px">
-              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 12px; height: 12px; border-radius: 3px; background: #FBF7F0"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
+              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 9px; height: 9px; border-radius: 2px; background: #5B7495"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 12px; height: 12px; border-radius: 3px; background: #FAF7F2"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
               <div style="flex: 1; padding: 16px 18px; display: flex; flex-direction: column; gap: 0">
                 <span style="font-size: 12px; font-weight: 700; color: #3A3529; margin-bottom: 10px">Document Center</span>
                 <div style="display: flex; align-items: center; gap: 10px; padding: 9px 10px 9px 8px; border-left: 3px solid #C13B67; border-bottom: 1px solid #F1EEE8">
@@ -778,14 +744,14 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           </div>
           </div>
       
-        <div id="doc-final-layer" style="position: absolute; inset: 0; background: #FBF7F0; clip-path: inset(0 0 0 86%)">
-          <img id="doc-final-img" src="images/doc-final.png" alt="Final document center screen" style="position: absolute; display: block; border: 0.5px solid #D6CDBB; box-shadow: 0 12px 32px rgba(38,34,27,0.08); box-sizing: border-box">
+        <div id="doc-final-layer" style="position: absolute; inset: 0; background: #FAF7F2; clip-path: inset(0 0 0 86%)">
+          <img id="doc-final-img" src="./doc-final.png" alt="Final document center screen" style="position: absolute; display: block; border: 0.5px solid #E3DED6; box-sizing: border-box">
         </div>
-        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #8A8171; border: 1px solid #DFD5C3; background: #F7F2EA; padding: 3px 10px">WIREFRAME</span>
-        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #F7F2EA; background: #026C96; padding: 3px 10px">FINAL</span>
+        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #6B6560; border: 1px solid #E3DED6; background: #FAF7F2; padding: 3px 10px">(Wireframe)</span>
+        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #FAF7F2; background: #1E3A5F; padding: 3px 10px">(Final)</span>
         <div id="doc-compare-handle" style="position: absolute; top: 0; bottom: 0; left: 86%; width: 0; cursor: ew-resize; touch-action: none; z-index: 3">
-          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #026C96"></div>
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; background: #026C96; color: #F7F2EA; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 4px 12px rgba(38,34,27,0.25)">⇄</div>
+          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #1E3A5F"></div>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: #1E3A5F; color: #FAF7F2; display: flex; align-items: center; justify-content: center; font-size: 14px">⇄</div>
         </div>
       </div>
 
@@ -796,56 +762,56 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     </section>
 
   <section id="scheduling" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process — Book the evaluation">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Process 05: Book the evaluation</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">How much to show</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Process 05 · Book the evaluation)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">How much to show</h2>
     <div data-reveal="">
       <div style="margin-bottom:40px">
-<p style="margin: 0 0 40px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">Step 5 books C&amp;P evaluations through the partner network, and it forced the project’s hardest trade. Veterans wanted instant booking and a visible address. Clinics confirm every appointment by hand, so instant booking would be a lie; a visible address would let veterans book around VBG, when the network is the business. I designed the truth instead: trust built with less information, as long as what you show is honest and what you hide has a schedule.</p>
+<p style="margin: 0 0 40px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">Step 5 books C&amp;P evaluations through the partner network, and it forced the project’s hardest trade. Veterans wanted instant booking and a visible address. Clinics confirm every appointment by hand, so instant booking would be a lie; a visible address would let veterans book around VBG, when the network is the business. I designed the truth instead: trust built with less information, as long as what you show is honest and what you hide has a schedule.</p>
 
     <!-- ============ II: REQUEST, DON'T BOOK ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Chosen direction</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Request, don't book: a three-state flow</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Chosen direction)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Request, don't book: a three-state flow</h4>
         
       </div>
       
 
       <div class="breakout sched-flow" style="display: flex; align-items: stretch; gap: 0; justify-content: center">
-          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 18px">
+          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #E3DED6; background: #FFFFFF; padding: 18px">
             <span style="display: inline-block; background: #EEECE7; color: #6B6558; border-radius: 4px; padding: 4px 9px; font-size: 9px; font-weight: 700; letter-spacing: 0.06em">READY TO SCHEDULE</span>
-            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Veteran picks a real date and a real slot from the network's availability.</p>
+            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #141414">Veteran picks a real date and a real slot from the network's availability.</p>
             
           </div>
           <div style="align-self: center; padding: 0 14px; font-size: 18px; color: #7FB4CE">→</div>
-          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 18px">
+          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #E3DED6; background: #FFFFFF; padding: 18px">
             <span style="display: inline-block; background: #F5EDDA; color: #7A5E1A; border-radius: 4px; padding: 4px 9px; font-size: 9px; font-weight: 700; letter-spacing: 0.06em">◔ AWAITING CONFIRMATION</span>
-            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">The request is echoed back verbatim; the clinic confirms within a business day.</p>
-            <span style="display: block; margin-top: 10px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #8A8171">NETWORK ACTS</span>
+            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #141414">The request is echoed back verbatim; the clinic confirms within a business day.</p>
+            <span style="display: block; margin-top: 10px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #6B6560">NETWORK ACTS</span>
           </div>
           <div style="align-self: center; padding: 0 14px; font-size: 18px; color: #7FB4CE">→</div>
-          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 18px">
+          <div style="flex: 1 1 0; min-width: 0; border: 1px solid #E3DED6; background: #FFFFFF; padding: 18px">
             <span style="display: inline-block; background: #E3EEF4; color: #2E6484; border-radius: 4px; padding: 4px 9px; font-size: 9px; font-weight: 700; letter-spacing: 0.06em">✓ APPOINTMENT SCHEDULED</span>
-            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #3E3930">Full detail grid: date, time, examiner, network, contact, and a location that stays partly hidden.</p>
-            <span style="display: block; margin-top: 10px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #8A8171">DONE · UNLOCKS PENDING</span>
+            <p style="margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: #141414">Full detail grid: date, time, examiner, network, contact, and a location that stays partly hidden.</p>
+            <span style="display: block; margin-top: 10px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9px; letter-spacing: 0.1em; color: #6B6560">DONE · UNLOCKS PENDING</span>
           </div>
         </div>
-      <p style="margin: 20px 0 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.1em; line-height: 1.8; color: #026C96">The amber state is honest waiting: it names who's acting and how long it takes</p>
+      <p style="margin: 20px 0 0; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.1em; line-height: 1.8; color: #1E3A5F">The amber state is honest waiting: it names who's acting and how long it takes</p>
     </section>
 
     <!-- ============ III: HIDE THE LOCATION ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Chosen direction</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Protecting the business: the area-only map</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Chosen direction)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Protecting the business: the area-only map</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">A visible clinic address would let a veteran book around VBG. The compromise: show <em>enough</em> to plan (area, travel time) but not enough to bypass the network.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">A visible clinic address would let a veteran book around VBG. The compromise: show <em>enough</em> to plan (area, travel time) but not enough to bypass the network.</p>
 
       <div class="breakout" style="display: flex; justify-content: center">
         <div style="flex: 0 1 720px; min-width: 0; display: flex; flex-direction: column">
-          <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08); padding: 16px 18px">
+          <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 16px 18px">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
               <div style="background: #F6F4EF; border-radius: 4px; padding: 9px">
                 <span style="font-size: 7px; font-weight: 700; letter-spacing: 0.06em; color: #8C8577">LOCATION</span>
@@ -866,7 +832,7 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
               <div style="position: absolute; right: 30px; bottom: 18px; width: 90px; height: 44px; border-radius: 8px; background: #E4E8DD"></div>
               <div style="position: absolute; left: 50%; top: 50%; width: 110px; height: 110px; margin: -55px 0 0 -55px; border: 2px dashed #4A8FB5; border-radius: 50%; background: rgba(74,143,181,0.08)"></div>
               <div style="position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; background: #2E6484"></div>
-              <div style="position: absolute; left: 10px; bottom: 10px; background: #FFFFFF; border-radius: 999px; padding: 5px 10px; font-size: 7.5px; color: #4A4438; box-shadow: 0 2px 8px rgba(38,34,27,0.12)"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#4A4438" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Approximate area shown; exact address appears 48 hours before your appointment</div>
+              <div style="position: absolute; left: 10px; bottom: 10px; background: #FFFFFF; border-radius: 999px; padding: 5px 10px; font-size: 7.5px; color: #4A4438"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#4A4438" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Approximate area shown; exact address appears 48 hours before your appointment</div>
             </div>
           </div>
           </div>
@@ -877,15 +843,15 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ IV: TIME-BASED UNLOCKS ============ -->
     <section style="margin-bottom:120px">
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8171; border: 1px solid #DFD5C3; padding: 3px 10px">Chosen direction</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">Unlock on a clock, not a click</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Chosen direction)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">Unlock on a clock, not a click</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">Hidden things need a promise of when. The in-person address unlocks at 48 hours — already when the reminder email goes out and clinics stop taking reschedules, so it lands on a beat veterans were listening for, and too late to be worth going around us. The video link needs no travel planning, so it waits until 15 minutes.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">Hidden things need a promise of when. The in-person address unlocks at 48 hours — already when the reminder email goes out and clinics stop taking reschedules, so it lands on a beat veterans were listening for, and too late to be worth going around us. The video link needs no travel planning, so it waits until 15 minutes.</p>
 
       <div class="breakout" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px">
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">IN PERSON · T-48 HOURS</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">IN PERSON · T-48 HOURS</p>
           <div style="display: flex; align-items: center; gap: 10px">
             <div style="flex: 1; background: #F6F4EF; border-radius: 4px; padding: 9px">
               <span style="display: block; font-size: 8px; color: #8C8577"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#8C8577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> North Sacramento area</span>
@@ -898,8 +864,8 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           </div>
           
         </div>
-        <div style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 8px 24px rgba(38,34,27,0.06); padding: 20px">
-          <p style="margin: 0 0 12px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #026C96">VIRTUAL · T-15 MINUTES</p>
+        <div style="border: 1px solid #E3DED6; background: #FFFFFF; padding: 20px">
+          <p style="margin: 0 0 12px; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 9.5px; letter-spacing: 0.12em; color: #1E3A5F">VIRTUAL · T-15 MINUTES</p>
           <div style="display: flex; align-items: center; gap: 10px">
             <div style="flex: 1; background: #F6F4EF; border-radius: 4px; padding: 9px">
               <span style="display: block; font-size: 8px; color: #8C8577"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#8C8577" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Link activates 15 min before</span>
@@ -919,22 +885,22 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
     <!-- ============ I: ONE CARD PER APPOINTMENT ============ -->
     <section>
       <div style="margin-bottom: 24px">
-        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #F7F2EA; background: #026C96; padding: 4px 10px">Final design · shipped</span></p>
-        <h4 style="margin: 0; font-family: 'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size: 22px; line-height: 1.25">One card per appointment, fully independent</h4>
+        <p style="margin: 0 0 10px"><span style="display: inline-block; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #1E3A5F">(Final design · shipped)</span></p>
+        <h4 style="margin: 0; font-family: 'Oswald', sans-serif; letter-spacing: 0; font-weight: 500; text-transform: uppercase; font-size: 22px; line-height: 1.25">One card per appointment, fully independent</h4>
         
       </div>
-      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #3E3930; text-wrap: pretty">A claim can need several evaluations with different networks and formats, so each is its own card with its own state; neither blocks the other.</p>
+      <p style="margin: 0 0 36px; font-size: 16.5px; line-height: 1.75; color: #141414; text-wrap: pretty">A claim can need several evaluations with different networks and formats, so each is its own card with its own state; neither blocks the other.</p>
 
-      <div id="appt-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #DFD5C3; background: #FBF7F0; padding: 48px 40px; display: flex; justify-content: center">
+      <div id="appt-compare" class="breakout" style="position: relative; overflow: hidden; border: 1px solid #E3DED6; background: #FAF7F2; padding: 48px 40px; display: flex; justify-content: center">
         <div style="flex: 0 1 620px; min-width: 460px; display: flex; flex-direction: column">
-          <div id="appt-wire-box" style="border: 1px solid #C9BFA9; background: #FFFFFF; box-shadow: 0 12px 32px rgba(38,34,27,0.08)">
+          <div id="appt-wire-box" style="border: 1px solid #E3DED6; background: #FFFFFF">
             <div style="height: 26px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: #0C213D">
-              <span style="width: 34px; height: 7px; background: #FBF7F0; border-radius: 3px"></span>
+              <span style="width: 34px; height: 7px; background: #FAF7F2; border-radius: 3px"></span>
               <span style="margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
               <span style="width: 7px; height: 7px; border-radius: 50%; background: #3D5473"></span>
             </div>
             <div style="display: flex; min-height: 300px">
-              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 12px; height: 12px; border-radius: 3px; background: #FBF7F0"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
+              <div style="width: 32px; background: #0C213D; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0"><span style="width: 12px; height: 12px; border-radius: 3px; background: #FAF7F2"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span><span style="width: 9px; height: 9px; border-radius: 2px; background: #3D5473"></span></div>
               <div style="flex: 1; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px">
                 <span style="font-size: 12px; font-weight: 700; color: #3A3529">Evaluation <span style="font-weight: 400; color: #8C8577">· Step 5 of 7</span></span>
                 <div style="border: 1px solid #E8E4DC; border-radius: 4px; padding: 12px">
@@ -970,14 +936,14 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           </div>
           </div>
       
-        <div id="appt-final-layer" style="position: absolute; inset: 0; background: #FBF7F0; clip-path: inset(0 0 0 86%)">
-          <img id="appt-final-img" src="images/appt-final.png" alt="Final scheduling screen" style="position: absolute; display: block; border: 0.5px solid #D6CDBB; box-shadow: 0 12px 32px rgba(38,34,27,0.08); box-sizing: border-box">
+        <div id="appt-final-layer" style="position: absolute; inset: 0; background: #FAF7F2; clip-path: inset(0 0 0 86%)">
+          <img id="appt-final-img" src="./appt-final.png" alt="Final scheduling screen" style="position: absolute; display: block; border: 0.5px solid #E3DED6; box-sizing: border-box">
         </div>
-        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #8A8171; border: 1px solid #DFD5C3; background: #F7F2EA; padding: 3px 10px">WIREFRAME</span>
-        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #F7F2EA; background: #026C96; padding: 3px 10px">FINAL</span>
+        <span style="position: absolute; top: 12px; left: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #6B6560; border: 1px solid #E3DED6; background: #FAF7F2; padding: 3px 10px">(Wireframe)</span>
+        <span style="position: absolute; top: 12px; right: 12px; z-index: 2; font-family: 'Geist', sans-serif; font-weight: 500; font-size: 10px; letter-spacing: 0.14em; color: #FAF7F2; background: #1E3A5F; padding: 3px 10px">(Final)</span>
         <div id="appt-compare-handle" style="position: absolute; top: 0; bottom: 0; left: 86%; width: 0; cursor: ew-resize; touch-action: none; z-index: 3">
-          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #026C96"></div>
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; background: #026C96; color: #F7F2EA; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 4px 12px rgba(38,34,27,0.25)">⇄</div>
+          <div style="position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: #1E3A5F"></div>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: #1E3A5F; color: #FAF7F2; display: flex; align-items: center; justify-content: center; font-size: 14px">⇄</div>
         </div>
       </div>
     </section>
@@ -990,35 +956,35 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   
 
   <section id="impact" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Impact">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-      <p data-reveal="" style="margin:0 0 32px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Impact · Outcome</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+      <p data-reveal="" style="margin:0 0 32px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Impact · Outcome)</p>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%), 1fr)); gap:16px">
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">processing time</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#026C96">48.6%</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">reduction in overall claim processing time</p><p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: rgb(138, 129, 113);">Part digitization, part design — the design share shows up where rework fell most: questionnaires and documents.</span></p>
+      <div data-reveal="" style="padding:6px 0; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(processing time)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#1E3A5F">48.6%</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">reduction in overall claim processing time</p><p style="margin:0; font-size:15px; line-height:1.55; color:#141414"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: #6B6560;">Part digitization, part design — the design share shows up where rework fell most: questionnaires and documents.</span></p>
       </div>
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">independence</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#026C96">53.1%</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">of veterans completed their questionnaires without staff support</p><p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: rgb(138, 129, 113);">Fourteen pages of clinical language, genuinely self-serve.</span></p>
+      <div data-reveal="" style="padding:6px 0 6px 28px; border-left:1px solid #E3DED6; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(independence)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#1E3A5F">53.1%</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">of veterans completed their questionnaires without staff support</p><p style="margin:0; font-size:15px; line-height:1.55; color:#141414"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: #6B6560;">Fourteen pages of clinical language, genuinely self-serve.</span></p>
       </div>
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">support load</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#026C96">49.2%</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">fewer customer service calls once status tracking became self-serve</p><p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: rgb(138, 129, 113);">Against the prior quarter’s volume, same intake.</span></p>
+      <div data-reveal="" style="padding:6px 0 6px 28px; border-left:1px solid #E3DED6; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(support load)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#1E3A5F">49.2%</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">fewer customer service calls once status tracking became self-serve</p><p style="margin:0; font-size:15px; line-height:1.55; color:#141414"><span style="transition: background-color 0.6s, color 0.6s, border-color 0.6s; display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.55; color: #6B6560;">Against the prior quarter’s volume, same intake.</span></p>
       </div>
       </div>
   </section><section id="reflection" style="max-width:820px; margin:0 auto; padding:200px 32px 200px" data-screen-label="Reflection">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#026C96">Reflection</p>
-    <p data-reveal="" style="margin:0; font-family:'Poppins', sans-serif; font-weight:300; font-size:16px; line-height:1.75; color:#26221B">Next time: engineering in the questionnaire system a month earlier — the card architecture was rebuilt twice because I designed the interaction before we agreed on the data model. And instrument from day one; analytics shipped week three and cost us our cleanest baseline. What I would keep: naming the five status states before drawing any screens — it made every later decision almost automatic.</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#1E3A5F">(Reflection)</p>
+    <p data-reveal="" style="margin:0; font-family:'Geist', sans-serif; font-weight:400; font-size:16px; line-height:1.75; max-width:70ch; color:#141414">Next time: engineering in the questionnaire system a month earlier — the card architecture was rebuilt twice because I designed the interaction before we agreed on the data model. And instrument from day one; analytics shipped week three and cost us our cleanest baseline. What I would keep: naming the five status states before drawing any screens — it made every later decision almost automatic.</p>
   </section>
 
-  <section style="background:#FBF7F0; color:#26221B; border-top:1px solid #DFD5C3" data-screen-label="Next project" data-force-light="1">
+  <section style="background:#FAF7F2; color:#141414; border-top:1px solid #E3DED6" data-screen-label="Next project" data-force-light="1">
     <div style="max-width:1240px; margin:0 auto; padding:120px 32px 120px">
-      <p style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8A8171" data-force-light="1">Next case study</p>
-      <a href="a-crm-worth-navigating.html" style="font-family:'Poppins', sans-serif; font-size:clamp(24px,3vw,38px); font-weight:500; letter-spacing:-0.03em; color:#26221B; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#026C96" data-force-light="1">A CRM Worth Navigating →</a>
+      <p style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560" data-force-light="1">(Next case study)</p>
+      <a href="a-crm-worth-navigating.html" style="font-family:'Oswald', sans-serif; text-transform:uppercase; font-size:clamp(24px,3vw,38px); font-weight:500; letter-spacing:-0.01em; color:#141414; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#1E3A5F" data-force-light="1">A CRM Worth Navigating →</a>
       
     </div>
   </section>
@@ -1178,13 +1144,13 @@ class Component extends DCLogic {
     const overlay = document.createElement('div');
     overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(24,21,16,0.88);display:none;align-items:center;justify-content:center;padding:40px;cursor:zoom-out';
     const big = document.createElement('img');
-    big.style.cssText = 'max-width:100%;max-height:100%;box-shadow:0 24px 80px rgba(0,0,0,0.5);background:#FFFFFF';
+    big.style.cssText = 'max-width:100%;max-height:100%;background:#FFFFFF';
     overlay.appendChild(big);
     overlay.addEventListener('click', () => { overlay.style.display = 'none'; document.body.style.overflow = ''; });
     document.body.appendChild(overlay);
     const tip = document.createElement('div');
     tip.innerHTML = '<span style="font-size:13px;line-height:1;margin-right:8px">⤢</span>Click to enlarge';
-    tip.style.cssText = "position:fixed;z-index:9998;pointer-events:none;display:none;align-items:center;transform:translateX(-50%);border-radius:999px;background:rgba(24,21,16,0.88);color:#F7F2EA;font-family:'Poppins', sans-serif;font-weight:500;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:7px 14px;white-space:nowrap";
+    tip.style.cssText = "position:fixed;z-index:9998;pointer-events:none;display:none;align-items:center;transform:translateX(-50%);background:rgba(24,21,16,0.88);color:#FAF7F2;font-family:'Geist', sans-serif;font-weight:500;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:7px 14px;white-space:nowrap";
     document.body.appendChild(tip);
     document.querySelectorAll('img').forEach((img) => {
       const src = (img.getAttribute('src') || '').split('?')[0];
@@ -1289,7 +1255,7 @@ class Component extends DCLogic {
       links.forEach((l) => {
         const active = l.dataset.toc === current;
         const dot = l.querySelector('[data-toc-dot]');
-        l.style.color = active ? '#026C96' : (l._hov ? '#26221B' : '#6E675C');
+        l.style.color = active ? '#1E3A5F' : (l._hov ? '#141414' : '#6B6560');
         if (dot) { dot.style.opacity = active ? '1' : '0'; }
       });
     };
@@ -1308,6 +1274,5 @@ class Component extends DCLogic {
   renderVals() { return {}; }
 }
 </script>
-<script src="js/main.js"></script>
 </body>
 </html>

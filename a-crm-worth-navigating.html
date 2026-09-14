@@ -1,55 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/support.js"></script>
-<meta name="description" content="Case study: restructuring the information architecture of a multi-role CRM.">
-<title>A CRM Worth Navigating · Yunlei Shen</title>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.yunleidesign.com/a-crm-worth-navigating.html">
-<meta property="og:url" content="https://www.yunleidesign.com/a-crm-worth-navigating.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="A CRM Worth Navigating · Yunlei Shen">
-<meta property="og:description" content="Case study: restructuring the information architecture of a multi-role CRM.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
 <title>A CRM Worth Navigating · Yunlei Shen</title>
-<script src="js/image-slot.js"></script>
+<script src="./image-slot.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-::selection { background: #0F7A78; color: #F7F2EA; }
-body { transition: background-color .6s ease; }
-[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
-body[data-dark] { background: #26221B; }
-body[data-dark] [data-force-light="1"][style] { background-color: #FBF7F0 !important; color: #26221B !important; }
+body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
+::selection { background: #141414; color: #FAF7F2; }
+a { color: #141414; }
+a:hover { color: #2F7E68; }
 
-svg path[fill="#F7F2EA"] { transition: fill .6s ease; }
-body[data-dark] svg path[fill="#F7F2EA"] { fill: #26221B; }
-body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
-body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
-body[data-dark] [style*="background: rgb(253, 251, 247)"], body[data-dark] [style*="background-color: rgb(253, 251, 247)"], body[data-dark] [style*=") rgb(253, 251, 247)"] { background-color: #2E2A22 !important; }
-body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
-body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
-body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
-body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
-body[data-dark] [style*="color: rgb(15, 122, 120)"] { color: #4FC5C1 !important; }
-body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
-body[data-dark] [data-force-light="1"][style] { background-color: #FBF7F0 !important; border-color: #DFD5C3 !important; }
-body[data-dark] [style*="rgb(234, 226, 211)"] { border-color: #3E3930 !important; }
-body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; }
 @media (max-width: 1024px) {
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
+  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #E3DED6 !important; padding: 14px 20px !important; }
+  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: nowrap !important; align-items: center; flex: 1 1 auto; min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 2px; }
+  .rail-links::-webkit-scrollbar { display: none; }
+  .rail-links > a { flex: none !important; white-space: nowrap !important; }
+  .site-rail > div:first-child { min-width: 0 !important; max-width: 100% !important; flex: 1 1 auto !important; }
   .rail-meta { display: none !important; }
   .site-main { margin-left: 0 !important; }
   .hero-fixed { left: 0 !important; }
@@ -60,7 +36,7 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 
 .lbl-row { display: grid; grid-template-columns: 132px minmax(0,1fr); gap: 28px; }
 .opt-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
-.next-link { font-size: clamp(24px, 3vw, 38px) !important; letter-spacing: -0.03em; }
+.next-link { font-size: clamp(24px, 3vw, 38px) !important; letter-spacing: -0.01em; }
 @media (max-width: 1024px) {
   .lbl-row { grid-template-columns: 1fr; gap: 10px; }
   .opt-grid { grid-template-columns: 1fr; }
@@ -74,24 +50,12 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   html, body { overflow-x: clip; }
   .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
 }
-  #overview .hero-row { display:flex; align-items:baseline; justify-content:space-between; gap:24px; }
+  #overview .hero-row { display:flex; flex-direction:column; align-items:flex-start; gap:24px; }
   @media (max-width: 1024px) { .meta-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
   @media (max-width: 1024px) {
-    #overview .hero-row { flex-direction: column-reverse; align-items: flex-start !important; gap: 16px !important; }
-    #overview .hero-row h1 { white-space: normal !important; font-size: clamp(28px, 8.4vw, 44px) !important; }
+    #overview .hero-row { align-items: flex-start !important; gap: 16px !important; }
+    #overview .hero-row h1 { font-size: clamp(36px, 10vw, 56px) !important; }
   }
-
-@media (max-width: 1024px) {
-  html, body { overflow-x: clip; }
-  img { max-width: 100% !important; }
-  .site-rail > div:first-child { display: flex !important; align-items: center; gap: 14px; width: 100%; min-width: 0; max-width: 100%; }
-  .site-rail > div:first-child > a:first-child { flex-shrink: 0; white-space: nowrap; }
-  .rail-links { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; max-width: 100%; }
-  .rail-links::-webkit-scrollbar { display: none; }
-  .rail-links a { flex-shrink: 0; white-space: nowrap; }
-  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
-  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
-}
 
 @media (max-width: 1024px) {
   .site-main img[style*="position: absolute"] { max-width: none !important; }
@@ -104,46 +68,47 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
 </style>
 </helmet>
 
-<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="Case Study — A CRM Worth Navigating">
+<div style="background:#FAF7F2; color:#141414; font-family:'Geist', sans-serif; min-height:100vh" data-screen-label="Case Study — A CRM Worth Navigating">
 
-  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
+  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#FAF7F2; border-right:1px solid #E3DED6; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
     <div>
-      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#26221B; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; border:1px solid #DFD5C3; padding:8px 16px; border-radius:99px" style-hover="border:1px solid #0F7A78; color:#0F7A78">← Home</a>
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:8px; color:#141414; text-decoration:none; font-size:13px; font-weight:400" style-hover="color:#2F7E68; text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1.5px">← (Home)</a>
       <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px; margin-top:44px">
-        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Overview</a>
-        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Context</a>
-        <a data-toc="problem" href="#problem" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Problem</a>
-        <a data-toc="strategy" href="#strategy" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Strategy</a>
-        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Process</a>
-        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Impact</a>
-        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6E675C; text-decoration:none; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span data-toc-dot="1" style="width:6px; height:6px; border-radius:50%; background:#0F7A78; opacity:0; transition:opacity .25s"></span>Reflection</a>
+        <a data-toc="overview" href="#overview" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽¹⁾</span>Overview</a>
+        <a data-toc="context" href="#context" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽²⁾</span>Context</a>
+        <a data-toc="problem" href="#problem" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽³⁾</span>Problem</a>
+        <a data-toc="strategy" href="#strategy" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁴⁾</span>Strategy</a>
+        <a data-toc="process" href="#process" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁵⁾</span>Process</a>
+        <a data-toc="impact" href="#impact" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁶⁾</span>Impact</a>
+        <a data-toc="reflection" href="#reflection" style="display:flex; align-items:center; gap:10px; padding:6px 0; color:#6B6560; text-decoration:none; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; transition:color .25s"><span style="font-size:11px; letter-spacing:0">⁽⁷⁾</span>Reflection</a>
       </div>
     </div>
     
   </aside>
   <div class="site-main" style="margin-left:224px">
 
-  <div style="position:relative; z-index:1; background:#F7F2EA">
+  <div style="position:relative; z-index:1; background:#FAF7F2">
 
   <section id="overview" style="max-width:820px; margin:0 auto; padding:160px 32px 0; container-type:inline-size" data-screen-label="Hero">
 
     <div class="hero-row">
-      <h1 data-reveal="" style="margin:0; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px, calc((100cqw - 230px) / 11.66), 72px); line-height:1.06; letter-spacing:-0.032em; color:#26221B; white-space:nowrap">A CRM Worth Navigating</h1>
-      <span style="flex:0 0 auto; display:inline-flex; align-items:center; gap:14px"><span data-reveal="" style="font-size:12px; color:#8A8171">5 min read</span><span data-reveal="" style="display:inline-flex; align-items:center; gap:8px; border:1px solid #DFD5C3; border-radius:99px; padding:7px 14px; font-size:12px; font-weight:500; color:#3E3930"><span style="width:7px; height:7px; border-radius:50%; background:#0F7A78"></span>Shipped</span></span>
+      <p data-reveal="" style="margin:0; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">02 &mdash; Sugar CRM &middot; 2024&ndash;25</p>
+      <h1 data-reveal="" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(44px, 12.6cqw, 104px); line-height:0.95; letter-spacing:-0.01em; color:#141414">A CRM Worth Navigating</h1>
+      <p data-reveal="" style="margin:0; font-size:13px; font-weight:300; color:#6B6560">(5 min read) &middot; <span style="color:#2F7E68">(Shipped)</span></p>
     </div>
 
-    <div data-reveal="" style="margin-top:56px; border-radius:20px; overflow:hidden; background:#EFE8DB; box-shadow:0 18px 44px rgba(38,34,27,0.10), 0 3px 10px rgba(38,34,27,0.05)">
+    <div data-reveal="" style="margin-top:56px; overflow:hidden; background:#F2EEE7">
       <div style="position:relative; width:100%; aspect-ratio:1637/840; overflow:hidden"><iframe data-walkthrough="1" src="./crm-highlight-walkthrough.html" title="Key screens walkthrough" scrolling="no" style="position:absolute; left:0; top:-4%; width:100%; height:108%; border:0; background:transparent"></iframe></div>
     </div>
 
-    <p data-reveal="" style="margin:56px 0 0; max-width:70ch; font-size:18px; line-height:1.7; color:#3E3930; text-wrap:pretty">Sugar CRM is where every VBG employee spends the working day. Years of growth without a designer had buried the work four to six clicks deep, and claim submissions had quietly fallen by half. I rebuilt the information architecture — and let five teams decide what it should be.</p>
+    <p data-reveal="" style="margin:56px 0 0; max-width:34em; font-family:'STIX Two Text', serif; font-size:clamp(21px,2vw,26px); line-height:1.55; color:#141414; text-wrap:pretty">Sugar CRM is where every VBG employee spends the working day. Years of growth without a designer had buried the work four to six clicks deep, and claim submissions had quietly fallen by half. I rebuilt the information architecture — and let five teams decide what it should be.</p>
 
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:56px 0 32px"></div>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:56px 0 32px"></div>
     <div class="meta-grid" style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:32px 40px">
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Product</p><p style="margin:0; font-size:16px; color:#26221B">Sugar CRM</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">My role</p><p style="margin:0; font-size:16px; color:#26221B">Product Designer</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Timeline</p><p style="margin:0; font-size:16px; color:#26221B">2025</p></div>
-      <div><p style="margin:0 0 8px; font-size:13px; color:#8A8171">Scope</p><p style="margin:0; font-size:16px; color:#26221B">IA &amp; navigation · <a href="four-roles-one-system.html" style="color:#0F7A78">companion project</a></p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Product)</p><p style="margin:0; font-size:16px; color:#141414">Sugar CRM</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(My role)</p><p style="margin:0; font-size:16px; color:#141414">Product Designer</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Timeline)</p><p style="margin:0; font-size:16px; color:#141414">2025</p></div>
+      <div><p style="margin:0 0 8px; font-size:13px; color:#6B6560">(Scope)</p><p style="margin:0; font-size:16px; color:#141414">IA &amp; navigation · <a href="four-roles-one-system.html" style="color:#2F7E68">companion project</a></p></div>
     </div>
   </section>
 
@@ -152,50 +117,50 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   
 
   <section id="context" style="max-width:820px; margin:0 auto; padding:160px 32px 0" data-screen-label="Context">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78">CONTEXT</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em"><div>The tool five teams live in</div></h2>
-    <div data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930"><div>Sugar holds everything: leads, veterans, claims, documents, disabilities. It grew field by field, shaped by whoever needed something that week, and no one had ever stepped back to ask what shape it should have. By the time I took it on, the structure itself was the cost — in productivity, in morale, and eventually in submissions.</div><div><br></div><div>The hard part was never the diagnosis. It was that five teams had built eight-hour-a-day habits inside this structure, and any fix worth doing would break all of them at once.</div></div>
-    <div data-reveal="" style="margin-top:44px; border-top:2px solid #26221B">
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">(Context)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em"><div>The tool five teams live in</div></h2>
+    <div data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#141414"><div>Sugar holds everything: leads, veterans, claims, documents, disabilities. It grew field by field, shaped by whoever needed something that week, and no one had ever stepped back to ask what shape it should have. By the time I took it on, the structure itself was the cost — in productivity, in morale, and eventually in submissions.</div><div><br></div><div>The hard part was never the diagnosis. It was that five teams had built eight-hour-a-day habits inside this structure, and any fix worth doing would break all of them at once.</div></div>
+    <div data-reveal="" style="margin-top:44px; border-top:1px solid #141414">
       
-      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #DFD5C3">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Owned</p>
-        <div style="display:flex; flex-wrap:wrap; gap:8px"><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #0F7A78; padding:6px 11px">IA redesign</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #0F7A78; padding:6px 11px">Research &amp; card sorting</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #0F7A78; padding:6px 11px">New sitemap</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #0F7A78; padding:6px 11px">Page-layout logic</span><span style="font-size:12.5px; line-height:1.4; color:#26221B; border:1px solid #0F7A78; padding:6px 11px">Rollout plan</span></div>
+      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #E3DED6">
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Owned)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#141414">IA redesign &middot; Research &amp; card sorting &middot; New sitemap &middot; Page-layout logic &middot; Rollout plan</p>
       </div>
-      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #DFD5C3">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Partnered on</p>
-        <div style="display:flex; flex-wrap:wrap; gap:8px"><span style="font-size:12.5px; line-height:1.4; color:#6E675C; border:1px dashed #C9BFA9; padding:6px 11px">Engineering build</span><span style="font-size:12.5px; line-height:1.4; color:#6E675C; border:1px dashed #C9BFA9; padding:6px 11px">Role permissions — companion case</span></div>
+      <div class="lbl-row" style="padding:18px 0; border-bottom:1px solid #E3DED6">
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Partnered on)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6B6560">Engineering build &middot; Role permissions — companion case</p>
       </div>
       <div class="lbl-row" style="padding:18px 0 0">
-        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#8A8171">Constraint</p>
-        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6E675C">SugarCRM let us restructure navigation, pages, and fields — not the record model.</p>
+        <p style="margin:0; font-size:10.5px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#6B6560">(Constraint)</p>
+        <p style="margin:0; font-size:14.5px; line-height:1.65; color:#6B6560">SugarCRM let us restructure navigation, pages, and fields — not the record model.</p>
       </div>
     </div>
     
     
   </section><section id="problem" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Problem">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <div data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78"><div>Problem · Diagnosis</div></div>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">What was actually broken</h2>
-    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">Interviews and field studies with each role surfaced three structural problems:</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <div data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68"><div>(Problem · Diagnosis)</div></div>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">What was actually broken</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#141414">Interviews and field studies with each role surfaced three structural problems:</p>
     <div data-reveal="" style="margin-top:32px">
-      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #DFD5C3"><p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:20px; color:#0F7A78; width:32px; flex-shrink:0">1</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#3E3930"><strong style="font-weight:600">One navigation for everyone.</strong> Crowded with links most roles never used; no secondary navigation; the same features in different places on different pages.</p></div>
-      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #DFD5C3"><p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:20px; color:#0F7A78; width:32px; flex-shrink:0">2</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#3E3930"><strong style="font-weight:600">Everything was deep.</strong> Key information sat 3–5 clicks away; related content was scattered; critical actions like upload had no consistent home.</p></div>
-      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #DFD5C3; border-bottom:1px solid #DFD5C3"><p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:20px; color:#0F7A78; width:32px; flex-shrink:0">3</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#3E3930"><strong style="font-weight:600">Key details hidden in plain sight.</strong> Pages omitted basics like file names or the associated veteran; sorting followed no logic users recognized.</p></div>
+      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #E3DED6"><p style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:20px; color:#2F7E68; width:32px; flex-shrink:0">1</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#141414"><strong style="font-weight:600">One navigation for everyone.</strong> Crowded with links most roles never used; no secondary navigation; the same features in different places on different pages.</p></div>
+      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #E3DED6"><p style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:20px; color:#2F7E68; width:32px; flex-shrink:0">2</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#141414"><strong style="font-weight:600">Everything was deep.</strong> Key information sat 3–5 clicks away; related content was scattered; critical actions like upload had no consistent home.</p></div>
+      <div style="display:flex; gap:20px; padding:18px 0; border-top:1px solid #E3DED6; border-bottom:1px solid #E3DED6"><p style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:20px; color:#2F7E68; width:32px; flex-shrink:0">3</p><p style="margin:0; font-size:15.5px; line-height:1.65; color:#141414"><strong style="font-weight:600">Key details hidden in plain sight.</strong> Pages omitted basics like file names or the associated veteran; sorting followed no logic users recognized.</p></div>
     </div>
-    <figure data-reveal="" style="margin:40px 0 16px; border:1px solid #DFD5C3; background:#FBF7F0">
-      <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Before: the veteran claim detail page</figcaption>
-      <div onMouseEnter="{{ showScrollHint }}" onMouseLeave="{{ hideScrollHint }}" style="position:relative; padding:22px; max-height:560px; overflow:auto"><img src="images/crm-previous-claim-detail.png" alt="Previous Sugar CRM veteran claim detail page" style="display:block; width:100%; height:auto; border:1px solid #DFD5C3">
+    <figure data-reveal="" style="margin:40px 0 16px; background:#FAF7F2">
+      <figcaption style="padding:14px 20px; border-bottom:1px solid #E3DED6; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">Fig. 01 &mdash; Before: the veteran claim detail page</figcaption>
+      <div onMouseEnter="{{ showScrollHint }}" onMouseLeave="{{ hideScrollHint }}" style="position:relative; padding:22px; max-height:560px; overflow:auto"><img src="./crm-previous-claim-detail.png" alt="Previous Sugar CRM veteran claim detail page" style="display:block; width:100%; height:auto">
         <div style="position:sticky; bottom:0; left:0; display:flex; justify-content:center; pointer-events:none; opacity:{{ scrollHintOpacity }}; transition:opacity 220ms ease">
-          <span style="display:inline-flex; align-items:center; gap:8px; margin-top:-14px; padding:7px 14px; border-radius:999px; background:rgba(38,34,27,0.86); color:#F7F2EA; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; backdrop-filter:blur(3px)"><span style="font-size:13px; line-height:1">↕</span>Scroll to see the full page</span>
+          <span style="display:inline-flex; align-items:center; gap:8px; margin-top:-14px; padding:7px 14px; background:rgba(38,34,27,0.86); color:#FAF7F2; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; backdrop-filter:blur(3px)"><span style="font-size:13px; line-height:1">↕</span>Scroll to see the full page</span>
         </div>
       </div>
-      <p style="margin: 0; padding: 0 22px 20px; font-size: 13.5px; line-height: 1.6; color: #6E675C; padding-top: 10px">Twelve top-level menus, a thirteen-stage status bar, and four tabs of fields, the density that pushed everyday work four to six clicks deep.</p>
+      <p style="margin: 0; padding: 0 22px 20px; font-size: 13.5px; line-height: 1.6; color: #6B6560; padding-top: 10px">Twelve top-level menus, a thirteen-stage status bar, and four tabs of fields, the density that pushed everyday work four to six clicks deep.</p>
     </figure>
-    <figure data-reveal="" style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
-      <figcaption style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:14px 20px; border-bottom:1px solid #DFD5C3; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">
-        <span>Previous IA: mapped from the live system</span>
-        <span style="display:flex; align-items:center; gap:8px; letter-spacing:0.1em; color:#0F7A78"><span style="width:8px; height:8px; border-radius:50%; background:#0F7A78"></span>Four clicks or deeper</span>
+    <figure data-reveal="" style="margin:0; background:#FAF7F2">
+      <figcaption style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:14px 20px; border-bottom:1px solid #E3DED6; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">
+        <span>Fig. 02 &mdash; Previous IA: mapped from the live system</span>
+        <span style="display:flex; align-items:center; gap:8px; letter-spacing:0.1em; color:#2F7E68"><span style="width:8px; height:8px; border-radius:50%; background:#2F7E68"></span>Four clicks or deeper</span>
       </figcaption>
       <div style="padding:30px 22px 34px; overflow-x:auto">
         <div style="min-width:700px">
@@ -203,261 +168,261 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
           <div style="display:grid; grid-template-columns:58px 1fr; column-gap:12px">
             <div></div>
             <div style="display:flex; flex-direction:column; align-items:center">
-              <div style="width:100%; max-width:240px; padding:13px 16px; box-sizing:border-box; border:1px solid #CFC3AC; background:#FFFDF9; text-align:center">
-                <p style="margin:0; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:19px; line-height:1.2">Home</p>
-                <p style="margin:4px 0 0; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#8A8377">Dashboard for all roles</p>
+              <div style="width:100%; max-width:240px; padding:13px 16px; box-sizing:border-box; border:1px solid #CFC9C0; background:#FFFFFF; text-align:center">
+                <p style="margin:0; font-family:'Geist', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:19px; line-height:1.2">Home</p>
+                <p style="margin:4px 0 0; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">Dashboard for all roles</p>
               </div>
-              <span style="width:1px; height:22px; background:#D8CEBB"></span>
+              <span style="width:1px; height:22px; background:#D8D3CA"></span>
             </div>
           </div>
 
           <div style="display:grid; grid-template-columns:58px repeat(5, 1fr); column-gap:12px">
             <div></div>
-            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:50%; right:-6px; height:1px; background:#D8CEBB"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8CEBB"></span></div>
-            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8CEBB"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8CEBB"></span></div>
-            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8CEBB"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8CEBB"></span></div>
-            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8CEBB"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8CEBB"></span></div>
-            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:50%; height:1px; background:#D8CEBB"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8CEBB"></span></div>
+            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:50%; right:-6px; height:1px; background:#D8D3CA"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8D3CA"></span></div>
+            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8D3CA"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8D3CA"></span></div>
+            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8D3CA"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8D3CA"></span></div>
+            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:-6px; height:1px; background:#D8D3CA"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8D3CA"></span></div>
+            <div style="position:relative; height:26px"><span style="position:absolute; top:0; left:-6px; right:50%; height:1px; background:#D8D3CA"></span><span style="position:absolute; top:0; bottom:0; left:50%; width:1px; background:#D8D3CA"></span></div>
           </div>
 
           <div style="display:grid; grid-template-columns:58px repeat(5, 1fr); column-gap:12px; row-gap:0; align-items:stretch">
 
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8377">1 click</span></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Leads</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#8A8377">List view</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Accounts</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#8A8377">List view</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Claims</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#8A8377">List view</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#8A8377">List view</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disabilities</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#8A8377">List view</p></div>
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">1 click</span></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Leads</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#6B6560">List view</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Accounts</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#6B6560">List view</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Claims</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#6B6560">List view</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#6B6560">List view</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disabilities</p><p style="margin:5px 0 0; font-size:11.5px; line-height:1.5; color:#6B6560">List view</p></div>
 
             <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
 
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8377">2 clicks</span></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Lead View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Legacy</span></div></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Account View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Activity</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Claims</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Appointments</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">DBQ Categories</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Legacy</span></div></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Claim View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Related</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">DBQ Categories</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Appointments</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Legacy</span></div></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Related</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span></div></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disability View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Related</span></div></div>
-
-            <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8CEBB"></span></div>
-
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8377">3 clicks</span></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">DBQ Categories</p></div>
-            <div style="padding:11px 12px; border:1px solid #CFC3AC; background:#FFFDF9"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">DBQ Category View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Details</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Disabilities</span><span style="padding:2px 7px; border:1px solid #E4DBC9; font-size:10.5px; color:#6E675C">Legacy</span></div></div>
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">2 clicks</span></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Lead View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Legacy</span></div></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Account View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Activity</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Claims</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Appointments</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">DBQ Categories</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Legacy</span></div></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Claim View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Related</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">DBQ Categories</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Appointments</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Legacy</span></div></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Related</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span></div></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disability View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Related</span></div></div>
 
             <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#D8D3CA"></span></div>
 
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#0F7A78">4 clicks</span></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disability History</p></div>
-
-            <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-            <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
-
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#0F7A78">5 clicks</span></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
-            <div></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">3 clicks</span></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">DBQ Categories</p></div>
+            <div style="padding:11px 12px; border:1px solid #CFC9C0; background:#FFFFFF"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">DBQ Category View</p><div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px"><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Details</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Disabilities</span><span style="padding:2px 7px; border:1px solid #E3DED6; font-size:10.5px; color:#6B6560">Legacy</span></div></div>
 
             <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9D2D0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
 
-            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#0F7A78">6 clicks</span></div>
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">4 clicks</span></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Disability History</p></div>
+
+            <div></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+            <div></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">5 clicks</span></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Document View</p></div>
+            <div></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Notes</p></div>
+
             <div></div>
             <div></div>
             <div></div>
             <div></div>
-            <div style="padding:11px 12px; border:1px solid #A9D2D0; background:#EAF3F2"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents → DBQ Categories</p></div>
+            <div></div>
+            <div style="display:flex; justify-content:center"><span style="width:1px; height:24px; background:#A9CFC0"></span></div>
+
+            <div style="display:flex; align-items:flex-start; padding-top:2px"><span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">6 clicks</span></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div style="padding:11px 12px; border:1px solid #A9CFC0; background:#E9F1EC"><p style="margin:0; font-size:13.5px; font-weight:600; line-height:1.3">Documents → DBQ Categories</p></div>
 
           </div>
         </div>
       </div>
     </figure>
   </section><section id="strategy" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Strategy">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78">Strategy</p>
-    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Patch, restructure, or replace</h2>
-    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#3E3930">A new IA from heuristics would have taken a week, the problems were that visible. But five teams would have to relearn the tool they use eight hours a day, and a designer’s opinion would not survive that fight. Evidence would. First, the path:</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">(Strategy)</p>
+    <h2 data-reveal="" style="margin:0 0 24px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Patch, restructure, or replace</h2>
+    <p data-reveal="" style="margin:0 0 18px; font-size:16.5px; line-height:1.75; color:#141414">A new IA from heuristics would have taken a week, the problems were that visible. But five teams would have to relearn the tool they use eight hours a day, and a designer’s opinion would not survive that fight. Evidence would. First, the path:</p>
     <div data-reveal="" class="opt-grid" style="margin:36px 0 0">
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #DFD5C3; background:transparent">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #E3DED6; background:transparent">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C4BAA6">A</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#8A8171; border:1px solid #DFD5C3">Ruled out</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C9C4BC">A</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#6B6560">(Ruled out)</span>
         </div>
-        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#5A544A">Patch the worst pages</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">Low risk, no retraining — and no ceiling raised. The problems were architectural; this is polishing rooms in a house with a broken floor plan.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#8A8171">Fixes symptoms, not the plan.</p>
+        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#6B6560">Patch the worst pages</h3>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">Low risk, no retraining — and no ceiling raised. The problems were architectural; this is polishing rooms in a house with a broken floor plan.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#6B6560">Fixes symptoms, not the plan.</p>
       </article>
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #0F7A78; background:#FFFDF9">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #2F7E68; background:#FFFFFF">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#0F7A78">B</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#F7F2EA; background:#0F7A78; border:1px solid #0F7A78">Chosen</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#2F7E68">B</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#2F7E68">(Chosen)</span>
         </div>
-        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#26221B">Restructure the IA inside SugarCRM</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">The platform let us rebuild navigation, pages, and fields, but not the record model. Months of work, five teams retrained.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#0F7A78">Months of work — and the ceiling comes down.</p>
+        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#141414">Restructure the IA inside SugarCRM</h3>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">The platform let us rebuild navigation, pages, and fields, but not the record model. Months of work, five teams retrained.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#2F7E68">Months of work — and the ceiling comes down.</p>
       </article>
-      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #DFD5C3; background:transparent">
+      <article style="display:flex; flex-direction:column; gap:12px; padding:24px 22px 22px; border:1px solid #E3DED6; background:transparent">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C4BAA6">C</span>
-          <span style="font-size:9.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:4px 9px; color:#8A8171; border:1px solid #DFD5C3">Ruled out</span>
+          <span style="font-size:26px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C9C4BC">C</span>
+          <span style="font-size:11px; font-weight:400; letter-spacing:0.04em; color:#6B6560">(Ruled out)</span>
         </div>
-        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#5A544A">Replace the CRM entirely</h3>
-        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6E675C">Floated by ops leadership. But every documented problem was structural, not platform-specific — and a mid-year data migration the business could not afford.</p>
-        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E7DFCC; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#8A8171">New tool, same rot.</p>
+        <h3 style="margin:0; font-size:17px; font-weight:600; line-height:1.35; letter-spacing:-0.022em; color:#6B6560">Replace the CRM entirely</h3>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#6B6560">Floated by ops leadership. But every documented problem was structural, not platform-specific — and a mid-year data migration the business could not afford.</p>
+        <p style="margin:auto 0 0; padding-top:14px; border-top:1px solid #E3DED6; font-size:12px; line-height:1.5; letter-spacing:0.02em; color:#6B6560">New tool, same rot.</p>
       </article>
     </div>
     
   </section>
 
   <section id="process" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Process">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78">PROCESS · REDESIGN</p>
-    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Poppins', sans-serif; font-weight:500; font-size:clamp(30px,4vw,42px); line-height:1.15; letter-spacing:-0.03em">Rebuilding the map before the rooms</h2>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">(Process · Redesign)</p>
+    <h2 data-reveal="" style="margin:0 0 56px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(30px,4.4vw,48px); line-height:1.05; letter-spacing:-0.01em">Rebuilding the map before the rooms</h2>
 
     <div data-reveal="" style="margin-bottom:120px">
-      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Waypoint 01: Chart the terrain</span></p>
-      <h3 style="margin:0 0 18px; font-family:'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size:28px; line-height:1.2">Let users draw the architecture, card sorting across roles</h3>
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">Participants from every role sorted each page and feature around their real workflows. The new IA came straight from their mental models and put every key page within two clicks.</p>
-      <figure style="margin:0 0 16px; border:1px solid #DFD5C3; background:#FBF7F0">
-        <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Step 1: scrambled cards, sorted by role</figcaption>
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(Waypoint 01 · Chart the terrain)</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Oswald', sans-serif; letter-spacing:0; font-weight:500; text-transform:uppercase; font-size:26px; line-height:1.2">Let users draw the architecture, card sorting across roles</h3>
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">Participants from every role sorted each page and feature around their real workflows. The new IA came straight from their mental models and put every key page within two clicks.</p>
+      <figure style="margin:0 0 16px; border:1px solid #E3DED6; background:#FAF7F2">
+        <figcaption style="padding:14px 20px; border-bottom:1px solid #E3DED6; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">Fig. 03 &mdash; Step 1: scrambled cards, sorted by role</figcaption>
         <div style="padding:26px 22px 30px">
-          <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8377">Every page, field, and action as a card</p>
-          <div style="display:flex; flex-wrap:wrap; gap:6px; padding-bottom:24px; border-bottom:1px solid #E4DBC9">
-            <span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Lead list</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Notification icon</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Claim ID</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Upload documents</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Veteran info</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Log a call</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Doc uploader</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Mark as complete</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Diagnosis name</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Clinics</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Progress bar</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Appointment date &amp; time</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Last contact attempt</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Networks</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Checklist</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Homepage</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Disability flag</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Account owner</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Payment</span><span style="padding:4px 9px; background:#EDEAE3; font-size:11px; color:#6E675C">Events</span>
+          <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">Every page, field, and action as a card</p>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; padding-bottom:24px; border-bottom:1px solid #E3DED6">
+            <span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Lead list</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Notification icon</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Claim ID</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Upload documents</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Veteran info</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Log a call</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Doc uploader</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Mark as complete</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Diagnosis name</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Clinics</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Progress bar</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Appointment date &amp; time</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Last contact attempt</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Networks</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Checklist</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Homepage</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Disability flag</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Account owner</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Payment</span><span style="padding:4px 9px; background:#EFEBE4; font-size:11px; color:#6B6560">Events</span>
           </div>
-          <p style="margin:24px 0 12px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8A8377">Where participants put them</p>
+          <p style="margin:24px 0 12px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">Where participants put them</p>
           <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:12px">
-            <div style="border:1px solid #DFD5C3; background:#FFFDF9">
-              <p style="margin:0; padding:8px 10px; background:#0A4E4C; color:#F7F2EA; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Home</p>
+            <div style="border:1px solid #E3DED6; background:#FFFFFF">
+              <p style="margin:0; padding:8px 10px; background:#245C4C; color:#FAF7F2; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Home</p>
               <div style="display:flex; flex-direction:column; gap:5px; padding:10px">
-                <span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Tasks</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Recent claims</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Notifications</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Search</span>
+                <span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Tasks</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Recent claims</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Notifications</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Search</span>
               </div>
             </div>
-            <div style="border:1px solid #DFD5C3; background:#FFFDF9">
-              <p style="margin:0; padding:8px 10px; background:#0A4E4C; color:#F7F2EA; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Claims</p>
+            <div style="border:1px solid #E3DED6; background:#FFFFFF">
+              <p style="margin:0; padding:8px 10px; background:#245C4C; color:#FAF7F2; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Claims</p>
               <div style="display:flex; flex-direction:column; gap:5px; padding:10px">
-                <span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Claim name</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Claim status</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Veteran info</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Progress bar</span>
+                <span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Claim name</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Claim status</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Veteran info</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Progress bar</span>
               </div>
             </div>
-            <div style="border:1px solid #DFD5C3; background:#FFFDF9">
-              <p style="margin:0; padding:8px 10px; background:#0A4E4C; color:#F7F2EA; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Documents</p>
+            <div style="border:1px solid #E3DED6; background:#FFFFFF">
+              <p style="margin:0; padding:8px 10px; background:#245C4C; color:#FAF7F2; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Documents</p>
               <div style="display:flex; flex-direction:column; gap:5px; padding:10px">
-                <span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Document name</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Doc uploader</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Upload date</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Search</span>
+                <span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Document name</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Doc uploader</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Upload date</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Search</span>
               </div>
             </div>
-            <div style="border:1px solid #DFD5C3; background:#FFFDF9">
-              <p style="margin:0; padding:8px 10px; background:#0A4E4C; color:#F7F2EA; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Disability</p>
+            <div style="border:1px solid #E3DED6; background:#FFFFFF">
+              <p style="margin:0; padding:8px 10px; background:#245C4C; color:#FAF7F2; font-size:11px; letter-spacing:0.08em; text-transform:uppercase">Disability</p>
               <div style="display:flex; flex-direction:column; gap:5px; padding:10px">
-                <span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Disability name</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Diagnosis name</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Date accepted</span><span style="padding:4px 8px; background:#DDEEED; font-size:11px; color:#0B5E5C">Related documents</span>
+                <span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Disability name</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Diagnosis name</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Date accepted</span><span style="padding:4px 8px; background:#E2EEE9; font-size:11px; color:#245C4C">Related documents</span>
               </div>
             </div>
           </div>
-          <div style="display:flex; align-items:flex-start; gap:12px; margin-top:22px; padding-top:18px; border-top:1px solid #E4DBC9">
-            <span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#0F7A78; flex-shrink:0; padding-top:2px">Pattern</span>
-            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#3E3930">Roles grouped differently, by task type or by frequency, but identity fields (who the veteran is, which claim, what file) landed at the top of every sort.</p>
+          <div style="display:flex; align-items:flex-start; gap:12px; margin-top:22px; padding-top:18px; border-top:1px solid #E3DED6">
+            <span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68; flex-shrink:0; padding-top:2px">Pattern</span>
+            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#141414">Roles grouped differently, by task type or by frequency, but identity fields (who the veteran is, which claim, what file) landed at the top of every sort.</p>
           </div>
         </div>
       </figure>
-      <figure style="margin:0; border:1px solid #DFD5C3; background:#FBF7F0">
-        <figcaption style="padding:14px 20px; border-bottom:1px solid #DFD5C3; font-family:'Poppins', sans-serif; font-weight:500; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Step 2: the resulting IA, nothing deeper than two clicks</figcaption>
+      <figure style="margin:0; border:1px solid #E3DED6; background:#FAF7F2">
+        <figcaption style="padding:14px 20px; border-bottom:1px solid #E3DED6; font-family:'Geist', sans-serif; font-weight:500; font-family:'Geist', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">Fig. 04 &mdash; Step 2: the resulting IA, nothing deeper than two clicks</figcaption>
         <div style="padding:24px 22px">
           <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:10px">
-            <span style="font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#0F7A78">1 click</span>
-            <span style="flex:1; border-bottom:1px dotted #C9BFA9"></span>
+            <span style="font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#2F7E68">1 click</span>
+            <span style="flex:1; border-bottom:1px dotted #E3DED6"></span>
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:24px">
-            <span style="padding:6px 11px; border:1px solid #CFC3AC; background:#FFFDF9; font-size:12px; font-weight:600">Home</span>
-            <span style="padding:6px 11px; border:1px solid #CFC3AC; background:#FFFDF9; font-size:12px; font-weight:600">Claims</span>
-            <span style="padding:6px 11px; border:1px solid #CFC3AC; background:#FFFDF9; font-size:12px; font-weight:600">Accounts</span>
-            <span style="padding:6px 11px; border:1px solid #CFC3AC; background:#FFFDF9; font-size:12px; font-weight:600">Disabilities</span>
-            <span style="padding:6px 11px; border:1px solid #CFC3AC; background:#FFFDF9; font-size:12px; font-weight:600">Documents</span>
+            <span style="padding:6px 11px; border:1px solid #CFC9C0; background:#FFFFFF; font-size:12px; font-weight:600">Home</span>
+            <span style="padding:6px 11px; border:1px solid #CFC9C0; background:#FFFFFF; font-size:12px; font-weight:600">Claims</span>
+            <span style="padding:6px 11px; border:1px solid #CFC9C0; background:#FFFFFF; font-size:12px; font-weight:600">Accounts</span>
+            <span style="padding:6px 11px; border:1px solid #CFC9C0; background:#FFFFFF; font-size:12px; font-weight:600">Disabilities</span>
+            <span style="padding:6px 11px; border:1px solid #CFC9C0; background:#FFFFFF; font-size:12px; font-weight:600">Documents</span>
           </div>
           <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:10px">
-            <span style="font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#0F7A78">2 clicks</span>
-            <span style="flex:1; border-bottom:1px dotted #C9BFA9"></span>
+            <span style="font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#2F7E68">2 clicks</span>
+            <span style="flex:1; border-bottom:1px dotted #E3DED6"></span>
           </div>
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(150px,100%), 1fr)); gap:10px; align-items:start">
-            <div style="border:1px solid #CFC3AC; background:#FFFDF9">
-              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E4DBC9; font-size:13px; font-weight:600">More</p>
-              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6E675C">Veteran Invoices<br>Veteran Payments<br>Networks<br>Clinics</div>
+            <div style="border:1px solid #CFC9C0; background:#FFFFFF">
+              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E3DED6; font-size:13px; font-weight:600">More</p>
+              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6B6560">Veteran Invoices<br>Veteran Payments<br>Networks<br>Clinics</div>
             </div>
-            <div style="border:1px solid #CFC3AC; background:#FFFDF9">
-              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E4DBC9; font-size:13px; font-weight:600">Claim View</p>
-              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6E675C">Subnavigation<br>Claim key info<br>Progress bar<br>Success checklist</div>
-              <p style="margin:0; padding:8px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; font-weight:600; color:#2F6B4F">Mark as complete</p>
-              <div style="padding:10px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; line-height:1.65; color:#6E675C">Work board: details, documents, disabilities, appointments, activities</div>
+            <div style="border:1px solid #CFC9C0; background:#FFFFFF">
+              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E3DED6; font-size:13px; font-weight:600">Claim View</p>
+              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6B6560">Subnavigation<br>Claim key info<br>Progress bar<br>Success checklist</div>
+              <p style="margin:0; padding:8px 12px; border-top:1px solid #E3DED6; font-size:11.5px; font-weight:600; color:#2F7E68">Mark as complete</p>
+              <div style="padding:10px 12px; border-top:1px solid #E3DED6; font-size:11.5px; line-height:1.65; color:#6B6560">Work board: details, documents, disabilities, appointments, activities</div>
             </div>
-            <div style="border:1px solid #CFC3AC; background:#FFFDF9">
-              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E4DBC9; font-size:13px; font-weight:600">Account View</p>
-              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6E675C">Subnavigation<br>Account key info<br>Details</div>
-              <p style="margin:0; padding:8px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; font-weight:600; color:#2F6B4F">Edit button</p>
-              <div style="padding:10px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; line-height:1.65; color:#6E675C">History: claims, appointments, documents, activity</div>
+            <div style="border:1px solid #CFC9C0; background:#FFFFFF">
+              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E3DED6; font-size:13px; font-weight:600">Account View</p>
+              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6B6560">Subnavigation<br>Account key info<br>Details</div>
+              <p style="margin:0; padding:8px 12px; border-top:1px solid #E3DED6; font-size:11.5px; font-weight:600; color:#2F7E68">Edit button</p>
+              <div style="padding:10px 12px; border-top:1px solid #E3DED6; font-size:11.5px; line-height:1.65; color:#6B6560">History: claims, appointments, documents, activity</div>
             </div>
-            <div style="border:1px solid #CFC3AC; background:#FFFDF9">
-              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E4DBC9; font-size:13px; font-weight:600">Document View</p>
-              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6E675C">Subnavigation<br>Document key info<br>Details · preview<br>Activity</div>
-              <p style="margin:0; padding:8px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; font-weight:600; color:#2F6B4F">Accept · reject · edit</p>
+            <div style="border:1px solid #CFC9C0; background:#FFFFFF">
+              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E3DED6; font-size:13px; font-weight:600">Document View</p>
+              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6B6560">Subnavigation<br>Document key info<br>Details · preview<br>Activity</div>
+              <p style="margin:0; padding:8px 12px; border-top:1px solid #E3DED6; font-size:11.5px; font-weight:600; color:#2F7E68">Accept · reject · edit</p>
             </div>
-            <div style="border:1px solid #CFC3AC; background:#FFFDF9">
-              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E4DBC9; font-size:13px; font-weight:600">Disability View</p>
-              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6E675C">Subnavigation<br>Disability key info<br>Diagnosis details<br>Related documents</div>
-              <p style="margin:0; padding:8px 12px; border-top:1px solid #E4DBC9; font-size:11.5px; font-weight:600; color:#2F6B4F">Reviewed · create diagnosis · upload</p>
+            <div style="border:1px solid #CFC9C0; background:#FFFFFF">
+              <p style="margin:0; padding:9px 12px; border-bottom:1px solid #E3DED6; font-size:13px; font-weight:600">Disability View</p>
+              <div style="padding:10px 12px; font-size:11.5px; line-height:1.65; color:#6B6560">Subnavigation<br>Disability key info<br>Diagnosis details<br>Related documents</div>
+              <p style="margin:0; padding:8px 12px; border-top:1px solid #E3DED6; font-size:11.5px; font-weight:600; color:#2F7E68">Reviewed · create diagnosis · upload</p>
             </div>
           </div>
-          <div style="display:flex; align-items:flex-start; gap:12px; margin-top:22px; padding-top:18px; border-top:1px solid #E4DBC9">
-            <span style="font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F6B4F; flex-shrink:0; padding-top:2px">New</span>
-            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#3E3930">Actions in green did not exist before, they were buried in menus or handled outside the system entirely.</p>
+          <div style="display:flex; align-items:flex-start; gap:12px; margin-top:22px; padding-top:18px; border-top:1px solid #E3DED6">
+            <span style="font-family:'Geist', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68; flex-shrink:0; padding-top:2px">New</span>
+            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#141414">Actions in green did not exist before, they were buried in menus or handled outside the system entirely.</p>
           </div>
           <div style="display:flex; align-items:flex-start; gap:12px; margin-top:14px">
-            <span style="font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#0F7A78; flex-shrink:0; padding-top:2px">Result</span>
-            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#3E3930">What used to sit four to six clicks down now lives on the record itself; nothing important is more than two clicks from the homepage.</p>
+            <span style="font-family:'Geist', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68; flex-shrink:0; padding-top:2px">Result</span>
+            <p style="margin:0; font-size:13.5px; line-height:1.6; color:#141414">What used to sit four to six clicks down now lives on the record itself; nothing important is more than two clicks from the homepage.</p>
           </div>
         </div>
       </figure>
     </div>
 
     <div data-reveal="" style="margin-bottom:120px">
-      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Waypoint 02: Redraw the main roads</span></p>
-      <h3 style="margin:0 0 18px; font-family:'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size:28px; line-height:1.2">Rebuilding the top level</h3>
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">Navigation keeps only the most used links; the homepage now leads with work progress, key updates, and each role's top pages. The day starts there, not three menus deep.</p>
-      <div class="breakout"><img src="images/crm-home-structure-flat-clean.png" alt="Homepage structure, annotated" style="display:block; width:100%; height:auto; background:transparent"></div>
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(Waypoint 02 · Redraw the main roads)</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Oswald', sans-serif; letter-spacing:0; font-weight:500; text-transform:uppercase; font-size:26px; line-height:1.2">Rebuilding the top level</h3>
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">Navigation keeps only the most used links; the homepage now leads with work progress, key updates, and each role's top pages. The day starts there, not three menus deep.</p>
+      <div class="breakout"><img src="./crm-home-structure-flat-clean.png" alt="Homepage structure, annotated" style="display:block; width:100%; height:auto; background:transparent"></div>
     </div>
 
     <div data-reveal="" style="margin-bottom:120px">
-      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Poppins', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171; border:1px solid #DFD5C3; padding:3px 10px">Waypoint 03: Fit each room to its use</span></p>
-      <h3 style="margin:0 0 18px; font-family:'Poppins', sans-serif; letter-spacing:-0.022em; font-weight: 600; font-size:28px; line-height:1.2">Match the layout to the data, not the template</h3>
-      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#3E3930">One rule settled every page debate: pages people act on get cards with key info on the face; pages people scan keep tables, plus the identity columns every sort demanded. Deciding the rule first meant no layout ever got relitigated.</p>
+      <p style="margin:0 0 10px"><span style="display:inline-block; font-family:'Geist', sans-serif; font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6B6560">(Waypoint 03 · Fit each room to its use)</span></p>
+      <h3 style="margin:0 0 18px; font-family:'Oswald', sans-serif; letter-spacing:0; font-weight:500; text-transform:uppercase; font-size:26px; line-height:1.2">Match the layout to the data, not the template</h3>
+      <p style="margin:0 0 24px; font-size:16.5px; line-height:1.75; color:#141414">One rule settled every page debate: pages people act on get cards with key info on the face; pages people scan keep tables, plus the identity columns every sort demanded. Deciding the rule first meant no layout ever got relitigated.</p>
       <div style="display:grid; grid-template-columns:1fr; gap:16px">
         <div style="position:relative; aspect-ratio:1240/900; overflow:visible"><iframe data-mock-frame="1" data-fit-inner="1240" src="./crm-key-screens-mocks.html" title="Key screen mockups" scrolling="no" style="position:absolute; left:0; top:0; width:1240px; height:900px; transform-origin:0 0; border:0; background:transparent; pointer-events:none"></iframe></div>
       </div>
@@ -465,35 +430,35 @@ body[data-dark] [style*="border: 1px solid rgb(38, 34, 27)"] { border-color: #F7
   </section>
 
   <section id="impact" style="max-width:820px; margin:0 auto; padding:200px 32px 0" data-screen-label="Impact">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-      <p data-reveal="" style="margin:0 0 32px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78">Impact · Outcome</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+      <p data-reveal="" style="margin:0 0 32px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">(Impact · Outcome)</p>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(200px,100%), 1fr)); gap:16px">
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">submissions</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#0F7A78">2×</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">claim submissions within one month of launch</p>
+      <div data-reveal="" style="padding:6px 0; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(submissions)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#2F7E68">2×</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">claim submissions within one month of launch</p>
       </div>
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">navigation</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#0F7A78">−28.6%</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">navigation errors after the restructure</p>
+      <div data-reveal="" style="padding:6px 0 6px 28px; border-left:1px solid #E3DED6; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(navigation)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#2F7E68">−28.6%</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">navigation errors after the restructure</p>
       </div>
-      <div data-reveal="" style="border:1px solid #DFD5C3; background:#FBF7F0; padding:32px; display:flex; flex-direction:column; gap:16px">
-        <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size:10px; letter-spacing:0.08em; color:#8A8171; border:1px solid #DFD5C3; padding:4px 8px; align-self:flex-start">satisfaction</span>
-        <p data-fit-metric="1" style="margin:0; font-family:'Poppins', sans-serif; font-size:clamp(30px,3.4vw,46px); overflow-wrap:break-word; line-height:1; color:#0F7A78">1.8 → 3.1</p>
-        <p style="margin:0; font-size:15px; line-height:1.55; color:#3E3930">satisfaction score (of 5), with users citing easier navigation and faster access to key information</p>
+      <div data-reveal="" style="padding:6px 0 6px 28px; border-left:1px solid #E3DED6; display:flex; flex-direction:column; gap:14px">
+        <span style="font-size:12px; font-weight:300; letter-spacing:0.08em; color:#6B6560">(satisfaction)</span>
+        <p data-fit-metric="1" style="margin:0; font-family:'Oswald', sans-serif; font-weight:500; font-size:clamp(46px,5vw,68px); overflow-wrap:break-word; line-height:1; color:#2F7E68">1.8 → 3.1</p>
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#141414">satisfaction score (of 5), with users citing easier navigation and faster access to key information</p>
       </div>
       </div>
   </section><section id="reflection" style="max-width:820px; margin:0 auto; padding:200px 32px 200px" data-screen-label="Reflection">
-    <div data-reveal="" style="height:1px; background:#DFD5C3; margin:0 0 30px"></div>
-    <p data-reveal="" style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#0F7A78">Reflection</p>
-    <p data-reveal="" style="margin:0; font-family:'Poppins', sans-serif; font-weight:300; font-size:16px; line-height:1.75; color:#26221B">When several roles share one system, the IA is the product. The deeper lesson was authority: I could not argue five teams into a new structure, but I could hand them the cards and let them argue each other into it. The card sort was not just research — it was the political strategy.</p>
+    <div data-reveal="" style="height:1px; background:#E3DED6; margin:0 0 30px"></div>
+    <p data-reveal="" style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#2F7E68">(Reflection)</p>
+    <p data-reveal="" style="margin:0; font-family:'Geist', sans-serif; font-weight:400; font-size:16px; line-height:1.75; max-width:70ch; color:#141414">When several roles share one system, the IA is the product. The deeper lesson was authority: I could not argue five teams into a new structure, but I could hand them the cards and let them argue each other into it. The card sort was not just research — it was the political strategy.</p>
   </section>
 
-  <section style="background:#FBF7F0; color:#26221B; border-top:1px solid #DFD5C3" data-screen-label="Next project" data-force-light="1">
+  <section style="background:#FAF7F2; color:#141414; border-top:1px solid #E3DED6" data-screen-label="Next project" data-force-light="1">
     <div style="max-width:1240px; margin:0 auto; padding:120px 32px 120px">
-      <p style="margin:0 0 16px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8A8171" data-force-light="1">Next case study</p>
-      <a href="four-roles-one-system.html" style="font-family:'Poppins', sans-serif; font-size:clamp(24px,3vw,38px); font-weight:500; letter-spacing:-0.03em; color:#26221B; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#0F7A78" data-force-light="1">Four Roles, One System →</a>
+      <p style="margin:0 0 16px; font-family:'Geist', sans-serif; font-weight:300; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560" data-force-light="1">(Next case study)</p>
+      <a href="four-roles-one-system.html" style="font-family:'Oswald', sans-serif; text-transform:uppercase; font-size:clamp(24px,3vw,38px); font-weight:500; letter-spacing:-0.01em; color:#141414; text-decoration:none; line-height:1.1; display:inline-block" style-hover="color:#2F7E68" data-force-light="1">Four Roles, One System →</a>
       
     </div>
   </section>
@@ -508,8 +473,8 @@ class Component extends DCLogic {
     const f = document.querySelector('iframe[data-walkthrough]');
     if (!f) return;
     const pageBg = () => {
-      try { return getComputedStyle(document.body).backgroundColor || '#F7F2EA'; }
-      catch (e) { return '#F7F2EA'; }
+      try { return getComputedStyle(document.body).backgroundColor || '#FAF7F2'; }
+      catch (e) { return '#FAF7F2'; }
     };
     const buildCss = () => '[data-omelette-chrome]{display:none!important}'
       + '#__bundler_thumbnail,#__bundler_loading{display:none!important}'
@@ -797,7 +762,7 @@ class Component extends DCLogic {
       links.forEach((l) => {
         const active = l.dataset.toc === current;
         const dot = l.querySelector('[data-toc-dot]');
-        l.style.color = active ? '#0F7A78' : (l._hov ? '#26221B' : '#6E675C');
+        l.style.color = active ? '#2F7E68' : (l._hov ? '#141414' : '#6B6560');
         if (dot) { dot.style.opacity = active ? '1' : '0'; }
       });
     };
@@ -822,6 +787,5 @@ class Component extends DCLogic {
   }
 }
 </script>
-<script src="js/main.js"></script>
 </body>
 </html>

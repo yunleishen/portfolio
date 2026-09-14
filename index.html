@@ -1,20 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/support.js"></script>
-<meta name="description" content="Portfolio of Yunlei Shen, product designer — case studies in government services, CRM systems, and marketplace products.">
-<title>Yunlei Shen — Product Designer</title>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.yunleidesign.com/">
-<meta property="og:url" content="https://www.yunleidesign.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yunlei Shen — Product Designer">
-<meta property="og:description" content="Portfolio of Yunlei Shen, product designer — case studies in government services, CRM systems, and marketplace products.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -22,208 +11,171 @@
 <title>Yunlei Shen — Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-::selection { background: #8F6B2E; color: #F7F2EA; }
-.rail-links a { position: relative; transition: color .25s ease; }
-.rail-links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: #8F6B2E; transform: scaleX(0); transform-origin: left center; transition: transform .3s cubic-bezier(.22,1,.36,1); }
-.rail-links a:hover { color: #8F6B2E !important; }
-.rail-links a:hover::after { transform: scaleX(1); }
-.rail-links a.active::after { transform: scaleX(1); }
-.rail-links a.active:hover { color: #8F6B2E !important; }
-.rail-links a.active:hover::after { background: #8F6B2E; height: 1px; }
-.case-cta:hover { color: #5E4620 !important; }
-.case-cta:hover::after { background: #5E4620; }
-.case-cta { position: relative; transition: color .25s ease; }
-.case-cta::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: #8F6B2E; transform: scaleX(0); transform-origin: left center; transition: transform .3s cubic-bezier(.22,1,.36,1); }
-.case-cta:hover::after { transform: scaleX(1); }
-.skill-chip { transition: transform .2s ease, box-shadow .2s ease !important; }
-.skill-chip:hover { transform: rotate(0deg) scale(1.1) !important; box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
-body { transition: background-color .6s ease; }
-[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
-body[data-dark] { background: #26221B; }
-body[data-dark] [style*="background: rgb(247, 242, 234)"]:not(#contact *), body[data-dark] [style*="background-color: rgb(247, 242, 234)"]:not(#contact *), body[data-dark] [style*=") rgb(247, 242, 234)"]:not(#contact *) { background-color: #26221B !important; }
-body[data-dark] [style*="background: rgb(251, 247, 240)"]:not(#contact *), body[data-dark] [style*="background-color: rgb(251, 247, 240)"]:not(#contact *), body[data-dark] [style*=") rgb(251, 247, 240)"]:not(#contact *) { background-color: #2E2A22 !important; }
-body[data-dark] [style*="rgb(241, 234, 219)"]:not(#contact *) { background-color: #332E25 !important; }
-body[data-dark] [style*="color: rgb(38, 34, 27)"]:not(#contact *) { color: #F7F2EA !important; }
-body[data-dark] [style*="color: rgb(62, 57, 48)"]:not(#contact *) { color: #D9D2C4 !important; }
-body[data-dark] [style*="color: rgb(110, 103, 92)"]:not(#contact *) { color: #A99F8D !important; }
-body[data-dark] [style*="color: rgb(181, 56, 42)"]:not(#contact *) { color: #A39C8E !important; }
-body[data-dark] [style*="rgb(223, 213, 195)"]:not(#contact *) { border-color: #3E3930 !important; }
-body[data-dark] [style*="rgb(228, 219, 201)"]:not(#contact *) { border-color: #3E3930 !important; }
-body[data-dark] .h-panel:hover { background: #2E2A22 !important; }
-body[data-dark] .site-rail { border-right-color: #3E3930 !important; }
-.rail-meta a { transition: color .25s ease, border-color .25s ease; }
-.rail-meta a:hover { color: #8F6B2E !important; border-color: #8F6B2E !important; }
-body[data-dark] .rail-meta a { border-color: #F7F2EA !important; color: #F7F2EA !important; }
-body[data-dark] .rail-meta a:hover { color: #C9A96A !important; border-color: #C9A96A !important; }
-.h-panel { flex: 1 1 0; transition: flex-grow .65s cubic-bezier(0.3, 0.7, 0, 1), background-color .3s ease; }
+body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
+::selection { background: #141414; color: #FAF7F2; }
+a { color: #141414; }
+a:hover { color: #141414; }
+.top-nav a { text-decoration: none; transition: opacity .2s ease; }
+.top-nav a:hover { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
+.top-nav a.active { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
+.case-cta { transition: opacity .25s ease; }
+.h-panel:hover .case-cta { opacity: 1; }
+.h-panel { flex: 1 1 0; transition: flex-grow .65s cubic-bezier(0.3, 0.7, 0, 1); }
 .panel-spine { opacity: 1; transition: opacity .3s ease .25s; }
 .panel-full { opacity: 0; transition: opacity .45s ease .18s; }
-.h-panel:hover { flex-grow: 7; background: #F7F2EA; }
+.h-panel:hover { flex-grow: 7; }
 .h-panel:hover .panel-full { opacity: 1; }
 .h-panel:hover .panel-spine { opacity: 0; }
-#work .h-panel:nth-child(1) { flex-grow: 7; background: #F7F2EA; }
+#work .h-panel:nth-child(1) { flex-grow: 7; }
 #work .h-panel:nth-child(1) .panel-full { opacity: 1; }
 #work .h-panel:nth-child(1) .panel-spine { opacity: 0; }
-#work #hpanels:hover .h-panel:nth-child(1):not(:hover) { flex-grow: 1; background: transparent; }
+#work #hpanels:hover .h-panel:nth-child(1):not(:hover) { flex-grow: 1; }
 #work #hpanels:hover .h-panel:nth-child(1):not(:hover) .panel-full { opacity: 0; }
 #work #hpanels:hover .h-panel:nth-child(1):not(:hover) .panel-spine { opacity: 1; }
+@keyframes indPushX { 0%, 100% { transform: translateX(0); opacity: 0.55; } 50% { transform: translateX(10px); opacity: 1; } }
+@keyframes indPushY { 0%, 100% { transform: translateY(0); opacity: 0.55; } 50% { transform: translateY(10px); opacity: 1; } }
+.ind-ar-d { display: inline-block; animation: indPushX 1.8s ease-in-out infinite; }
+.ind-ar-m { display: none; animation: indPushY 1.8s ease-in-out infinite; }
+.work-ind.gone { opacity: 0 !important; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .ind-ar-d, .ind-ar-m { animation: none; } }
 @media (max-width: 1024px) {
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
-  .rail-divider { align-self: center !important; width: 28px !important; }
-  .rail-meta { display: none !important; }
-  .site-main { margin-left: 0 !important; }
-  .hero-screen { min-height: 0 !important; padding: 64px 24px !important; }
-  .work-wrap { height: auto !important; }
-  .work-screen { position: static !important; height: auto !important; border-top: none !important; }
+  .nav-center { position: static !important; transform: none !important; }
+  .work-screen { position: static !important; height: auto !important; }
+  .site-shell { height: auto !important; }
   .h-main { flex-direction: column !important; overflow: visible !important; }
-  .h-panel { width: auto !important; min-height: 460px; border-left: none !important; border-top: 1px solid #DFD5C3; }
+  .h-panel { width: auto !important; flex: none !important; height: auto !important; min-height: 460px; border-left: none !important; border-top: 1px solid #E3DED6; }
   .h-panel:first-child { border-top: none !important; }
   .panel-spine { display: none !important; }
-  .panel-full { opacity: 1 !important; }
+  .panel-full { opacity: 1 !important; position: static !important; }
+  .cover-fit { position: relative !important; flex: none !important; width: 100% !important; aspect-ratio: 900 / 560; min-height: 0 !important; }
+  .cover-frame { position: absolute !important; left: 50% !important; top: 50% !important; width: 900px !important; height: 560px !important; transform-origin: center center; transform: translate(-50%, -50%) scale(var(--cover-scale, 1)) !important; }
+  .hero-name { font-size: clamp(64px, 17.5vw, 160px) !important; }
+  .work-ind { margin-bottom: 14px; }
+  .ind-t-d, .ind-ar-d { display: none !important; }
+  .ind-t-m { display: inline !important; }
+  .ind-ar-m { display: inline-block !important; }
 }
-
-.nav-burger { display: none; }
-.mobile-intro { display: none; }
-@media (max-width: 1024px) {
-  html, body { overflow-x: clip; }
-  img { max-width: 100% !important; }
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .site-rail > div:first-child { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-  .site-rail p { display: none !important; }
-  .nav-burger { display: flex !important; }
-  .rail-links { display: none !important; }
-  .site-rail[data-open] .rail-links { display: flex !important; position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #F7F2EA; border-bottom: 1px solid #DFD5C3; flex-direction: column !important; align-items: flex-start !important; gap: 18px !important; margin: 0 !important; padding: 20px 24px; }
-  .site-rail[data-open] .rail-links > span[aria-hidden] { width: 100% !important; align-self: stretch; }
-  body[data-dark] .site-rail[data-open] .rail-links { background: #26221B; border-bottom-color: #3E3930; }
-  .rail-meta { display: none !important; }
-  .mobile-intro { display: block !important; }
-  .site-main { padding-top: 28px; }
-  .h-panel { min-height: 660px !important; }
-  .panel-full { padding: 24px 20px !important; }
-  .panel-full iframe { width: 200% !important; height: 200% !important; transform: scale(0.5); transform-origin: center center; }
-  .panel-full iframe[src*="cover-paper-trail"], .panel-full iframe[src*="cover-agent"] { width: 100% !important; height: 100% !important; transform: none !important; }
-  .panel-full span[style*="font-size:32px"], .panel-full span[style*="font-size: 32px"] { font-size: 20px !important; }
-  .panel-full span[style*="font-size:11px"], .panel-full span[style*="font-size: 11px"] { font-size: 10px !important; }
-  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
-  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
+@media (max-width: 680px) {
+  .nav-right { display: none !important; }
+  .nav-center { gap: 18px !important; }
+  .panel-full { padding: 28px 20px !important; }
+  .hero-bottom { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
 }
-@media (max-width: 640px) { .h-panel { min-height: 380px !important; } }
 </style>
 </helmet>
 
-<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="Home">
+<div class="site-shell" style="background:#FAF7F2; color:#141414; font-family:'Geist', sans-serif; height:100vh; display:flex; flex-direction:column; box-sizing:border-box" data-screen-label="Home">
 
-  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
-    <div>
-      <a href="index.html" title="Yunlei Shen" style="display:inline-block; text-decoration:none; color:#26221B; font-family:'Poppins',sans-serif; font-weight:400; font-size:20px; letter-spacing:0.06em; line-height:1">YUNLEI SHEN</a><button class="nav-burger" aria-label="Menu" style="background:none; border:1px solid #DFD5C3; border-radius:8px; padding:10px 9px; cursor:pointer; flex-direction:column; gap:4px; align-items:center; justify-content:center"><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span></button>
-      <p style="margin:24px 0 0; font-size:13px; line-height:1.65; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
-      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; margin-top:44px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
-        <a href="#work" class="active" style="color:#8F6B2E; text-decoration:none; padding-bottom:2px">Work</a>
-        <a href="about.html" style="color:#26221B; text-decoration:none; padding-bottom:2px">About</a>
-        <span class="rail-divider" style="align-self:stretch; height:1px; background:#DFD5C3" aria-hidden="true"></span>
-        <a href="mailto:yunlei921128@gmail.com" style="color:#26221B; text-decoration:none; padding-bottom:2px">Email&nbsp;&#8599;</a>
-        <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">LinkedIn&nbsp;&#8599;</a>
-        <a href="images/yunlei-shen-cv-2026.pdf" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">Resume&nbsp;&#8599;</a>
+  <header class="top-nav" style="position:relative; flex:none; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 28px; height:58px; border-bottom:1px solid #E3DED6; box-sizing:border-box; font-size:13px; font-weight:400">
+    <a href="index.html" style="font-weight:500; letter-spacing:0.02em">Yunlei Shen</a>
+    <nav class="nav-center" style="position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:28px">
+      <a href="index.html#work" class="active"><span style="color:#6B6560; font-size:12px">&#8317;&#185;&#8318;</span> Work</a>
+      <a href="about.html"><span style="color:#6B6560; font-size:12px">&#8317;&#178;&#8318;</span> About</a>
+    </nav>
+    <div class="nav-right" style="display:flex; gap:22px">
+      <a href="mailto:yunlei921128@gmail.com">Email&nbsp;&#8599;</a>
+      <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener">LinkedIn&nbsp;&#8599;</a>
+      <a href="yunlei-shen-cv-2026.pdf" target="_blank" rel="noopener">Resume&nbsp;&#8599;</a>
+    </div>
+  </header>
+
+  <section id="work" class="work-screen" data-active="0" style="flex:1; min-height:0; box-sizing:border-box; display:flex; flex-direction:column; overflow:hidden" data-screen-label="Work">
+    <div class="h-main" id="hpanels" style="flex:1; min-height:0; display:flex; align-items:stretch">
+
+      <div class="h-panel" style="display:block; position:relative; min-width:0; overflow:hidden; color:#141414" data-screen-label="Hero">
+        <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
+          <span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560">(Intro)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Yunlei Shen</span>
+          <span style="font-size:10px; letter-spacing:0.1em; font-weight:300; color:#6B6560">(Seattle)</span>
+        </span>
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 48px 36px; box-sizing:border-box">
+          <span style="display:flex; justify-content:space-between; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560"><span>(Seattle, WA)</span><span>(Portfolio &middot; 2026)</span></span>
+          <span style="flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:36px">
+            <span class="hero-name" style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(64px, 10.5vw, 210px); line-height:0.92; letter-spacing:-0.015em; display:block">Yunlei<br>Shen</span>
+            <span style="font-family:'STIX Two Text', serif; font-size:clamp(21px, 2vw, 29px); line-height:1.45; max-width:640px; display:block">Product designer specializing in <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">interaction and visual design</u>, with a strong bias toward execution. I build from zero to one, design the <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">systems</u> that hold it together, and bring my work to life in Figma, Framer, and <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">code</u>. I'm at my best when the brief doesn't exist yet.</span>
+            <span class="work-ind" id="workInd" style="display:flex; justify-content:flex-end; align-items:center; gap:12px; font-size:14px; font-weight:300; color:#6B6560; opacity:1; transition:opacity .6s ease"><span class="ind-t-d">(the work, 01&ndash;04 &mdash; hover to expand)</span><span class="ind-t-m" style="display:none">(the work, 01&ndash;04 &mdash; tap to expand)</span><span style="font-size:20px; color:#141414; line-height:1"><span class="ind-ar-d">&rarr;</span><span class="ind-ar-m">&darr;</span></span></span>
+          </span>
+          <span class="hero-bottom" style="display:flex; justify-content:space-between; align-items:baseline; gap:24px; font-size:13px">
+            <span style="font-weight:300; color:#6B6560">(Currently) <span style="color:#141414; font-weight:400">Product Designer II &middot; Veteran Benefits Guide</span></span>
+            <a href="about.html" style="text-decoration:none; white-space:nowrap; font-weight:400" style-hover="text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1.5px">More (About) Me &rarr;</a>
+          </span>
+        </span>
       </div>
+
+      <a class="h-panel" href="the-end-of-the-paper-trail.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — Paper Trail">
+        <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
+          <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#1E3A5F">(01)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The End of the Paper Trail</span>
+          <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(VBG Portal)</span>
+        </span>
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
+          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#1E3A5F; font-weight:500">(01)</span> &mdash; VBG Portal &middot; 2025&ndash;26</span>
+          <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-paper-trail.html" title="VBG Portal cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">The End of the Paper Trail</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#1E3A5F; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="h-panel" href="a-crm-worth-navigating.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — CRM Re-Architecture">
+        <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
+          <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#2F7E68">(02)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">A CRM Worth Navigating</span>
+          <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Sugar CRM)</span>
+        </span>
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
+          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#2F7E68; font-weight:500">(02)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
+          <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-crm-nav.html" title="Sugar CRM cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">A CRM Worth Navigating</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#2F7E68; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="h-panel" href="four-roles-one-system.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — CRM Workflows">
+        <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
+          <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#3E6FD9">(03)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Four Roles, One System</span>
+          <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Sugar CRM)</span>
+        </span>
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
+          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#3E6FD9; font-weight:500">(03)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
+          <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-four-roles.html" title="Four Roles cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">Four Roles, One System</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#3E6FD9; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="h-panel" href="the-two-minute-deal.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — Matchmaking">
+        <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
+          <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#6B5CD6">(04)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The Two-Minute Deal</span>
+          <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Anonymous Agent)</span>
+        </span>
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
+          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#6B5CD6; font-weight:500">(04)</span> &mdash; Anonymous Agent &middot; 2022&ndash;23</span>
+          <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-agent.html" title="Anonymous Agent cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">The Two-Minute Deal</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#6B5CD6; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+        </span>
+      </a>
+
     </div>
-    <div class="rail-meta" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
-      <div style=" font-size:11px; font-weight:400; letter-spacing:0.1em; color:#6E675C; line-height:2"><span style="display:inline-flex; align-items:center; gap:6px"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M6 11 C6 11 10 7.4 10 4.6 A4 4 0 0 0 2 4.6 C2 7.4 6 11 6 11 Z"></path><circle cx="6" cy="4.6" r="1.4"></circle></svg>Seattle, WA</span><br>&copy; 2026 Yunlei Shen<br>Made with Claude</div>
-    </div>
-  </aside>
+  </section>
 
-  <div class="site-main" style="margin-left:224px">
-  <p class="mobile-intro" style="margin:0; padding:0 24px 24px; font-size:14px; line-height:1.7; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
-  <div class="mobile-intro" style="height:1px; background:#DFD5C3; margin:0 24px" aria-hidden="true"></div>
-
-
-    <div id="workwrap" class="work-wrap">
-    <section id="work" class="work-screen" data-active="0" style="height:100vh; box-sizing:border-box; border-top:1px solid #DFD5C3; display:flex; flex-direction:column; overflow:hidden" data-screen-label="Work">
-      <div class="h-main" id="hpanels" style="flex:1; min-height:0; display:flex; align-items:stretch">
-
-        <a class="h-panel" href="the-end-of-the-paper-trail.html" style="display:block; position:relative; min-width:0; overflow:hidden; color:#26221B; text-decoration:none" data-screen-label="Work — Paper Trail">
-          <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; gap:24px; padding:32px 0; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; color:#6E675C">01</span>
-            <span style="writing-mode:vertical-rl; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:24px; line-height:1; white-space:nowrap">The End of the Paper Trail</span>
-          </span>
-          <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:36px 44px; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; white-space:nowrap">01 &mdash; VBG Portal &middot; 2025&ndash;26</span>
-            <span style="flex:1; min-height:0; margin:24px 0; display:flex; align-items:center; justify-content:center; overflow:hidden"><iframe src="./cover-paper-trail.html" title="VBG Portal cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-            <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Poppins', sans-serif; font-size:32px; line-height:1.1">The End of the Paper Trail</span><span data-accent="c" class="case-cta" style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8F6B2E; white-space:nowrap">Case study &rarr;</span></span>
-          </span>
-        </a>
-
-        <a class="h-panel" href="a-crm-worth-navigating.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #DFD5C3; color:#26221B; text-decoration:none" data-screen-label="Work — CRM Re-Architecture">
-          <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; gap:24px; padding:32px 0; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; color:#6E675C">02</span>
-            <span style="writing-mode:vertical-rl; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:24px; line-height:1; white-space:nowrap">A CRM Worth Navigating</span>
-          </span>
-          <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:36px 44px; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; white-space:nowrap">02 &mdash; Sugar CRM &middot; 2024-25</span>
-            <span style="flex:1; min-height:0; margin:24px 0; display:flex; align-items:center; justify-content:center; overflow:hidden"><iframe src="./cover-crm-nav.html" title="Sugar CRM cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-            <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Poppins', sans-serif; font-size:32px; line-height:1.1">A CRM Worth Navigating</span><span data-accent="c" class="case-cta" style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8F6B2E; white-space:nowrap">Case study &rarr;</span></span>
-          </span>
-        </a>
-
-        <a class="h-panel" href="four-roles-one-system.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #DFD5C3; color:#26221B; text-decoration:none" data-screen-label="Work — CRM Workflows">
-          <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; gap:24px; padding:32px 0; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; color:#6E675C">03</span>
-            <span style="writing-mode:vertical-rl; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:24px; line-height:1; white-space:nowrap">Four Roles, One System</span>
-          </span>
-          <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:36px 44px; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; white-space:nowrap">03 &mdash; Sugar CRM &middot; 2024&ndash;25</span>
-            <span style="flex:1; min-height:0; margin:24px 0; display:flex; align-items:center; justify-content:center; overflow:hidden"><iframe src="./cover-four-roles.html" title="Four Roles cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-            <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Poppins', sans-serif; font-size:32px; line-height:1.1">Four Roles, One System</span><span data-accent="c" class="case-cta" style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8F6B2E; white-space:nowrap">Case study &rarr;</span></span>
-          </span>
-        </a>
-
-        <a class="h-panel" href="the-two-minute-deal.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #DFD5C3; color:#26221B; text-decoration:none" data-screen-label="Work — Matchmaking">
-          <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; gap:24px; padding:32px 0; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; color:#6E675C">04</span>
-            <span style="writing-mode:vertical-rl; font-family:'Poppins', sans-serif; font-weight:600; letter-spacing:-0.022em; font-size:24px; line-height:1; white-space:nowrap">The Two-Minute Deal</span>
-          </span>
-          <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:36px 44px; box-sizing:border-box">
-            <span style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6E675C; white-space:nowrap">04 &mdash; Anonymous Agent &middot; 2022&ndash;23</span>
-            <span style="flex:1; min-height:0; margin:24px 0; display:flex; align-items:center; justify-content:center; overflow:hidden"><iframe src="./cover-agent.html" title="Anonymous Agent cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-            <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Poppins', sans-serif; font-size:32px; line-height:1.1">The Two-Minute Deal</span><span data-accent="c" class="case-cta" style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8F6B2E; white-space:nowrap">Case study &rarr;</span></span>
-          </span>
-        </a>
-
-      </div>
-    </section>
-    </div>
-
-  
-
-  </div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#26221B&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#26221B&quot;, &quot;#3E5C76&quot;, &quot;#5A6B4F&quot;], &quot;section&quot;: &quot;Theme&quot;}, &quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
+<script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   componentDidMount() {
-    const burger = document.querySelector('.nav-burger');
-    if (burger) {
-      const rail = burger.closest('.site-rail');
-      burger.addEventListener('click', function () { rail.hasAttribute('data-open') ? rail.removeAttribute('data-open') : rail.setAttribute('data-open', '1'); });
-      rail.querySelectorAll('.rail-links a').forEach(function (a) { a.addEventListener('click', function () { rail.removeAttribute('data-open'); }); });
-    }
-
-    this.applyAccent();
-    this._theme = () => {
-      const c = document.getElementById('contact');
-      if (!c) return;
-      const dark = c.getBoundingClientRect().top < window.innerHeight * 0.6;
-      if (dark) document.body.setAttribute('data-dark', '1');
-      else document.body.removeAttribute('data-dark');
+    const fitCovers = () => {
+      const box = document.querySelector('.cover-fit');
+      if (!box || !box.clientWidth) return;
+      const s = Math.min(box.clientWidth / 900, box.clientHeight / 560);
+      if (s > 0) document.documentElement.style.setProperty('--cover-scale', s);
     };
-    window.addEventListener('scroll', this._theme, { passive: true });
-    window.addEventListener('resize', this._theme);
-    this._theme();
+    fitCovers();
+    requestAnimationFrame(fitCovers);
+    window.addEventListener('resize', fitCovers);
+    window.addEventListener('load', fitCovers);
+    if (window.ResizeObserver) new ResizeObserver(fitCovers).observe(document.documentElement);
     const ptPanel = document.querySelector('iframe[src="./cover-paper-trail.html"]');
     if (ptPanel) {
       const panel = ptPanel.closest('.h-panel');
@@ -285,55 +237,28 @@ class Component extends DCLogic {
         });
       }
     }
-    if ((this.props.motion ?? true) === false) return;
-    const els = Array.from(document.querySelectorAll('[data-reveal]'));
-    this._check = () => {
-      const vh = window.innerHeight;
-      const vw = window.innerWidth;
-      let pending = 0;
-      els.forEach((el) => {
-        if (el.dataset.shown) return;
-        const r = el.getBoundingClientRect();
-        if (r.top < vh - 40 && r.left < vw - 40) {
-          el.dataset.shown = '1';
-          try {
-            el.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: 'ease', fill: 'backwards' });
-            setTimeout(() => { if (getComputedStyle(el).opacity !== '1') el.getAnimations().forEach((a) => a.cancel()); }, 900);
-          } catch (err) {}
-        } else { pending++; }
-      });
-      if (pending === 0) this._teardown();
-    };
-    window.addEventListener('scroll', this._check, { passive: true });
-    window.addEventListener('resize', this._check);
-    this._check();
-    requestAnimationFrame(() => this._check && this._check());
-    setTimeout(() => this._check && this._check(), 300);
-  }
-  _teardown() {
-    if (!this._check) return;
-    window.removeEventListener('scroll', this._check);
-    window.removeEventListener('resize', this._check);
-    if (this._main) this._main.removeEventListener('scroll', this._check);
-    this._check = null;
-  }
-  componentDidUpdate() { this.applyAccent(); }
-  componentWillUnmount() {
-    this._teardown();
-    if (this._work) {
-      window.removeEventListener('scroll', this._work);
-      window.removeEventListener('resize', this._work);
+    const ind = document.getElementById('workInd');
+    if (ind) {
+      let seen = false;
+      try { seen = localStorage.getItem('yl-work-indicator-seen') === '1'; } catch (e) {}
+      if (seen) { ind.style.display = 'none'; }
+      else {
+        const dismiss = () => {
+          if (ind.classList.contains('gone')) return;
+          ind.classList.add('gone');
+          try { localStorage.setItem('yl-work-indicator-seen', '1'); } catch (e) {}
+          setTimeout(() => { ind.style.display = 'none'; }, 700);
+        };
+        document.querySelectorAll('a.h-panel').forEach((p) => {
+          p.addEventListener('mouseenter', dismiss, { once: true });
+          p.addEventListener('touchstart', dismiss, { once: true, passive: true });
+          p.addEventListener('click', dismiss, { once: true });
+        });
+      }
     }
-  }
-  applyAccent() {
-    const a = this.props.accent;
-    if (!a || a === '#26221B') return;
-    document.querySelectorAll('[data-accent="c"]').forEach((el) => { el.style.color = a; });
-    document.querySelectorAll('[data-accent="bg"]').forEach((el) => { el.style.background = a; });
   }
   renderVals() { return {}; }
 }
 </script>
-<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,20 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/support.js"></script>
-<meta name="description" content="About Yunlei Shen — product designer working across research, systems thinking, and interface craft.">
-<title>About · Yunlei Shen</title>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.yunleidesign.com/about.html">
-<meta property="og:url" content="https://www.yunleidesign.com/about.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About · Yunlei Shen">
-<meta property="og:description" content="About Yunlei Shen — product designer working across research, systems thinking, and interface craft.">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -22,285 +11,190 @@
 <title>About · Yunlei Shen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #F7F2EA; -webkit-font-smoothing: antialiased; }
-::selection { background: #8F6B2E; color: #F7F2EA; }
-.rail-links a { position: relative; transition: color .25s ease; }
-.rail-links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: #8F6B2E; transform: scaleX(0); transform-origin: left center; transition: transform .3s cubic-bezier(.22,1,.36,1); }
-.rail-links a:hover { color: #8F6B2E !important; }
-.rail-links a:hover::after { transform: scaleX(1); }
-.rail-links a.active::after { transform: scaleX(1); }
-.skill-chip { transition: transform .25s cubic-bezier(0.34, 1.56, 0.64, 1) !important; }
-.skill-chip:hover { transform: translateY(-5px) rotate(0deg) !important; }
-.hero-chip { cursor: default; will-change: transform; animation: hero-float 5.2s ease-in-out infinite; }
-.hero-chip:nth-of-type(2n) { animation-duration: 6.4s; animation-delay: -2.1s; animation-name: hero-float-b; }
-.hero-chip:nth-of-type(3n) { animation-duration: 7.1s; animation-delay: -3.6s; }
-.hero-chip:nth-of-type(5n) { animation-duration: 5.8s; animation-delay: -1.2s; animation-name: hero-float-b; }
-@keyframes hero-float { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-9px) rotate(calc(var(--r, 0deg) + 1.6deg)); } }
-@keyframes hero-float-b { 0%,100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(8px) rotate(calc(var(--r, 0deg) - 1.4deg)); } }
-.hero-blob { animation: blob-drift 14s ease-in-out infinite; will-change: transform; }
-.hero-blob:nth-of-type(2n) { animation-duration: 18s; animation-delay: -6s; animation-direction: reverse; }
-.hero-blob:nth-of-type(3n) { animation-duration: 22s; animation-delay: -11s; }
-@keyframes blob-drift { 0%,100% { translate: 0 0; } 33% { translate: 14px -12px; } 66% { translate: -10px 10px; } }
-@media (prefers-reduced-motion: reduce) { .hero-chip, .hero-blob { animation: none; } }
-@media (max-width: 1024px) { .hero-blob { display: none; } }
-@media (max-width: 1024px) { .hero-chip { position: static !important; transform: none !important; display: inline-block; margin: 6px 4px; } .hero-stage { display: flex; flex-direction: column; align-items: center; text-align: center; } .hero-stage > span[aria-hidden] { display: none; } }
-body { transition: background-color .6s ease; }
-[style] { transition: background-color .6s ease, color .6s ease, border-color .6s ease; }
-body[data-dark] { background: #26221B; }
-body[data-dark] [style*="background: rgb(247, 242, 234)"], body[data-dark] [style*="background-color: rgb(247, 242, 234)"], body[data-dark] [style*=") rgb(247, 242, 234)"] { background-color: #26221B !important; }
-body[data-dark] [style*="background: rgb(251, 247, 240)"], body[data-dark] [style*="background-color: rgb(251, 247, 240)"], body[data-dark] [style*=") rgb(251, 247, 240)"] { background-color: #2E2A22 !important; }
-body[data-dark] [style*="background: rgb(239, 231, 214)"], body[data-dark] [style*="background-color: rgb(239, 231, 214)"] { background-color: #2A251E !important; }
-body[data-dark] [style*="rgb(241, 234, 219)"] { background-color: #332E25 !important; }
-body[data-dark] [style*="color: rgb(38, 34, 27)"] { color: #F7F2EA !important; }
-body[data-dark] [style*="color: rgb(62, 57, 48)"] { color: #D9D2C4 !important; }
-body[data-dark] [style*="color: rgb(110, 103, 92)"] { color: #A99F8D !important; }
-body[data-dark] [style*="color: rgb(143, 107, 46)"] { color: #C9A96A !important; }
-body[data-dark] [style*="rgb(223, 213, 195)"] { border-color: #3E3930 !important; }
-body[data-dark] [style*="rgb(216, 205, 184)"] { border-color: #3E3930 !important; }
-body[data-dark] [style*="rgb(201, 191, 169)"] { border-color: #5C5544 !important; }
-body[data-dark] #contact [style*="border: 1.5px solid rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
-body[data-dark] #contact [style*="border: 3px double rgb(143, 107, 46)"] { border-color: #C9A96A !important; color: #C9A96A !important; }
-body[data-dark] #contact [style*="border: 1.5px solid rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
-body[data-dark] #contact [style*="border: 1.5px dashed rgb(138, 129, 113)"] { border-color: #A99F8D !important; color: #F7F2EA !important; }
-body[data-dark] #contact [style*="border: 1.5px dashed rgb(38, 34, 27)"] { border-color: #F7F2EA !important; color: #F7F2EA !important; }
-body[data-dark] [style*="background: rgb(228, 219, 201)"], body[data-dark] [style*="background-color: rgb(228, 219, 201)"] { background-color: #2E2A22 !important; }
-#contact svg path { transition: fill .6s ease; }
-body[data-dark] #contact svg path { fill: #2E2A22 !important; }
-body[data-dark] #contact [style*="background: rgb(38, 34, 27)"] { background-color: #FBF7F0 !important; color: #26221B !important; }
-body[data-dark] #contact [style*="background: rgb(143, 107, 46)"] { background-color: #C9A96A !important; color: #26221B !important; }
-body[data-dark] #contact button[type="submit"] { border-color: #C9A96A !important; color: #C9A96A !important; }
-body[data-dark] .site-rail { border-right-color: #3E3930 !important; }
-.rail-meta a { transition: color .25s ease, border-color .25s ease; }
-.rail-meta a:hover { color: #8F6B2E !important; border-color: #8F6B2E !important; }
-body[data-dark] .rail-meta a { border-color: #F7F2EA !important; color: #F7F2EA !important; }
-body[data-dark] .rail-meta a:hover { color: #C9A96A !important; border-color: #C9A96A !important; }
-@media (max-width: 1180px) {
-  .chip-scatter { position: static !important; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; margin-bottom: 56px; pointer-events: auto !important; }
-  .chip-scatter .skill-chip { position: static !important; }
-  .chip-scatter-wrap { padding: 0 !important; }
-}
-@media (max-width: 1024px) {
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .rail-links { flex-direction: row !important; gap: 18px !important; margin-top: 0 !important; flex-wrap: wrap; align-items: center; }
-  .rail-divider { align-self: center !important; width: 28px !important; }
-  .rail-meta { display: none !important; }
-  .site-main { margin-left: 0 !important; }
-}
-
-.nav-burger { display: none; }
-.mobile-intro { display: none; }
-@media (max-width: 1024px) {
-  html, body { overflow-x: clip; }
-  img { max-width: 100% !important; }
-  .site-rail { position: sticky !important; top: 0 !important; width: auto !important; height: auto !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid #DFD5C3 !important; padding: 14px 20px !important; }
-  .site-rail > div:first-child { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-  .site-rail p { display: none !important; }
-  .nav-burger { display: flex !important; }
-  .rail-links { display: none !important; }
-  .site-rail[data-open] .rail-links { display: flex !important; position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #F7F2EA; border-bottom: 1px solid #DFD5C3; flex-direction: column !important; align-items: flex-start !important; gap: 18px !important; margin: 0 !important; padding: 20px 24px; }
-  .site-rail[data-open] .rail-links > span[aria-hidden] { width: 100% !important; align-self: stretch; }
-  body[data-dark] .site-rail[data-open] .rail-links { background: #26221B; border-bottom-color: #3E3930; }
-  .rail-meta { display: none !important; }
-  .mobile-intro { display: block !important; }
-  .site-main { padding-top: 28px; }
-  [style*="repeat(4, minmax(0,1fr))"] { gap: 6px !important; }
-  .site-main section[id] { padding-left: 20px !important; padding-right: 20px !important; }
-  .breakout, .site-main figure { overflow-x: auto !important; overscroll-behavior-x: contain; }
-}
+body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
+::selection { background: #141414; color: #FAF7F2; }
+a { color: #141414; }
+a:hover { color: #141414; }
+.top-nav a { text-decoration: none; }
+.top-nav a:hover, .top-nav a.active { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1.5px; }
 .photo-grid { grid-template-columns: repeat(8, minmax(0,1fr)); }
 @media (max-width: 1024px) { .photo-grid { grid-template-columns: repeat(6, minmax(0,1fr)); gap: 10px; } }
 @media (max-width: 640px) { .photo-grid { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; } }
+@media (max-width: 1024px) {
+  .nav-center { position: static !important; transform: none !important; }
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .hero-photo-col { max-width: 420px; }
+}
+@media (max-width: 680px) {
+  .nav-right { display: none !important; }
+  .nav-center { gap: 18px !important; }
+  .fact-row { flex-direction: column !important; gap: 4px !important; }
+}
 </style>
 </helmet>
 
-<div style="background:#F7F2EA; color:#26221B; font-family:'Poppins', sans-serif; min-height:100vh" data-screen-label="About">
+<div style="background:#FAF7F2; color:#141414; font-family:'Geist', sans-serif; min-height:100vh" data-screen-label="About">
 
-  <aside class="site-rail" style="position:fixed; top:0; left:0; bottom:0; width:224px; box-sizing:border-box; z-index:50; background:#F7F2EA; border-right:1px solid #DFD5C3; padding:36px 32px; display:flex; flex-direction:column; justify-content:space-between">
-    <div>
-      <a href="index.html" title="Yunlei Shen" style="display:inline-block; text-decoration:none; color:#26221B; font-family:'Poppins',sans-serif; font-weight:400; font-size:20px; letter-spacing:0.06em; line-height:1">YUNLEI SHEN</a><button class="nav-burger" aria-label="Menu" style="background:none; border:1px solid #DFD5C3; border-radius:8px; padding:10px 9px; cursor:pointer; flex-direction:column; gap:4px; align-items:center; justify-content:center"><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span><span style="display:block; width:18px; height:1.5px; background:#26221B"></span></button>
-      <p style="margin:24px 0 0; font-size:13px; line-height:1.65; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
-      <div class="rail-links" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; margin-top:44px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
-        <a href="index.html#work" style="color:#26221B; text-decoration:none; padding-bottom:2px">Work</a>
-        <a href="about.html" class="active" style="color:#8F6B2E; text-decoration:none; padding-bottom:2px">About</a>
-        <span class="rail-divider" style="align-self:stretch; height:1px; background:#DFD5C3" aria-hidden="true"></span>
-        <a href="mailto:yunlei921128@gmail.com" style="color:#26221B; text-decoration:none; padding-bottom:2px">Email&nbsp;↗</a>
-        <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">LinkedIn&nbsp;↗</a>
-        <a href="images/yunlei-shen-cv-2026.pdf" target="_blank" rel="noopener" style="color:#26221B; text-decoration:none; padding-bottom:2px">Resume&nbsp;↗</a>
+  <header class="top-nav" style="position:sticky; top:0; z-index:50; background:#FAF7F2; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 28px; height:58px; border-bottom:1px solid #E3DED6; box-sizing:border-box; font-size:13px; font-weight:400">
+    <a href="index.html" style="font-weight:500; letter-spacing:0.02em">Yunlei Shen</a>
+    <nav class="nav-center" style="position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:28px">
+      <a href="index.html#work"><span style="color:#6B6560; font-size:12px">&#8317;&#185;&#8318;</span> Work</a>
+      <a href="about.html" class="active"><span style="color:#6B6560; font-size:12px">&#8317;&#178;&#8318;</span> About</a>
+    </nav>
+    <div class="nav-right" style="display:flex; gap:22px">
+      <a href="mailto:yunlei921128@gmail.com">Email&nbsp;&#8599;</a>
+      <a href="https://www.linkedin.com/in/yunlei-shen/" target="_blank" rel="noopener">LinkedIn&nbsp;&#8599;</a>
+      <a href="yunlei-shen-cv-2026.pdf" target="_blank" rel="noopener">Resume&nbsp;&#8599;</a>
+    </div>
+  </header>
+
+  <section style="max-width:1280px; margin:0 auto; padding:72px 32px 88px" data-screen-label="About hero">
+    <p data-reveal="" style="margin:0 0 28px; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">(About) &mdash; Yunlei Shen &middot; Seattle, WA</p>
+    <h1 data-reveal="" style="margin:0 0 56px; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(44px, 8.2vw, 124px); line-height:0.94; letter-spacing:-0.015em; text-wrap:balance">Ambiguity is the brief, software is the reply</h1>
+    <div class="hero-grid" data-reveal="" style="display:grid; grid-template-columns:minmax(280px, 400px) 1fr; gap:56px; align-items:start">
+      <div class="hero-photo-col">
+        <img src="portrait-hero.jpg" alt="Yunlei in Joshua Tree at golden hour" fetchpriority="high" style="display:block; width:100%; aspect-ratio:4/5; object-fit:cover; box-sizing:border-box">
+        <p style="margin:10px 0 0; font-size:12px; font-weight:300; color:#6B6560">Fig. 01 &mdash; Joshua Tree, golden hour</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:44px">
+        <p style="margin:0; font-size:14px; line-height:1.8; max-width:640px; text-wrap:pretty">I'm a product designer with craft expertise in interaction and visual design, and a habit of building the things I design. I've worked across startups, a creative agency, and an in-house automotive design team, most often as the first or only designer in the room &mdash; defining the problem, shipping the product, and building the system that outlives it. I'm drawn to zero-to-one work, to turning manual, tangled processes into flows that feel obvious, and to prototyping early enough that real users shape the product before engineering starts. Currently founding product designer at Veteran Benefits Guide in Seattle.</p>
+        <div style="display:flex; flex-direction:column; font-size:14px; line-height:1.6">
+          <div class="fact-row" style="display:flex; gap:24px; padding:14px 0; border-top:1px solid #E3DED6">
+            <p style="margin:0; width:130px; flex-shrink:0; font-weight:300; color:#6B6560">(Practice)</p>
+            <p style="margin:0">Product strategy &middot; design systems &middot; 0 &rarr; 1 &rarr; scale</p>
+          </div>
+          <div class="fact-row" style="display:flex; gap:24px; padding:14px 0; border-top:1px solid #E3DED6">
+            <p style="margin:0; width:130px; flex-shrink:0; font-weight:300; color:#6B6560">(Method)</p>
+            <p style="margin:0">Mixed-methods research &middot; AI-assisted prototyping &middot; metrics that move</p>
+          </div>
+          <div class="fact-row" style="display:flex; gap:24px; padding:14px 0; border-top:1px solid #E3DED6; border-bottom:1px solid #E3DED6">
+            <p style="margin:0; width:130px; flex-shrink:0; font-weight:300; color:#6B6560">(With)</p>
+            <p style="margin:0">Cross-functional teams &middot; stakeholders &middot; workflow is the product</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="rail-meta" style="display:flex; flex-direction:column; align-items:flex-start; gap:18px; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase">
-      <div style="font-size:11px; font-weight:400; letter-spacing:0.1em; color:#6E675C; line-height:2"><span style="display:inline-flex; align-items:center; gap:6px"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M6 11 C6 11 10 7.4 10 4.6 A4 4 0 0 0 2 4.6 C2 7.4 6 11 6 11 Z"></path><circle cx="6" cy="4.6" r="1.4"></circle></svg>Seattle, WA</span><br>© 2026 Yunlei Shen<br>Made with Claude</div>
-    </div>
-  </aside>
-
-  <div class="site-main" style="margin-left:224px">
-  <p class="mobile-intro" style="margin:0; padding:0 24px 24px; font-size:14px; line-height:1.7; color:#3E3930">Think it, prove it, ship it. I design in systems, prototype in code, and let outcomes carry the load. Ambiguity is the brief; working software is the reply.</p>
-  <div class="mobile-intro" style="height:1px; background:#DFD5C3; margin:0 24px" aria-hidden="true"></div>
-
-  <section style="max-width:1240px; margin:0 auto; padding:96px 32px 72px" data-screen-label="About hero">
-    <div style="text-align:center">
-      
-      
-    </div>
-    <div data-reveal="" class="hero-stage" style="position:relative; max-width:840px; margin:0 auto; padding:48px 0 40px">
-      <span class="hero-blob" style="position:absolute; left:6%; top:2%; width:340px; height:300px; background:#E4DBC9; border-radius:58% 42% 64% 36%/48% 60% 40% 52%; transform:rotate(-8deg)" aria-hidden="true"></span>
-      <span class="hero-blob" style="position:absolute; right:2%; bottom:0%; width:380px; height:320px; background:rgba(143,107,46,0.16); border-radius:38% 62% 46% 54%/62% 38% 60% 40%; transform:rotate(11deg)" aria-hidden="true"></span>
-      <span class="hero-blob" style="position:absolute; right:14%; top:-4%; width:230px; height:210px; border:2px solid #C9BFA9; border-radius:52% 48% 40% 60%/44% 56% 48% 52%; transform:rotate(-15deg)" aria-hidden="true"></span>
-      <span class="hero-blob" style="position:absolute; left:18%; bottom:-3%; width:200px; height:120px; background:#26221B; opacity:0.08; border-radius:64% 36% 56% 44%/40% 62% 38% 58%; transform:rotate(6deg)" aria-hidden="true"></span>
-      <div class="hero-photo" style="position:relative; width:min(340px, 70vw); margin:0 auto; transition:transform .45s cubic-bezier(.22,1,.36,1)">
-        <div style="position:absolute; inset:0; transform:translate(12px,12px); border:1px solid #C9BFA9; pointer-events:none"></div>
-        <img src="images/portrait-hero.jpg" alt="Yunlei in Joshua Tree at golden hour" fetchpriority="high" style="position:relative; display:block; width:100%; aspect-ratio:4/5; object-fit:cover">
-        <svg viewBox="0 0 60 24" style="position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:60px; height:24px; color:#8F6B2E" aria-hidden="true"><path d="M2 20 C 14 4, 30 4, 42 12 S 56 18, 58 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
-      </div>
-      <span class="hero-chip" style="position:absolute; left:7%; top:6%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; background:#F7F2EA; --r:-5deg; transform:rotate(-5deg)">0 → 1 → scale</span>
-      <span class="hero-chip" style="position:absolute; right:6%; top:5%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:3deg; transform:rotate(3deg)">product strategy</span>
-      <span class="hero-chip" style="position:absolute; left:2%; top:24%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-2deg; transform:rotate(-2deg)">mixed-methods research</span>
-      <span class="hero-chip" style="position:absolute; right:3%; top:23%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:15px 225px 15px 255px/255px 15px 225px 15px; background:#F7F2EA; --r:4deg; transform:rotate(4deg)">AI-assisted prototyping</span>
-      <span class="hero-chip" style="position:absolute; left:3%; top:46%; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#26221B; color:#F7F2EA; --r:2deg; transform:rotate(2deg)">workflow is the product</span>
-      <span class="hero-chip" style="position:absolute; right:2%; top:45%; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#8F6B2E; color:#F7F2EA; --r:-2deg; transform:rotate(-2deg)">vibe coding</span>
-      <span class="hero-chip" style="position:absolute; left:5%; top:66%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:225px 15px 255px 15px/15px 255px 15px 225px; background:#F7F2EA; --r:3deg; transform:rotate(3deg)">design systems</span>
-      <span class="hero-chip" style="position:absolute; right:4%; top:65%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-3deg; transform:rotate(-3deg)">cross-functional leadership</span>
-      <span class="hero-chip" style="position:absolute; left:9%; bottom:6%; border:1px solid #26221B; color:#26221B; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; background:#F7F2EA; --r:-3deg; transform:rotate(-3deg)">metrics that move</span>
-      <span class="hero-chip" style="position:absolute; right:7%; bottom:5%; border:1.5px dashed #8F6B2E; color:#8F6B2E; font-family:'Poppins', sans-serif; font-weight:500; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; padding:7px 14px; border-radius:255px 15px 225px 15px/15px 225px 15px 255px; background:#F7F2EA; --r:2deg; transform:rotate(2deg)">pitching to stakeholders</span>
-
-    </div>
-    
   </section>
 
   <section data-screen-label="Timeline">
-    <div style="max-width:1240px; margin:0 auto; padding:88px 32px 96px">
-      <p data-reveal="" style="margin:0 0 32px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#6E675C">The path so far</p>
-      <div style="max-width:760px; display:flex; flex-direction:column">
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2023 — now</p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">Product Designer II</strong> · Veteran Benefits Guide, Seattle<br><span style="color:#6E675C">First in-house designer; UX across B2C, internal tools &amp; enterprise</span></p>
+    <div style="max-width:1280px; margin:0 auto; padding:72px 32px 88px; border-top:1px solid #E3DED6">
+      <p data-reveal="" style="margin:0 0 32px; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">(The path so far)</p>
+      <div style="max-width:780px; display:flex; flex-direction:column">
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560">2023 — now</p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">Product Designer II</strong> · Veteran Benefits Guide, Seattle<br><span style="font-weight:300; color:#6B6560">First in-house designer; UX across B2C, internal tools &amp; enterprise</span></p>
         </div>
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2022 — 23</p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">Product Designer</strong> · Anonymous Agent, Seattle<br><span style="color:#6E675C">Cross-platform nano-influencer marketplace, zero to 900+ users</span></p>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560">2022 — 23</p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">Product Designer</strong> · Anonymous Agent, Seattle<br><span style="font-weight:300; color:#6B6560">Cross-platform nano-influencer marketplace, zero to 900+ users</span></p>
         </div>
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2022</p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight: 600;">UX Design Intern</strong> · Young &amp; Hungry Creative, San Francisco<br><span style="color: rgb(110, 103, 92);">Nonprofit donation flows, +12.2% donor conversion</span></p>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560">2022</p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">UX Design Intern</strong> · Young &amp; Hungry Creative, San Francisco<br><span style="font-weight:300; color:#6B6560">Nonprofit donation flows, +12.2% donor conversion</span></p>
         </div>
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">2021</p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight: 600;">UX Design Co-op</strong> · General Motors, San Francisco<br><span style="color: rgb(110, 103, 92);">Immersive storytelling for GM’s 2039 vision</span></p>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560">2021</p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">UX Design Co-op</strong> · General Motors, San Francisco<br><span style="font-weight:300; color:#6B6560">Immersive storytelling for GM&rsquo;s 2039 vision</span></p>
         </div>
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C">Education</p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">M.A. Interaction &amp; UI/UX Design</strong> · Academy of Art University<br><span style="color:#6E675C">San Francisco, CA</span></p>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560">Education</p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">M.A. Interaction &amp; UI/UX Design</strong> · Academy of Art University<br><span style="font-weight:300; color:#6B6560">San Francisco, CA</span></p>
         </div>
-        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #D8CDB8; border-bottom:1px solid #D8CDB8">
-          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; color:#6E675C"></p>
-          <p style="margin:0; font-size:15.5px; line-height:1.55"><strong style="font-weight:600">B.F.A. Digital Arts</strong> · Zhejiang University of Technology<br><span style="color:#6E675C">Hangzhou, China</span></p>
+        <div data-reveal="" style="display:flex; gap:24px; padding:18px 0; border-top:1px solid #E3DED6; border-bottom:1px solid #E3DED6">
+          <p style="margin:0; width:110px; flex-shrink:0; font-size:13px; font-weight:300; color:#6B6560"></p>
+          <p style="margin:0; font-size:15px; line-height:1.55"><strong style="font-weight:500">B.F.A. Digital Arts</strong> · Zhejiang University of Technology<br><span style="font-weight:300; color:#6B6560">Hangzhou, China</span></p>
         </div>
       </div>
     </div>
   </section>
 
   <section data-screen-label="The real me">
-    <div style="max-width:1240px; margin:0 auto; padding:88px 32px 96px">
-      <p data-reveal="" style="margin:0 0 20px; font-family:'Poppins', sans-serif; font-weight:400; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#8F6B2E">Me, as myself</p>
-      <h2 id="rmt" data-reveal="" style="margin:0 0 28px; font-family:'Poppins', sans-serif; font-weight:400; font-size:clamp(30px,4.5vw,48px); line-height:1.1"><span id="rmt-in" style="display:inline-block">The real me lives <em style="color:#8F6B2E">off the clock</em>.</span></h2>
+    <div style="max-width:1280px; margin:0 auto; padding:72px 32px 96px; border-top:1px solid #E3DED6">
+      <p data-reveal="" style="margin:0 0 20px; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560">(Me, as myself)</p>
+      <h2 data-reveal="" style="margin:0 0 48px; font-family:'STIX Two Text', serif; font-weight:400; font-size:clamp(30px, 3.6vw, 44px); line-height:1.2">The real me lives <em style="text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1.5px">off the clock</em>.</h2>
       <div data-reveal="" style="margin-bottom:48px">
-        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">On the road</p>
+        <p style="margin:0 0 14px; font-size:12px; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">(On the road) &mdash; &times;19</p>
         <div class="photo-grid" style="display:grid; gap:12px">
-          <img src="images/photo-22.jpg" alt="Nā Pali coast from above" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 50%">
-          <img src="images/photo-04.jpg" alt="Sedona cave" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
-          <img src="images/photo-06.jpg" alt="Winter sunset over boreal hills" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-          <img src="images/photo-33.jpg" alt="Snowy peak at dusk" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
-          <img src="images/photo-36.jpg" alt="Beach cove from the bluff" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:25% 50%">
-          <img src="images/photo-11.jpg" alt="Volcano valley under clouds" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
-          <img src="images/photo-26.jpg" alt="Plaza in Quito" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:70% 45%">
-          <img src="images/photo-25.jpg" alt="Basilica towers" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-          <img src="images/photo-40.jpg" alt="Ridge line and golden meadows" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
-          <img src="images/photo-13.jpg" alt="Uprooted giant in the rainforest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
-          <img src="images/photo-31.jpg" alt="Giraffe at sunset" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 45%">
-          <img src="images/photo-08.jpg" alt="Wildebeest crossing the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
-          <img src="images/photo-14.jpg" alt="Lion cub in the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 45%">
-          <img src="images/photo-39.jpg" alt="Leopard in the grass" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:28% 45%">
-          <img src="images/photo-21.jpg" alt="Elephants with egrets" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 45%">
-          <img src="images/photo-38.jpg" alt="Maasai giraffe" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
-          <img src="images/photo-32.jpg" alt="Frozen river canyon" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-          <img src="images/photo-27.jpg" alt="Sunset above the clouds on Mauna Kea" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 70%">
-          <img src="images/photo-12.jpg" alt="Badwater Basin reflections" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 65%">
+          <img src="uploads/9A9F21A3-053A-4712-ABB5-7221F70085EA_1_105_c.jpeg" alt="Nā Pali coast from above" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 50%; box-sizing:border-box">
+          <img src="uploads/10724406-F78E-44BF-86C2-9FFDF8C57EA4_1_105_c.jpeg" alt="Sedona cave" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; box-sizing:border-box">
+          <img src="uploads/16530AE5-FD4A-400A-8D6B-2CB3487881CB_1_105_c.jpeg" alt="Winter sunset over boreal hills" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+          <img src="uploads/DAE4D7B5-69AF-4598-83B6-BCD21E081589_1_105_c.jpeg" alt="Snowy peak at dusk" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; box-sizing:border-box">
+          <img src="uploads/E890CAC3-1A4D-4641-B153-0A500DDC0FF1_1_105_c.jpeg" alt="Beach cove from the bluff" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:25% 50%; box-sizing:border-box">
+          <img src="uploads/4951FF6E-0BC1-4436-9C65-35CB4DC66427_1_105_c.jpeg" alt="Volcano valley under clouds" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; box-sizing:border-box">
+          <img src="uploads/C7BF316E-5C04-46A6-8DDE-550BD3633E29_1_105_c.jpeg" alt="Plaza in Quito" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:70% 45%; box-sizing:border-box">
+          <img src="uploads/BCF0C8A0-28C5-49B7-95A7-BDF0C8D7145B_1_105_c.jpeg" alt="Basilica towers" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+          <img src="uploads/FD874BE9-5CB4-4EDB-8151-F362D879EE59.jpeg" alt="Ridge line and golden meadows" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; box-sizing:border-box">
+          <img src="uploads/661DE643-7701-41BE-BF91-9E7204F9ADBE.jpeg" alt="Uprooted giant in the rainforest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; box-sizing:border-box">
+          <img src="uploads/D7A41D23-422E-40B0-8DAF-210F46ADE752_1_105_c.jpeg" alt="Giraffe at sunset" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:55% 45%; box-sizing:border-box">
+          <img src="uploads/2FA539E1-13C7-4C60-A451-AF5D87C59216_1_105_c.jpeg" alt="Wildebeest crossing the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; box-sizing:border-box">
+          <img src="uploads/6A2412B1-5EC0-457C-BD30-0C8A95CA58B5_1_105_c.jpeg" alt="Lion cub in the Mara" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 45%; box-sizing:border-box">
+          <img src="uploads/F77BDF49-DB7F-44B0-A254-A6DC9C139DF8_1_105_c.jpeg" alt="Leopard in the grass" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:28% 45%; box-sizing:border-box">
+          <img src="uploads/9843C7FB-D1B6-4355-BD4D-52667249D212_1_105_c.jpeg" alt="Elephants with egrets" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 45%; box-sizing:border-box">
+          <img src="uploads/F4656D22-4928-4F74-BC5B-36C1F4A30169_1_105_c.jpeg" alt="Maasai giraffe" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; box-sizing:border-box">
+          <img src="uploads/D8D05519-ACBF-4507-8973-B053AEE4DC0B_1_105_c.jpeg" alt="Frozen river canyon" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+          <img src="uploads/C9D5468A-E7AE-4B63-8511-EA01DFD1B0AC_1_105_c.jpeg" alt="Sunset above the clouds on Mauna Kea" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 70%; box-sizing:border-box">
+          <img src="uploads/5229D900-186D-4F4D-8169-3447D3A5F266_1_105_c.jpeg" alt="Badwater Basin reflections" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 65%; box-sizing:border-box">
         </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
-          <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">BAKING</p>
+          <p style="margin:0 0 14px; font-size:12px; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">(Baking) &mdash; &times;7</p>
           <div class="photo-grid" style="display:grid; gap:12px">
-            <img src="images/photo-35.jpg" alt="Peach and thyme cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
-            <img src="images/photo-17.jpg" alt="Garlic rosemary focaccia" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover">
-            <img src="images/photo-03.jpg" alt="Sourdough loaf" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-            <img src="images/photo-05.jpg" alt="Lattice apple pie" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 50%">
-            <img src="images/photo-01.jpg" alt="Flower-pot chocolate dessert" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%">
-            <img src="images/photo-28.jpg" alt="Blueberry rosemary cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 50%">
-            <img src="images/photo-15.jpg" alt="Mille-crêpe cake and cold brew" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 60%">
+            <img src="uploads/E322302C-C257-4257-B708-72EBF0587F5A_1_105_c.jpeg" alt="Peach and thyme cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; box-sizing:border-box">
+            <img src="uploads/789C0A1C-12CE-44C2-9236-1BEE4FFBF45D_1_105_c.jpeg" alt="Garlic rosemary focaccia" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; box-sizing:border-box">
+            <img src="uploads/0E7FD528-4C3C-4B9D-803E-617DB90B53FD_1_105_c.jpeg" alt="Sourdough loaf" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+            <img src="uploads/133E443C-1AC6-4952-B7F4-91D3680D74F7_1_105_c.jpeg" alt="Lattice apple pie" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 50%; box-sizing:border-box">
+            <img src="uploads/097FC053-45ED-4748-922E-51D7F2D0A7BE_1_105_c.jpeg" alt="Flower-pot chocolate dessert" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; box-sizing:border-box">
+            <img src="uploads/CB5A96A6-D73B-4ACB-8066-DF576C950618_1_105_c.jpeg" alt="Blueberry rosemary cheesecake" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 50%; box-sizing:border-box">
+            <img src="uploads/7008F4C9-7C32-4D36-AC91-27F133FA1BE8_1_105_c.jpeg" alt="Mille-crêpe cake and cold brew" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:30% 60%; box-sizing:border-box">
           </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
-          <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Coffee, always</p>
+          <p style="margin:0 0 14px; font-size:12px; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">(Coffee, always) &mdash; &times;4</p>
           <div class="photo-grid" style="display:grid; gap:12px">
-            <img src="images/photo-10.jpg" alt="Espresso in a red cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
-            <img src="images/photo-19.jpg" alt="Black coffee" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-            <img src="images/photo-23.jpg" alt="Coffee with biscotti" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
-            <img src="images/photo-37.jpg" alt="Espresso in a Mondrian cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%">
+            <img src="uploads/416189B8-3095-45AC-8015-B641538BAFA2_1_105_c.jpeg" alt="Espresso in a red cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; box-sizing:border-box">
+            <img src="uploads/8654A06E-B48D-4692-987B-E611CE0E515C.jpeg" alt="Black coffee" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+            <img src="uploads/A6FEB562-F1E3-49C6-9C51-AEFF73152793_1_105_c.jpeg" alt="Coffee with biscotti" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
+            <img src="uploads/F0884C06-4184-4623-B2AF-AA865EBC1B27_1_105_c.jpeg" alt="Espresso in a Mondrian cup" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 55%; box-sizing:border-box">
           </div>
       </div>
       <div data-reveal="" style="margin-bottom:48px">
-        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">MY DOG, CHEWIE</p>
+        <p style="margin:0 0 14px; font-size:12px; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">(My dog, Chewie) &mdash; &times;5</p>
         <div class="photo-grid" style="display:grid; gap:12px">
-          <img src="images/photo-16.jpg" alt="Chewie on the beach" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 45%">
-          <img src="images/photo-24.jpg" alt="Chewie mid-sprint" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
-          <img src="images/photo-29.jpg" alt="Chewie and the gingerbread man" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 40%">
-          <img src="images/photo-07.jpg" alt="Chewie at Salvation Mountain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%">
-          <img src="images/photo-09.jpg" alt="Chewie guarding the apple harvest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 50%">
+          <img src="uploads/736EED08-1883-42F9-A4CD-22202F2E9DD8_1_105_c.jpeg" alt="Chewie on the beach" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:40% 45%; box-sizing:border-box">
+          <img src="uploads/AFB77B46-B4B4-494D-B7A0-AF4441491814_1_105_c.jpeg" alt="Chewie mid-sprint" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; box-sizing:border-box">
+          <img src="uploads/CEF93551-55E1-49A2-8FCC-E67F3D97F761_1_105_c.jpeg" alt="Chewie and the gingerbread man" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 40%; box-sizing:border-box">
+          <img src="uploads/1BC4CCDC-D6BC-4FA6-A5BA-575E91AA09C5_1_105_c.jpeg" alt="Chewie at Salvation Mountain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 60%; box-sizing:border-box">
+          <img src="uploads/401705A6-F7DD-4DE5-9A53-7E1AF7DF7475_1_105_c.jpeg" alt="Chewie guarding the apple harvest" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 50%; box-sizing:border-box">
         </div>
       </div>
       <div data-reveal="">
-        <p style="margin:0 0 14px; font-family:'Poppins', sans-serif; font-weight:500; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#8A8171">Growing roses, lately</p>
+        <p style="margin:0 0 14px; font-size:12px; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; color:#6B6560">(Growing roses, lately) &mdash; &times;5</p>
         <div class="photo-grid" style="display:grid; gap:12px">
-          <img src="images/photo-18.jpg" alt="Cream and yellow roses" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 65%">
-          <img src="images/photo-02.jpg" alt="Apricot rose" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 45%">
-          <img src="images/photo-20.jpg" alt="Pink rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%">
-          <img src="images/photo-34.jpg" alt="Yellow rose in the sun" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%">
-          <img src="images/photo-30.jpg" alt="Magenta rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:60% 55%">
+          <img src="uploads/7BB76F21-D16F-4B4D-B77B-C7CE7ECB3A05_1_105_c.jpeg" alt="Cream and yellow roses" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:35% 65%; box-sizing:border-box">
+          <img src="uploads/0B402657-9DBF-417F-9F6C-294AE940FD44_1_105_c.jpeg" alt="Apricot rose" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:45% 45%; box-sizing:border-box">
+          <img src="uploads/903A4DB1-D052-46AF-83D1-4AE22808E928_1_105_c.jpeg" alt="Pink rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 45%; box-sizing:border-box">
+          <img src="uploads/E1DC4C29-C265-4A8C-B136-FEB228361C30_1_105_c.jpeg" alt="Yellow rose in the sun" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:50% 40%; box-sizing:border-box">
+          <img src="uploads/D4149F62-2278-4C9C-A879-FD1607CF9FD3_1_105_c.jpeg" alt="Magenta rose after rain" loading="lazy" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover; object-position:60% 55%; box-sizing:border-box">
         </div>
       </div>
     </div>
   </section>
 
+  <footer style="border-top:1px solid #E3DED6">
+    <div style="max-width:1280px; margin:0 auto; padding:20px 32px; display:flex; justify-content:space-between; gap:16px; font-size:12px; font-weight:300; color:#6B6560; flex-wrap:wrap">
+      <span>&copy; 2026 Yunlei Shen &middot; Seattle, WA</span>
+      <span>Made with Claude</span>
+    </div>
+  </footer>
 
-  
-
-  </div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot;}}">
 class Component extends DCLogic {
   componentDidMount() {
-    const burger = document.querySelector('.nav-burger');
-    if (burger) {
-      const rail = burger.closest('.site-rail');
-      burger.addEventListener('click', function () { rail.hasAttribute('data-open') ? rail.removeAttribute('data-open') : rail.setAttribute('data-open', '1'); });
-      rail.querySelectorAll('.rail-links a').forEach(function (a) { a.addEventListener('click', function () { rail.removeAttribute('data-open'); }); });
-    }
-
-    this._theme = () => {
-      const c = document.getElementById('contact');
-      if (!c) return;
-      const dark = c.getBoundingClientRect().top < window.innerHeight * 0.6;
-      if (dark) document.body.setAttribute('data-dark', '1');
-      else document.body.removeAttribute('data-dark');
-    };
-    window.addEventListener('scroll', this._theme, { passive: true });
-    window.addEventListener('resize', this._theme);
-    this._theme();
     if ((this.props.motion ?? true) === false) return;
     const els = Array.from(document.querySelectorAll('[data-reveal]'));
     this._check = () => {
@@ -334,10 +228,5 @@ class Component extends DCLogic {
   renderVals() { return {}; }
 }
 </script>
-<script>
-(function(){function fit(){var h2=document.getElementById('rmt'),inner=document.getElementById('rmt-in');if(!h2||!inner)return;var p=h2.parentElement,cs=getComputedStyle(p);var box=p.getBoundingClientRect().width-parseFloat(cs.paddingLeft||0)-parseFloat(cs.paddingRight||0);if(window.innerWidth<1024){h2.style.fontSize='clamp(30px,4.5vw,48px)';inner.style.whiteSpace='normal';return;}inner.style.whiteSpace='nowrap';h2.style.fontSize='100px';var w=inner.getBoundingClientRect().width;if(!w)return;h2.style.fontSize=Math.max(28,Math.min(96,100*(box*0.8)/w))+'px';}
-window.addEventListener('resize',fit);requestAnimationFrame(fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);})();
-</script>
-<script src="js/main.js"></script>
 </body>
 </html>
