@@ -11,7 +11,7 @@
 <title>Yunlei Shen — Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=STIX+Two+Text:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
 body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
@@ -52,7 +52,7 @@ a:hover { color: #141414; }
   .panel-full { opacity: 1 !important; position: static !important; }
   .cover-fit { position: relative !important; flex: none !important; width: 100% !important; aspect-ratio: 900 / 560; min-height: 0 !important; }
   .cover-frame { position: absolute !important; left: 50% !important; top: 50% !important; width: 900px !important; height: 560px !important; transform-origin: center center; transform: translate(-50%, -50%) scale(var(--cover-scale, 1)) !important; }
-  .hero-name { font-size: clamp(64px, 17.5vw, 160px) !important; }
+  .hero-name { font-size: clamp(40px, 17cqw, 160px) !important; }
   .work-ind { margin-bottom: 14px; }
   .ind-t-d, .ind-ar-d { display: none !important; }
   .ind-t-m { display: inline !important; }
@@ -70,7 +70,7 @@ a:hover { color: #141414; }
 <div class="site-shell" style="background:#FAF7F2; color:#141414; font-family:'Geist', sans-serif; height:100vh; display:flex; flex-direction:column; box-sizing:border-box" data-screen-label="Home">
 
   <header class="top-nav" style="position:relative; flex:none; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 28px; height:58px; border-bottom:1px solid #E3DED6; box-sizing:border-box; font-size:13px; font-weight:400">
-    <a href="index.html" style="font-weight:500; letter-spacing:0.02em">Yunlei Shen</a>
+    <a href="index.html" aria-label="Yunlei Shen — home" style="display:inline-flex; align-items:center"><img src="logo-s.svg" alt="Yunlei Shen" style="height:30px; width:auto; display:block"></a>
     <nav class="nav-center" style="position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:28px">
       <a href="index.html#work" class="active"><span style="color:#6B6560; font-size:12px">&#8317;&#185;&#8318;</span> Work</a>
       <a href="about.html"><span style="color:#6B6560; font-size:12px">&#8317;&#178;&#8318;</span> About</a>
@@ -91,15 +91,15 @@ a:hover { color: #141414; }
           <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Yunlei Shen</span>
           <span style="font-size:10px; letter-spacing:0.1em; font-weight:300; color:#6B6560">(Seattle)</span>
         </span>
-        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 48px 36px; box-sizing:border-box">
+        <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 48px 36px; box-sizing:border-box; container-type:inline-size">
           <span style="display:flex; justify-content:space-between; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560"><span>(Seattle, WA)</span><span>(Portfolio &middot; 2026)</span></span>
           <span style="flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:36px">
-            <span class="hero-name" style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(64px, 10.5vw, 210px); line-height:0.92; letter-spacing:-0.015em; display:block">Yunlei<br>Shen</span>
-            <span style="font-family:'STIX Two Text', serif; font-size:clamp(21px, 2vw, 29px); line-height:1.45; max-width:640px; display:block">Product designer specializing in <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">interaction and visual design</u>, with a strong bias toward execution. I build from zero to one, design the <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">systems</u> that hold it together, and bring my work to life in Figma, Framer, and <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">code</u>. I'm at my best when the brief doesn't exist yet.</span>
+            <span class="hero-name" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:600; font-size:clamp(40px, 17cqw, 210px); line-height:1; letter-spacing:-0.02em; display:block; white-space:nowrap">Yunlei <i style="font-style:italic; font-weight:600">Shen</i></span>
+            <span style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-size:clamp(21px, 2vw, 29px); line-height:1.45; max-width:640px; display:block">Product designer specializing in <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">interaction and visual design</u>, with a strong bias toward execution. I build from zero to one, design the <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">systems</u> that hold it together, and bring my work to life in Figma, Framer, and <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">code</u>. I'm at my best when the brief doesn't exist yet.</span>
             <span class="work-ind" id="workInd" style="display:flex; justify-content:flex-end; align-items:center; gap:12px; font-size:14px; font-weight:300; color:#6B6560; opacity:1; transition:opacity .6s ease"><span class="ind-t-d">(the work, 01&ndash;04 &mdash; hover to expand)</span><span class="ind-t-m" style="display:none">(the work, 01&ndash;04 &mdash; tap to expand)</span><span style="font-size:20px; color:#141414; line-height:1"><span class="ind-ar-d">&rarr;</span><span class="ind-ar-m">&darr;</span></span></span>
           </span>
           <span class="hero-bottom" style="display:flex; justify-content:space-between; align-items:baseline; gap:24px; font-size:13px">
-            <span style="font-weight:300; color:#6B6560">(Currently) <span style="color:#141414; font-weight:400">Product Designer II &middot; Veteran Benefits Guide</span></span>
+            <span style="font-weight:300; color:#6B6560">(Currently) <span style="color:#141414; font-weight:400">Product Designer &middot; Veteran Benefits Guide</span></span>
             <a href="about.html" style="text-decoration:none; white-space:nowrap; font-weight:400" style-hover="text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1.5px">More (About) Me &rarr;</a>
           </span>
         </span>
