@@ -9,9 +9,10 @@
 <x-dc>
 <helmet>
 <title>Yunlei Shen — Product Designer</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500&amp;family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;family=Geist:wght@300;400;500;600&amp;family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">
 <style>
 html { scroll-behavior: smooth; }
 body { margin: 0; background: #FAF7F2; -webkit-font-smoothing: antialiased; }
@@ -40,6 +41,10 @@ a:hover { color: #141414; }
 .ind-ar-d { display: inline-block; animation: indPushX 1.8s ease-in-out infinite; }
 .ind-ar-m { display: none; animation: indPushY 1.8s ease-in-out infinite; }
 .work-ind.gone { opacity: 0 !important; pointer-events: none; }
+.case-spine { font-size: clamp(14px, 1.53vw, 30px) !important; }
+.case-title { font-size: clamp(22px, 2.64vw, 52px) !important; }
+@media (max-width: 1024px) { .case-title { font-size: clamp(26px, 5vw, 42px) !important; } }
+@media (max-width: 680px) { .case-title { font-size: clamp(22px, 6.4vw, 32px) !important; } }
 @media (prefers-reduced-motion: reduce) { .ind-ar-d, .ind-ar-m { animation: none; } }
 @media (max-width: 1024px) {
   .nav-center { position: static !important; transform: none !important; }
@@ -87,15 +92,15 @@ a:hover { color: #141414; }
 
       <div class="h-panel" style="display:block; position:relative; min-width:0; overflow:hidden; color:#141414" data-screen-label="Hero">
         <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
-          <span style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560">(Intro)</span>
-          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Yunlei Shen</span>
+          <span style="font-size:11px; letter-spacing:0.02em; font-weight:300; color:#6B6560">(Intro)</span>
+          <span style="writing-mode:vertical-rl; font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Yunlei <i style="font-style:italic">Shen</i></span>
           <span style="font-size:10px; letter-spacing:0.1em; font-weight:300; color:#6B6560">(Seattle)</span>
         </span>
         <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 48px 36px; box-sizing:border-box; container-type:inline-size">
-          <span style="display:flex; justify-content:space-between; font-size:12px; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; color:#6B6560"><span>(Seattle, WA)</span><span>(Portfolio &middot; 2026)</span></span>
+          <span style="display:flex; justify-content:space-between; font-size:12px; font-weight:300; letter-spacing:0.02em; color:#6B6560"><span>(Seattle, WA)</span><span>(Portfolio &middot; 2026)</span></span>
           <span style="flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:36px">
-            <span class="hero-name" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:600; font-size:clamp(40px, 17cqw, 210px); line-height:1; letter-spacing:-0.02em; display:block; white-space:nowrap">Yunlei <i style="font-style:italic; font-weight:600">Shen</i></span>
-            <span style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-size:clamp(21px, 2vw, 29px); line-height:1.45; max-width:640px; display:block">Product designer specializing in <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">interaction and visual design</u>, with a strong bias toward execution. I build from zero to one, design the <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">systems</u> that hold it together, and bring my work to life in Figma, Framer, and <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">code</u>. I'm at my best when the brief doesn't exist yet.</span>
+            <span class="hero-name" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; font-size:clamp(40px, 17cqw, 210px); line-height:1; letter-spacing:-0.02em; display:block; white-space:nowrap">Yunlei <i style="font-style:italic; font-weight:400">Shen</i></span>
+            <span style="font-family:'Geist', sans-serif; font-weight:300; font-size:clamp(17px, 1.5vw, 21px); line-height:1.6; max-width:640px; display:block">Product designer specializing in <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">interaction and visual design</u>, with a strong bias toward execution. I build from zero to one, design the <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">systems</u> that hold it together, and bring my work to life in Figma, Framer, and <u style="text-underline-offset:6px; text-decoration-thickness:1.5px">code</u>. I'm at my best when the brief doesn't exist yet.</span>
             <span class="work-ind" id="workInd" style="display:flex; justify-content:flex-end; align-items:center; gap:12px; font-size:14px; font-weight:300; color:#6B6560; opacity:1; transition:opacity .6s ease"><span class="ind-t-d">(the work, 01&ndash;04 &mdash; hover to expand)</span><span class="ind-t-m" style="display:none">(the work, 01&ndash;04 &mdash; tap to expand)</span><span style="font-size:20px; color:#141414; line-height:1"><span class="ind-ar-d">&rarr;</span><span class="ind-ar-m">&darr;</span></span></span>
           </span>
           <span class="hero-bottom" style="display:flex; justify-content:space-between; align-items:baseline; gap:24px; font-size:13px">
@@ -108,52 +113,52 @@ a:hover { color: #141414; }
       <a class="h-panel" href="the-end-of-the-paper-trail.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — Paper Trail">
         <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
           <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#1E3A5F">(01)</span>
-          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The End of the Paper Trail</span>
+          <span class="case-spine" style="writing-mode:vertical-rl; font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The End of the Paper Trail</span>
           <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(VBG Portal)</span>
         </span>
         <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
-          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#1E3A5F; font-weight:500">(01)</span> &mdash; VBG Portal &middot; 2025&ndash;26</span>
+          <span style="font-size:12px; letter-spacing:0.02em; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#1E3A5F; font-weight:500">(01)</span> &mdash; VBG Portal &middot; 2025&ndash;26</span>
           <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-paper-trail.html" title="VBG Portal cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">The End of the Paper Trail</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#1E3A5F; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span class="case-title" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:38px; line-height:1.05">The End of the Paper Trail</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#1E3A5F; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
         </span>
       </a>
 
       <a class="h-panel" href="a-crm-worth-navigating.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — CRM Re-Architecture">
         <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
           <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#2F7E68">(02)</span>
-          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">A CRM Worth Navigating</span>
+          <span class="case-spine" style="writing-mode:vertical-rl; font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">A CRM Worth Navigating</span>
           <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Sugar CRM)</span>
         </span>
         <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
-          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#2F7E68; font-weight:500">(02)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
+          <span style="font-size:12px; letter-spacing:0.02em; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#2F7E68; font-weight:500">(02)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
           <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-crm-nav.html" title="Sugar CRM cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">A CRM Worth Navigating</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#2F7E68; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span class="case-title" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:38px; line-height:1.05">A CRM Worth Navigating</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#2F7E68; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
         </span>
       </a>
 
       <a class="h-panel" href="four-roles-one-system.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — CRM Workflows">
         <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
           <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#3E6FD9">(03)</span>
-          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Four Roles, One System</span>
+          <span class="case-spine" style="writing-mode:vertical-rl; font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">Four Roles, One System</span>
           <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Sugar CRM)</span>
         </span>
         <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
-          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#3E6FD9; font-weight:500">(03)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
+          <span style="font-size:12px; letter-spacing:0.02em; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#3E6FD9; font-weight:500">(03)</span> &mdash; Sugar CRM &middot; 2024&ndash;25</span>
           <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-four-roles.html" title="Four Roles cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">Four Roles, One System</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#3E6FD9; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span class="case-title" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:38px; line-height:1.05">Four Roles, One System</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#3E6FD9; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
         </span>
       </a>
 
       <a class="h-panel" href="the-two-minute-deal.html" style="display:block; position:relative; min-width:0; overflow:hidden; border-left:1px solid #E3DED6; color:#141414; text-decoration:none" data-screen-label="Work — Matchmaking">
         <span class="panel-spine" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:28px 0; box-sizing:border-box">
           <span style="font-size:11px; letter-spacing:0.1em; font-weight:400; color:#6B5CD6">(04)</span>
-          <span style="writing-mode:vertical-rl; font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The Two-Minute Deal</span>
+          <span class="case-spine" style="writing-mode:vertical-rl; font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:22px; line-height:1; white-space:nowrap">The Two-Minute Deal</span>
           <span style="font-size:10px; letter-spacing:0.08em; font-weight:300; color:#6B6560">(Anonymous Agent)</span>
         </span>
         <span class="panel-full" style="position:absolute; inset:0; display:flex; flex-direction:column; padding:32px 44px 36px; box-sizing:border-box">
-          <span style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#6B5CD6; font-weight:500">(04)</span> &mdash; Anonymous Agent &middot; 2022&ndash;23</span>
+          <span style="font-size:12px; letter-spacing:0.02em; font-weight:300; color:#6B6560; white-space:nowrap"><span style="color:#6B5CD6; font-weight:500">(04)</span> &mdash; Anonymous Agent &middot; 2022&ndash;23</span>
           <span style="flex:1; min-height:0; margin:22px 0; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative" class="cover-fit"><iframe class="cover-frame" src="./cover-agent.html" title="Anonymous Agent cover" scrolling="no" style="flex:none; width:100%; height:100%; border:0; pointer-events:none"></iframe></span>
-          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span style="font-family:'Oswald', sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:-0.01em; font-size:42px; line-height:1.05">The Two-Minute Deal</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#6B5CD6; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
+          <span style="display:flex; align-items:baseline; justify-content:space-between; gap:20px"><span class="case-title" style="font-family:'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', Didot, serif; font-weight:400; letter-spacing:-0.01em; font-size:38px; line-height:1.05">The Two-Minute Deal</span><span data-accent="c" class="case-cta" style="font-size:15px; font-weight:400; color:#141414; white-space:nowrap"><span style="text-decoration:underline; text-decoration-color:#6B5CD6; text-underline-offset:5px; text-decoration-thickness:1.5px">Case Study</span> &rarr;</span></span>
         </span>
       </a>
 
